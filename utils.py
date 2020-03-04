@@ -10,8 +10,8 @@ import sys
 import csv
 import xlrd
 import docx
-from pypinyin import pinyin, lazy_pinyin, Style
-from PyQt5.Qt import *
+import jieba
+from tqdm import tqdm
 
 class Converter(object):
     def __init__(self):
@@ -157,3 +157,67 @@ class Converter(object):
                 with open(tgt_file_path, 'w', encoding='utf-8') as fout:
                     fout.write(text)
 
+class Counter(object):  
+    def __init__(self):
+        pass
+
+    def countFile(self, srcPath, tgtPath, mode = 'character'):
+        if not os.path.isdir(tgtPath):
+            os.mkdir(tgtPath)
+        
+        for file in os.listdir(srcPath):
+            file_path = os.path.join(srcPath, file)
+
+            if os.path.isdir(file_path):
+                self.countFile(file_path, os.path.join(tgtPath, file), mode=mode)
+            else:
+                f = open(file_path, 'rb')
+                encode_data = chardet.detect(f.read(1000))
+                if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+                    encode_data["encoding"] = "GBK"
+                encoding = encode_data["encoding"]
+                f.close()
+
+                with open(file_path, 'r', encoding=encoding) as fopen:
+                    text = fopen.read()
+
+                stats = {}
+                textLength = len(text)
+
+                for i in tqdm(range(textLength)):
+                    char = text[i]
+                    if mode == 'any': pass      # 所有字符
+                    elif mode == 'character':   # 汉字
+                        if char < u'\u4e00' or char > u'\u9fa5': continue
+                    elif mode == 'digit':       # 数字
+                        if not char.isdigit(): continue
+                    elif mode == 'alpha':       # 字母
+                        if not char.isalpha(): continue
+                    else:
+                        print("Mode Wrong!")
+                        exit()
+
+                    if char not in stats.keys(): 
+                        stats[char] = 1
+                    else: 
+                        stats[char] += 1
+
+                stats = [[item[0], item[1]] for item in stats.items()]
+
+                file = file.split('.')
+                file.pop(-1)
+                file.append('csv')
+                file = '.'.join(file)
+
+                tgt_file_path = os.path.join(tgtPath, 'stats_'+file, )
+                with codecs.open(tgt_file_path, 'w', encoding='utf_8_sig') as fopen:
+                    f_csv = csv.writer(fopen)
+                    f_csv.writerows(stats)
+
+class Extractor(object):
+    def __init__(self):
+        pass
+
+
+counter = Counter()
+counter.countFile('./03_test/GBK', './03_test/GBK')

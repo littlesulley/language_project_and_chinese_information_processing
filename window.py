@@ -10,6 +10,7 @@ import sys
 import csv
 import xlrd
 import docx
+import jieba
 from pypinyin import pinyin, lazy_pinyin, Style
 from PyQt5.Qt import *
 
@@ -18,12 +19,16 @@ class Window(QMainWindow):
     def __init__(self, converter):
         super().__init__()
         self.init()
+        self.windowCenter()
         self.converter = converter
     
     def init(self):
         self.setFixedSize(900, 600)
-        self.move(600, 600)
-        self.setWindowTitle('Character Encodings')
+        self.setWindowTitle('Chinese Language Processor')
+        self.setWindowIcon(QIcon('./resource/emiya.jpg'))
+        exeIcon = QSystemTrayIcon(self)
+        exeIcon.setIcon(QIcon('./resource/emiya.jpg'))
+        exeIcon.show()
 
         # 汉字转编码
         self.label4 = QLabel(self)
@@ -35,6 +40,7 @@ class Window(QMainWindow):
 
         
         self.charInputButton = QPushButton('输入汉字', self)
+        self.charInputButton.setToolTip('请输入<b>一个</b>汉字')
         self.charInputButton.move(100, 50)
         self.charInputButton.resize(100, 30)
         self.charInputButton.clicked.connect(self.inputDialog)
@@ -89,6 +95,7 @@ class Window(QMainWindow):
         self.label4.setStyleSheet('font-size:15px;font-weight:bold;font-family:Source Code Pro;')
 
         self.codeInputButton = QPushButton('输入编码', self)
+        self.codeInputButton.setToolTip('请输入编码，大小写均可')
         self.codeInputButton.move(100, 200)
         self.codeInputButton.resize(100, 30)
         self.codeInputButton.clicked.connect(self.inputDialog)
@@ -120,6 +127,7 @@ class Window(QMainWindow):
         self.label4.setStyleSheet('font-size:15px;font-weight:bold;font-family:Source Code Pro;')
 
         self.strokeInputButton = QPushButton('输入笔画', self)
+        self.strokeInputButton.setToolTip('请输入一个正整数')
         self.strokeInputButton.move(100, 300)
         self.strokeInputButton.resize(100, 30)
         self.strokeInputButton.clicked.connect(self.inputDialog)
@@ -151,6 +159,7 @@ class Window(QMainWindow):
 
         self.srcPathlineEdit = QLineEdit(self)
         self.srcPathlineEdit.setObjectName("filePathlineEdit")
+        self.srcPathlineEdit.setPlaceholderText('Source folder path')
         self.srcPathlineEdit.move(310, 400)
         self.srcPathlineEdit.resize(260, 30)
 
@@ -161,6 +170,7 @@ class Window(QMainWindow):
 
         self.tgtPathlineEdit = QLineEdit(self)
         self.tgtPathlineEdit.setObjectName("filePathlineEdit")
+        self.tgtPathlineEdit.setPlaceholderText('Target folder path')
         self.tgtPathlineEdit.move(310, 440)
         self.tgtPathlineEdit.resize(260, 30)
 
@@ -176,7 +186,14 @@ class Window(QMainWindow):
         self.pathLabel.setStyleSheet("color:red;font-weight:bold;")
 
         self.show()
-
+    
+    def windowCenter(self):
+        screenSize = QDesktopWidget().screenGeometry()
+        windowSize = self.geometry()
+        newLeft = (screenSize.width() - windowSize.width()) / 2
+        newTop = (screenSize.height() - windowSize.height()) / 2
+        self.move(newLeft, newTop)
+        
     def inputDialog(self):
         sender = self.sender()
         if sender == self.charInputButton:
@@ -239,5 +256,10 @@ class Window(QMainWindow):
             self.codeCharLable.setText(self.converter.dict_gbk_to_char.get(code, "-1"))
     
     def pathConfirm(self):
-        self.converter.decodeFile(self.srcPath, self.tgtPath)
-        self.pathLabel.setText("Done")
+        if os.path.exists(self.srcPath) and os.path.exists(self.tgtPath):
+            self.converter.decodeFile(self.srcPath, self.tgtPath)
+            self.pathLabel.setText("Done")
+            self.pathLabel.setStyleSheet("font-weight:bold;")
+        else:
+            self.pathLabel.setText("Error")
+            self.pathLabel.setStyleSheet("color:red;font-weight:bold;")
