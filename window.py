@@ -10,6 +10,7 @@ import sys
 import csv
 import xlrd
 import docx
+import string
 import jieba
 from pypinyin import pinyin, lazy_pinyin, Style
 from PyQt5.Qt import *

@@ -11,11 +11,13 @@ import csv
 import xlrd
 import docx
 import jieba
+import string
+from pypinyin import lazy_pinyin
 from tqdm import tqdm
 
 class Converter(object):
     def __init__(self):
-
+        print("*************Constructing dictionaries*************")
         self.dict_char_to_unicode, self.dict_unicode_to_char = \
             self.dictCharUnicode()
         self.dict_char_to_utf8, self.dict_utf8_to_char = \
@@ -26,6 +28,7 @@ class Converter(object):
             self.dictCharBig5()
         self.dict_char_to_stroke, self.dict_stroke_to_char = \
             self.dictCharStroke()
+        print("*************Complete*************")   
 
     def dictCharUnicode(self):
         codeset = xlrd.open_workbook(filename = 'codeset.xls')
@@ -158,10 +161,10 @@ class Converter(object):
                     fout.write(text)
 
 class Counter(object):  
-    def __init__(self):
-        pass
+    def __init__(self, converter):
+        self.converter = converter
 
-    def countFile(self, srcPath, tgtPath, mode = 'character'):
+    def countFile(self, srcPath, tgtPath):
         if not os.path.isdir(tgtPath):
             os.mkdir(tgtPath)
         
@@ -169,7 +172,7 @@ class Counter(object):
             file_path = os.path.join(srcPath, file)
 
             if os.path.isdir(file_path):
-                self.countFile(file_path, os.path.join(tgtPath, file), mode=mode)
+                self.countFile(file_path, os.path.join(tgtPath, file))
             else:
                 f = open(file_path, 'rb')
                 encode_data = chardet.detect(f.read(1000))
@@ -186,23 +189,22 @@ class Counter(object):
 
                 for i in tqdm(range(textLength)):
                     char = text[i]
-                    if mode == 'any': pass      # 所有字符
-                    elif mode == 'character':   # 汉字
-                        if char < u'\u4e00' or char > u'\u9fa5': continue
-                    elif mode == 'digit':       # 数字
-                        if not char.isdigit(): continue
-                    elif mode == 'alpha':       # 字母
-                        if not char.isalpha(): continue
-                    else:
-                        print("Mode Wrong!")
-                        exit()
-
+                    if char < u'\u4e00' or char > u'\u9fa5': continue
                     if char not in stats.keys(): 
                         stats[char] = 1
                     else: 
                         stats[char] += 1
 
-                stats = [[item[0], item[1]] for item in stats.items()]
+                stats = [[item[0], int(item[1])] for item in stats.items()]
+
+                for row in stats:
+                    char = row[0]
+                    row.append(str(self.converter.dict_char_to_unicode.get(char, "-1")))
+                    row.append(str(self.converter.dict_char_to_utf8.get(char, "-1")))
+                    row.append(str(self.converter.dict_char_to_gbk.get(char, "-1")))
+                    row.append(str(self.converter.dict_char_to_big5.get(char, "-1")))
+                    row.append(lazy_pinyin(char)[0])
+                    row.append(self.converter.dict_char_to_stroke.get(char, -1))
 
                 file = file.split('.')
                 file.pop(-1)
@@ -212,12 +214,93 @@ class Counter(object):
                 tgt_file_path = os.path.join(tgtPath, 'stats_'+file, )
                 with codecs.open(tgt_file_path, 'w', encoding='utf_8_sig') as fopen:
                     f_csv = csv.writer(fopen)
+                    f_csv.writerow(['character', 'frequency', 'unicode', 'utf8', 'gbk', 'big5', 'pinyin', 'stroke'])
                     f_csv.writerows(stats)
+    
+    def sortBy(self, statsFile, mode="frequency", reverse=False):
+        with codecs.open(statsFile, 'r', encoding='utf_8_sig') as fopen:
+            f_csv = csv.reader(fopen)
+            headings = next(f_csv)
+            stats = [row for row in f_csv]
+        
+        if mode == 'frequency':
+            stats.sort(key=lambda item: int(item[1]), reverse=reverse)
+        elif mode == 'unicode':
+            stats.sort(key=lambda item: str(item[2]), reverse=reverse)
+        elif mode == 'utf8':
+            stats.sort(key=lambda item: str(item[3]), reverse=reverse)
+        elif mode == 'gbk':
+            stats.sort(key=lambda item: str(item[4]), reverse=reverse)
+        elif mode == 'big5':
+            stats.sort(key=lambda item: str(item[5]), reverse=reverse)
+        elif mode == 'pinyin':
+            stats.sort(key=lambda item: str(item[6]), reverse=reverse)
+        else:
+            stats.sort(key=lambda item: int(item[7]), reverse=reverse)
+
+        statsFile = statsFile.split('/')
+        file = statsFile[-1]
+        file = 'sorted_'+file
+        statsFile.pop(-1)
+        statsFile.append(file)
+        filePath = '/'.join(statsFile)
+
+        with codecs.open(filePath, 'w', encoding='utf_8_sig') as fopen:
+            f_csv = csv.writer(fopen)
+            f_csv.writerow(headings)
+            f_csv.writerows(stats)
+
+    def groupBy(self, srcPath, tgtPath):
+        if not os.path.isdir(tgtPath):
+            os.mkdir(tgtPath)
+
+        for file in os.listdir(srcPath):
+            file_path = os.path.join(srcPath, file)
+
+            if os.path.isdir(file_path):
+                self.groupBy(file_path, tgtPath)
+            else:
+                f = open(file_path, 'rb')
+                encode_data = chardet.detect(f.read(1000))
+                if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+                    encode_data["encoding"] = "GBK"
+                encoding = encode_data["encoding"]
+                f.close()
+
+                with open(file_path, 'r', encoding=encoding) as fopen:
+                    text = fopen.read()
+
+                puncs = string.punctuation + '！？｡＂＃＄％＆＇（）＊＋，－／：；＜＝＞＠［＼］＾＿｀｛｜｝｢｣、〃《》【】'
+                textLength = len(text)
+
+                charNum = 0
+                alphaNum = 0
+                digitNum = 0
+                puncNum = 0
+                otherNum = 0
+
+                for i in tqdm(range(textLength)):
+                    char = text[i]
+                    if char >= u'\u4e00' and char <= u'\u9fa5':
+                        charNum += 1
+                    elif char.isalpha() or (char >= u'\uff21' and char <= u'\uff3a') or (char >= u'\uff41' and char <= u'\uff5a'):
+                        alphaNum += 1
+                    elif char.isdigit() or (char >= u'\uff10' and char <= u'\uff19'):
+                        digitNum += 1
+                    elif char in puncs:
+                        puncNum += 1
+                    else: otherNum += 1
+                
+                tgtPathFile = os.path.join(tgtPath, 'log.txt')
+                with codecs.open(tgtPathFile, 'a', encoding='utf_8') as fopen:
+                    fopen.write('File Path: ' + file_path + '\n')
+                    fopen.write('    ****The number of Chinese characters is ' + str(charNum) + '\n')
+                    fopen.write('    ****The number of English characters is ' + str(alphaNum) + '\n')
+                    fopen.write('    ****The number of digits is ' + str(digitNum) + '\n')
+                    fopen.write('    ****The number of punctuations is ' + str(puncNum) + '\n')
+                    fopen.write('    ****The number of other characters is ' + str(otherNum) + '\n\n')
 
 class Extractor(object):
     def __init__(self):
         pass
 
-
-counter = Counter()
-counter.countFile('./03_test/GBK', './03_test/GBK')

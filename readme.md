@@ -3,10 +3,10 @@ Current version: **v1.1.0**
 Developed by **Sulley**
 
 ## 程序简介
-- 支持笔画<->汉字<->编码的转换，并标出单个汉字的读音（
+- 支持笔画<->汉字<->编码的转换，并标出单个汉字的读音
 - 支持把word/txt文件转换为utf8编码的txt文件 
-- 支持统计字频
-- 支持提取词表并排序
+- 支持统计汉字字频，并按照一定标准排序
+- 支持提取中文词表并排序
 
 ## 使用方法
 
@@ -22,7 +22,7 @@ pip install xlrd pypinyin chardet docx pyqt5 jieba tqdm # 安装依赖包
 ## 程序说明
 **[utils.py](./utils.py)**
 - 定义类`Converter`，用于汉字、编码和笔画之间的转换
-- 定义类`Counter`，抽取字符的频度信息（支持按照汉字、英文字母和标点分类提取）
+- 定义类`Counter`，抽取汉字的频度信息并按照频度、编码、拼音或笔画排序
 - 定义类`Extractor`，用于中文分词（暂时使用[jieba](https://github.com/fxsjy/jieba)分词包，之后可能会自己实现一个基于神经网络的分词器）
 
 **[window.py](./window.py)**
