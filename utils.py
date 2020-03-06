@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 class Converter(object):
     def __init__(self):
-        print("*************Constructing dictionaries*************")
+        print("*************Constructing dictionaries*************") 
         self.dict_char_to_unicode, self.dict_unicode_to_char = \
             self.dictCharUnicode()
         self.dict_char_to_utf8, self.dict_utf8_to_char = \
@@ -28,7 +28,7 @@ class Converter(object):
             self.dictCharBig5()
         self.dict_char_to_stroke, self.dict_stroke_to_char = \
             self.dictCharStroke()
-        print("*************Complete*************")   
+        print("*********************Complete**********************")
 
     def dictCharUnicode(self):
         codeset = xlrd.open_workbook(filename = 'codeset.xls')
@@ -211,7 +211,7 @@ class Counter(object):
                 file.append('csv')
                 file = '.'.join(file)
 
-                tgt_file_path = os.path.join(tgtPath, 'stats_'+file, )
+                tgt_file_path = os.path.join(tgtPath, 'stats_'+file)
                 with codecs.open(tgt_file_path, 'w', encoding='utf_8_sig') as fopen:
                     f_csv = csv.writer(fopen)
                     f_csv.writerow(['character', 'frequency', 'unicode', 'utf8', 'gbk', 'big5', 'pinyin', 'stroke'])
@@ -301,6 +301,140 @@ class Counter(object):
                     fopen.write('    ****The number of other characters is ' + str(otherNum) + '\n\n')
 
 class Extractor(object):
-    def __init__(self):
-        pass
+    def __init__(self, converter):
+        self.converter = converter
 
+    def segment(self, srcPath, tgtPath):
+        if not os.path.isdir(tgtPath):
+            os.mkdir(tgtPath)
+        
+        for file in os.listdir(srcPath):
+            file_path = os.path.join(srcPath, file)
+            
+            if os.path.isdir(file_path):
+                self.segment(file_path, os.path.join(tgtPath, file))
+            else:
+                f = open(file_path, 'rb')
+                encode_data = chardet.detect(f.read(1000))
+                if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+                    encode_data["encoding"] = "GBK"
+                encoding = encode_data["encoding"]
+                f.close()
+
+                with open(file_path, 'r', encoding=encoding) as fopen:
+                    textLines = fopen.readlines()
+
+                newLines = []
+                print("*****************Segmenting Words******************")
+                for line in tqdm(textLines):
+                    newLine = ' '.join(jieba.cut(line.strip()))
+                    newLines.append(newLine+'\n')
+                print("*********************Complete**********************")
+
+                tgtPath = os.path.join(tgtPath, 'segmented_' + file)
+
+                with codecs.open(tgtPath, 'w', encoding='utf_8') as fopen:
+                    fopen.writelines(newLines)
+
+    def countSegmentedFile(self, srcPath, tgtPath):
+        if not os.path.isdir(tgtPath):
+            os.mkdir(tgtPath)
+        
+        for file in os.listdir(srcPath):
+            file_path = os.path.join(srcPath, file)
+
+            if os.path.isdir(file_path):
+                self.countSegmentedFile(file_path, os.path.join(tgtPath, file))
+            else:
+                f = open(file_path, 'rb')
+                encode_data = chardet.detect(f.read(1000))
+                if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+                    encode_data["encoding"] = "GBK"
+                encoding = encode_data["encoding"]
+                f.close()
+
+                with open(file_path, 'r', encoding=encoding) as fopen:
+                    text = fopen.readlines()
+
+                stats = {}
+
+                for line in tqdm(text):
+                    words = line.strip().split(' ')
+                    for word in words:
+                        if word not in stats.keys(): 
+                            stats[word] = 1
+                        else: 
+                            stats[word] += 1
+
+                stats = [[item[0], int(item[1])] for item in stats.items()] # [word, frequency]
+
+                for row in stats:
+                    word = row[0]
+                    wordUnicode = ''
+                    wordUtf8 = ''
+                    wordGBK = ''
+                    wordBig5 = ''
+                    wordStroke = 0
+                    for character in word:
+                        characterUnicode = str(self.converter.dict_char_to_unicode.get(character, "-1"))
+                        characterUtf8 = str(self.converter.dict_char_to_utf8.get(character, "-1"))
+                        characterGBK = str(self.converter.dict_char_to_gbk.get(character, "-1"))
+                        characterBig5 = str(self.converter.dict_char_to_big5.get(character, "-1"))
+                        characterStroke = self.converter.dict_char_to_stroke.get(character, 0)
+                        wordUnicode += characterUnicode
+                        wordUtf8 += characterUtf8
+                        wordBig5 += characterBig5
+                        wordGBK += characterGBK
+                        wordStroke += int(characterStroke)
+                    wordPinyin = ''.join(lazy_pinyin(word))
+                        
+                    row.append(wordUnicode)
+                    row.append(wordUtf8)
+                    row.append(wordGBK)
+                    row.append(wordBig5)
+                    row.append(wordPinyin)
+                    row.append(int(wordStroke))
+
+                file = file.split('.')
+                file.pop(-1)
+                file.append('csv')
+                file = '.'.join(file)
+
+                tgt_file_path = os.path.join(tgtPath, 'stats_'+file)
+                with codecs.open(tgt_file_path, 'w', encoding='utf_8_sig') as fopen:
+                    f_csv = csv.writer(fopen)
+                    f_csv.writerow(['word', 'frequency', 'unicode', 'utf8', 'gbk', 'big5', 'pinyin', 'stroke'])
+                    f_csv.writerows(stats)           
+    
+    def sortBy(self, statsFile, mode="frequency", reverse=False):
+        with codecs.open(statsFile, 'r', encoding='utf_8_sig') as fopen:
+            f_csv = csv.reader(fopen)
+            headings = next(f_csv)
+            stats = [row for row in f_csv]
+        
+        if mode == 'frequency':
+            stats.sort(key=lambda item: int(item[1]), reverse=reverse)
+        elif mode == 'unicode':
+            stats.sort(key=lambda item: str(item[2]), reverse=reverse)
+        elif mode == 'utf8':
+            stats.sort(key=lambda item: str(item[3]), reverse=reverse)
+        elif mode == 'gbk':
+            stats.sort(key=lambda item: str(item[4]), reverse=reverse)
+        elif mode == 'big5':
+            stats.sort(key=lambda item: str(item[5]), reverse=reverse)
+        elif mode == 'pinyin':
+            stats.sort(key=lambda item: str(item[6]), reverse=reverse)
+        else:
+            stats.sort(key=lambda item: int(item[7]), reverse=reverse)
+
+        statsFile = statsFile.split('/')
+        file = statsFile[-1]
+        file = 'sorted_'+file
+        statsFile.pop(-1)
+        statsFile.append(file)
+        filePath = '/'.join(statsFile)
+
+        with codecs.open(filePath, 'w', encoding='utf_8_sig') as fopen:
+            f_csv = csv.writer(fopen)
+            f_csv.writerow(headings)
+            f_csv.writerows(stats)

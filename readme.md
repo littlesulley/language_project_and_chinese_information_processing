@@ -6,6 +6,7 @@ Developed by **Sulley**
 - 支持笔画<->汉字<->编码的转换，并标出单个汉字的读音
 - 支持把word/txt文件转换为utf8编码的txt文件 
 - 支持统计汉字字频，并按照一定标准排序
+- 支持统计文件内的各类（汉字字符、英文字符、标点符号、其他字符）字符数量，并写入单个log文件
 - 支持提取中文词表并排序
 
 ## 使用方法
@@ -31,7 +32,11 @@ pip install xlrd pypinyin chardet docx pyqt5 jieba tqdm # 安装依赖包
 **[main.py](./main.py)**
 - 用户运行文件
 
-
+## TODO
+- 实现等待进度条
+- 优化程序执行时间
+- 实现user-friendly的菜单
+- 优化代码结构，减少冗余量
 
 ## 更新日志
 **v1.1.0**  
