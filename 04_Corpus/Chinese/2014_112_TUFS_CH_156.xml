@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_156</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_112_TUFS_CH_156.xml</title>
+    <text>
+      <paragraph>﻿    大学生应该<error type="replace" category="表现 副词 情态副词" revised="努力" id="1">热烈</error>地学习。大学的学习跟高中的学习不一样<error type="replace" category="标点符号" revised="。" id="2">，</error>在高中，老师对学生们单方面解释生词的意思、历史上的人物、复杂的方程式什么的。在大学，学生<error type="add" category="助词 其他助词" revised="们" id="3"/>先自己提<error type="replace" category="补语 趋向补语" revised="出" id="4">起</error>几个问题，上课的时候跟老师，<error type="add" category="连词" revised="还有" id="5"/><error type="add" category="代词 指示代词" revised="其他的" id="6"/>同学们一起研究那些问题，然后把自己的想法写成报告。通过<error type="add" category="介词 短语 介词短语" revised="在" id="7"/>大学的学习，学生<error type="replace" category="能愿动词" revised="可以" id="8">会</error>自己想，自己发表，自己写<error type="replace" category="表现" revised="有理论性" id="9">有道理</error>的文章。这些技能<error type="add" category="介词 短语 介词短语" revised="在" id="10"/>进入社会在公司工作的时候也会非常有用<error type="delete" category="助词 语气助词" revised="" id="11">的</error>。为了<error type="replace move" category="副词 情态副词" revised="这样学习" id="12">学习这样</error>，大学生应该预习和复习。预习是<error type="replace" category="表现 短语 介词短语" revised="为每门课做准备" id="13">准备每门课</error>，如果没准备就上课<error type="replace" category="助词 其他助词 复句 条件复句" revised="的话" id="14">的时候</error><error type="add" category="标点符号" revised="，" id="15"/>恐怕<error type="add" category="副词 范围副词" revised="只" id="16"/><error type="add" category="动词 能愿动词" revised="能" id="17"/>一直<error type="add" category="表现 动词" revised="保持" id="18"/>沉默。如果<error type="replace" category="副词 否定副词" revised="不" id="19">没</error>复习就<error type="add" category="动词 能愿动词" revised="会" id="20"/><error type="replace" category="表现 动词" revised="忘记" id="21">忘</error><error type="replace" category="表现 短语 “的”字短语" revised="学到的知识" id="22">知识</error>。<error type="add" category="连词 复句 条件复句" revised="只有" id="23"/>拼命努力地学习才<error type="add" category="动词 能愿动词" revised="能" id="24"/>得到学习成果。</paragraph>
+      <paragraph>虽说学习很重要，<error type="add" category="连词 复句 转折复句" revised="但是" id="25"/>课外活动<error type="replace move" category="副词 关联副词" revised="对大学生也" id="26">也对大学生</error>有好<error type="add" category="助词 结构助词" revised="的" id="27"/>影响，在课外活动小组里我们一般<error type="add" category="动词 能愿动词" revised="会" id="28"/><error type="replace" category="不及物动词" revised="和别人交流" id="29">交流别人</error>。有时跟不喜欢的人一起工作，有时跟长辈说话，有时对有的人<error type="delete" category="表现 动词" revised="" id="30">抱</error>反感，在各种各样的情况<error type="replace" category="方位词 短语 方位短语" revised="下" id="31">里</error>，我们能<error type="replace" category="动词" revised="了解" id="32">知道</error><error type="add" category="补语 结果补语" revised="到" id="33"/>人与人的关系<error type="replace move" category="短语 介词短语" revised="在组织里是" id="34">是在组织里</error>很重要的。<error type="replace" category="表现" revised="参加这种活动" id="35">活动它自己</error>当然是值得的。</paragraph>
+      <paragraph>我想学习与课外活动差不多。以我的<error type="delete" category="代词 指示代词" revised="" id="36">这种</error>情况为例，我学习的时候<error type="add" category="动词 能愿动词" revised="会" id="37"/>先找怀疑点，在课外活动<error type="replace" category="表现 动词" revised="练习" id="38">锻炼</error>的时候<error type="add" category="副词 关联副词" revised="也" id="39"/><error type="add" category="动词 能愿动词" revised="会" id="40"/>先<error type="add" category="动词 动作动词" revised="弄" id="41"/>清楚自己的弱点<error type="add" category="标点符号" revised="，" id="42"/>然后<error type="add" category="副词 时间副词" revised="再" id="43"/>开始练习。两者之间有共同之处，<error type="replace" category="连词 复句 注解复句" revised="那就是" id="44">是</error>先<error type="replace" category="表现 补语 结果补语" revised="弄清楚自己的现状" id="45">自己的现状很明显</error>然后<error type="add" category="副词 时间副词" revised="再" id="46"/>开始活动。学习优秀的人常常在课外活动小组里<error type="add" category="副词 关联副词" revised="也" id="47"/><error type="add" category="副词 程度副词" revised="很" id="48"/>活跃，因为<error type="add" category="主语 代词 指示代词" revised="两者" id="49"/><error type="replace" category="动词 存现动词" revised="有" id="50">是</error>这样的共同点。</paragraph>
+      <paragraph>大学生的时间是有限的。<error type="add" category="连词 复句 条件复句" revised="只要" id="51"/>安排时间安排得合理<error type="add" category="标点符号" revised="，" id="52"/>就能把学习和课外活动<error type="replace" category="表现 补语 结果补语" revised="都搞好" id="53">并立</error>。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

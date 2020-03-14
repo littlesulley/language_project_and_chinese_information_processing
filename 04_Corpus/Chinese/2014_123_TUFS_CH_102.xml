@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_102</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>26</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>4</school_year>
+      <month_of_study>48</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken>3級(2010.06)</chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_123_TUFS_CH_102.xml</title>
+    <text>
+      <paragraph>大家好。我今天<error type="add" category="动词 能愿动词" revised="要" id="1"/>介绍我的故乡神乐坂。神乐坂是<error type="add" category="动词 存现动词" revised="在" id="2"/>东京的东部，<error type="add" category="动词 关系动词" revised="是" id="3"/>新宿区的<error type="replace" category="名词" revised="街区" id="4">城市</error>之一。<error type="replace" category="代词 指示代词" revised="这个" id="5">那个</error>名字的由来是从南到北<error type="replace" category="动词 状态动词" revised="延伸" id="6">伸到</error>的<error type="add" category="短语 量词短语" revised="一个" id="7"/>坡道。300多年前，在举行庙会的时候，一直听得到从附近的寺庙<error type="add" category="短语 “的”字短语" revised="传来的" id="8"/>神乐的声音，<error type="add" category="连词 复句 因果复句" revised="因此" id="9"/>这个坡道就被叫<error type="add" category="补语 结果补语" revised="做" id="10"/>神乐坂，神乐是日本传统的<error type="replace" category="名词" revised="音乐" id="11">乐器</error>之一。</paragraph>
+      <paragraph>神乐坂的附近有法国<error type="delete" category="助词 结构助词" revised="" id="12">的</error>学校和文化学院，很多法国人住在那儿。所以神乐坂和法国的文化就很有关系<error type="add" category="助词 语气助词" revised="了" id="13"/>，<error type="replace" category="连词 复句 递进复句" revised="而且" id="14">再说</error><error type="replace" category="表现 短语 “的”字短语" revised="日本的传统文化" id="15">日本传统的文化</error><error type="add" category="副词 关联副词" revised="也" id="16"/>一起存在，这是神乐坂的<error type="replace" category="名词" revised="特色" id="17">特点</error>之一。一进入到神乐坂的岔道，我们就<error type="add" category="动词 能愿动词" revised="会" id="18"/>发现跟京都一样的景色。<error type="add" category="短语 介词短语" revised="在这里" id="19"/>观光客可以<error type="add" category="副词 时间副词" revised="同时" id="20"/><error type="replace" category="动作动词" revised="体验" id="21">享受</error>法国的文化和日本的文化。</paragraph>
+      <paragraph>神乐坂是被大正和昭和<error type="add" category="名词" revised="时代" id="22"/>的作家<error type="add" category="助词 其他助词" revised="们" id="23"/><error type="add" category="助词 其他助词" revised="所" id="24"/>热爱<error type="add" category="短语 “的”字短语" revised="的一个地方" id="25"/>，比如说夏目漱石，泉镜花，尾崎红叶<error type="replace" category="助词 列举助词" revised="等等" id="26">什么的</error>。他们常常去的文具店，叫相马屋，很有名，<error type="replace" category="连词" revised="而且" id="27">再说</error>现在还营业着。</paragraph>
+      <paragraph>去神乐坂的时候值得看的是毗沙门天善国寺。按照<error type="replace" category="代词 指示代词" revised="这个" id="28">那个</error>名字，这座寺庙供奉<error type="add" category="助词 结构助词" revised="的" id="29"/><error type="add" category="动词 能愿动词" revised="应该" id="30"/><error type="add" category="动词 关系动词" revised="是" id="31"/>毗沙门天王，是新宿七福神之一。这座寺庙<error type="add" category="副词 程度副词" revised="最" id="32"/>著名<error type="add" category="助词 结构助词" revised="的" id="33"/><error type="replace" category="动词 关系动词" revised="是" id="34">为</error>叫七福神巡游的文娱活动。住在附近的人一般一月一号<error type="add" category="动词 能愿动词" revised="会" id="35"/>去善国寺参拜，这是大家的习惯之一。</paragraph>
+      <paragraph><error type="replace" category="表现 副词 时间副词" revised="如今" id="36">今天</error>，<error type="add" category="动词 能愿动词" revised="能" id="37"/>体验日本传统文化的机会<error type="replace" category="表现 副词 程度副词" revised="越来越" id="38">很</error>少<error type="add" category="助词 语气助词" revised="了" id="39"/>，神乐坂是<error type="replace" category="表现 形容词" revised="宝贵" id="40">贵重</error>的城市之一。我觉得值得<error type="add" category="主语 句式 兼语句" revised="大家" id="41"/>去<error type="replace" category="重叠动词" revised="看看" id="42">看</error><error type="delete" category="宾语" revised="" id="43">神乐坂</error>。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

@@ -1,5 +1,5 @@
 # Chinese Language Processor
-Current version: **v1.1.0**  
+Current version: **v1.2.0**  
 Developed by **Sulley**
 
 ## 程序简介
@@ -17,7 +17,7 @@ Developed by **Sulley**
 
 ```shell
 pip install --upgrade pip # 更新pip
-pip install xlrd pypinyin chardet docx pyqt5 jieba tqdm # 安装依赖包
+pip install xlrd pypinyin chardet docx pyqt5 jieba # 安装依赖包
 ```
 
 ## 程序说明

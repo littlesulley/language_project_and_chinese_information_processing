@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_141</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_091_TUFS_CH_141.xml</title>
+    <text>
+      <paragraph>﻿    我<error type="replace" category="介词" revised="从" id="1">在</error>“<error type="replace" category="表现 短语 介词短语" revised="以学习为主" id="2">为主学习</error>”的立场<error type="replace" category="表现" revised="参加了讨论" id="3">讨论了</error>。这次有两个很难的问题，一个是<error type="replace" category="表现 短语 介词短语" revised="以学习为主" id="4">为主</error>的程度<error type="add" category="短语 “的”字短语" revised="的问题" id="5"/>。关于<error type="delete" category="表现" revised="" id="6">为主的</error>程度<error type="replace" category="表现 短语 “的”字短语" revised="的问题" id="7">说</error>，学习和课外活动<error type="replace" category="数词" revised="两" id="8">俩</error><error type="add" category="量词" revised="个" id="9"/><error type="add" category="副词 范围副词" revised="都" id="10"/>是<error type="add" category="副词 程度副词" revised="很" id="11"/>重要的。在人生中学习当然<error type="add" category="副词 程度副词" revised="很" id="12"/>有意义，这个是谁都知道的事情。但是同时课外活动也很重要。通过<error type="add" category="动词 动作动词" revised="参加" id="13"/>课外活动我们可以交<error type="add" category="补语 结果补语" revised="到" id="14"/>很多朋友，可以了解怎么跟别人沟通。成为社会的一员以后，这样的能力<error type="add" category="动词 关系动词 句式 强调句" revised="是" id="15"/>很重要<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="16"/>。还有在课外活动中，我们可以学习<error type="add" category="补语 结果补语" revised="到" id="17"/>各种各样的事情。但是，我们是大学生，大学生的本分<error type="add" category="副词 范围副词" revised="就" id="18"/>是学习。我们是花费父母挣<error type="add" category="补语 趋向补语" revised="来" id="19"/>的钱<error type="add" category="副词 语气副词" revised="才" id="20"/><error type="add" category="动词 能愿动词" revised="能" id="21"/><error type="replace" category="表现 动词" revised="学习" id="22">学</error>的，所以如果<error type="add" category="动词 能愿动词" revised="要" id="23"/>选择一个为主，那应该是学习。还有一个<error type="add" category="名词 主语" revised="问题" id="24"/>是什么是学习<error type="delete" category="助词 结构助词" revised="" id="25">的</error>。像我<error type="replace" category="名词 方位词" revised="前面" id="26">先</error>说的那样，<error type="add" category="动词 主语" revised="参加" id="27"/>课外活动也能学<error type="replace" category="补语 结果补语" revised="到" id="28">得</error><error type="add" category="副词 程度副词" revised="很" id="29"/>多<error type="add" category="名词 宾语" revised="东西" id="30"/>。课外活动也会是<error type="add" category="短语 量词短语" revised="一种" id="31"/>学习。但是不<error type="replace" category="表现 动词" revised="上" id="32">在</error>大学<error type="add" category="副词 关联副词" revised="也" id="33"/>可以参加课外活动，<error type="replace" category="表现" revised="不上大学" id="34">不在学习</error><error type="add" category="副词 关联副词" revised="就" id="35"/>不<error type="replace" category="动词 能愿动词" revised="能" id="36">可以</error>学习专业<error type="add" category="名词 宾语" revised="知识" id="37"/>。<error type="replace" category="连词 复句 递进复句" revised="还有" id="38">还是</error>考虑<error type="add" category="补语 结果补语" revised="到" id="39"/>我们来<error type="delete" category="介词 补语 介词短语补语" revised="" id="40">到</error>这个大学<error type="add" category="动词" revised="求学" id="41"/>的理由，比起课外活动学习更重要。我们不是为了参加社团来的，<error type="add" category="连词 复句 转折复句" revised="而" id="42"/>是为了学习来的。<error type="add" category="连词 复句 转折复句" revised="虽然" id="43"/>课外活动作为人生的经验来说很重要，但是我们不应该<error type="replace" category="表现 动词" revised="弄错" id="44">误解</error>大学生的本分。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

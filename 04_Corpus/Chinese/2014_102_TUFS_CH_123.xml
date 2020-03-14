@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_123</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_102_TUFS_CH_123.xml</title>
+    <text>
+      <paragraph>﻿    学校是<error type="replace" category="表现 动词" revised="提供" id="1">为了</error>学习<error type="add" category="处所名词" revised="的地方" id="2"/>，所以<error type="add move" category="短语 介词短语 句式 比较句" revised="比起课外活动" id="3"/>学生要<error type="add" category="副词 情态副词" revised="多" id="4"/>学习<error type="delete move" category="短语 介词短语 句式 比较句" revised="" id="5">比课外活动</error>。</paragraph>
+      <paragraph><error type="delete move" category="表现" revised="" id="6">学习</error>在学校<error type="add move" category="表现" revised="学习" id="7"/><error type="add" category="动词 关系动词" revised="是" id="8"/><error type="replace" category="表现 形容词" revised="首要" id="9">第一位</error>的目的。<error type="add" category="连词 复句 转折复句" revised="虽然" id="10"/>我现在<error type="add" category="副词 关联副词" revised="也" id="11"/>参加课外活动，不过我想更努力地学习。但是我有<error type="replace" category="代词 指示代词" revised="几个" id="12">多个</error>朋友<error type="replace" category="动词 能愿动词" revised="能" id="13">会</error>把学习和课外活动相结合。<error type="add move" category="复句 因果复句" revised="可能是由于参加课外活动" id="14"/><error type="add" category="动词 使令动词 句式 使役句" revised="使得" id="15"/>他们擅长管理时间。<error type="delete move" category="复句 因果复句" revised="" id="16">可能由于有课外活动。</error>管理<error type="add" category="连词" revised="和" id="17"/>计划<error type="add" category="助词 结构助词" revised="的" id="18"/>能力很重要。还有课外活动也有几个优点。第一，能<error type="replace" category="表现 动词" revised="体验" id="19">了解</error>在比赛<error type="add" category="方位词 短语 方位短语" revised="中" id="20"/>和舞台<error type="add" category="方位词 短语 方位短语" revised="上" id="21"/>成功的喜悦。如果<error type="replace" category="表现 动词" revised="体验" id="22">知道</error><error type="add" category="助词 时态助词" revised="了" id="23"/>那<error type="replace" category="量词" revised="种" id="24">个</error>喜悦，<error type="add" category="主语 代词 人称代词" revised="你" id="25"/><error type="add" category="动词 能愿动词" revised="会" id="26"/>更想努力<error type="add" category="动词 趋向动词 句式 连动句" revised="去" id="27"/><error type="add" category="动词" revised="做" id="28"/>各种各样的事。第二，<error type="add" category="动词 能愿动词" revised="会" id="29"/>比较擅长跳舞，音乐，篮球等等。<error type="delete" category="介词" revised="" id="30">在</error>人生有<error type="add" category="代词 人称代词" revised="自己的" id="31"/>兴趣<error type="add" category="副词 关联副词" revised="也" id="32"/>是<error type="add" category="短语 量词短语" revised="一件" id="33"/>让人愉快<error type="add" category="短语 “的”字短语" revised="的事" id="34"/>。如前所述，为了<error type="add" category="动词 使令动词 句式 使役句" revised="让" id="35"/>学习与课外活动相结合<error type="add" category="标点符号" revised="，" id="36"/>我们要有管理<error type="add" category="连词" revised="和" id="37"/>计划<error type="add" category="助词 结构助词" revised="的" id="38"/>能力<error type="replace" category="标点符号" revised="，" id="39">。</error><error type="replace" category="连词" revised="以及" id="40">还有</error>实现那个计划的能力。虽然学生要努力地学习，但是<error type="replace" category="表现 动词" revised="参加" id="41">还有也成功</error>课外活动也很重要。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

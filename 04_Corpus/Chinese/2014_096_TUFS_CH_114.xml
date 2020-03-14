@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_114</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_096_TUFS_CH_114.xml</title>
+    <text>
+      <paragraph>﻿    我认为<error type="replace" category="名词" revised="大学生活" id="1">大学生生活</error>中课外活动非常重要。</paragraph>
+      <paragraph>因为课外活动可以<error type="replace move" category="短语 介词短语" revised="教给我们" id="2">给我们教</error>很多事情。有人说大学的最大的目标<error type="add" category="副词 范围副词" revised="就" id="3"/>是学习，所以<error type="replace" category="名词" revised="大学生活" id="4">大学生生活</error>中最重要的是学习。我也可以理解这样的想法，可是我觉得课外活动比学习更重要。首先，课外活动<error type="add" category="动词 能愿动词" revised="可以" id="5"/>促进学生全面发展，促进学生社会化。课外活动因为强调学生<error type="add" category="助词 结构助词 短语 “的”字短语" revised="的" id="6"/>自主参加、自愿组合<error type="replace" category="标点符号" revised="，" id="7">、</error><error type="add" category="连词 复句 因果复句" revised="所以" id="8"/>充分发挥了学生的个性。在活动过程中，学生的独立性、责任心、参与意识等也<error type="add" category="动词 能愿动词" revised="可以" id="9"/>进一步<error type="add" category="表现 动词" revised="得到" id="10"/>发展。还有找工作的时候<error type="delete move" category="副词 关联副词" revised="" id="11">也</error>课外活动<error type="add move" category="副词 关联副词" revised="也" id="12"/>会很有用。因为现在的日本企业<error type="add" category="介词 短语 介词短语" revised="在" id="13"/>录用刚<error type="replace move" category="不及物动词" revised="大学毕业" id="14">毕业大学</error>的大学生的时候，不太把大学的成绩看<error type="add" category="助词 结构助词 补语 情态补语" revised="得" id="15"/><error type="add" category="副词 程度副词" revised="很" id="16"/>重要，反而把课外活动看<error type="add" category="助词 结构助词 补语 情态补语" revised="得" id="17"/><error type="add" category="副词 程度副词" revised="更" id="18"/>重要。在日本<error type="add" category="动词 存现动词" revised="有" id="19"/>很多大学生可以<error type="add" category="副词 程度副词" revised="很" id="20"/>容易地<error type="add" category="副词 语气副词" revised="就" id="21"/>得到好成绩，所以企业不可以<error type="add" category="副词 范围副词" revised="只" id="22"/>依靠成绩<error type="add" category="副词 关联副词" revised="就" id="23"/><error type="replace" category="动词" revised="了解" id="24">知道</error>那个人是<error type="replace" category="副词 语气副词" revised="真的" id="25">真</error>努力学习的还是不太认真学习的。<error type="delete" category="连词" revised="" id="26">然后，</error>企业的人<error type="add move" category="短语 介词短语" revised="除了学习以外" id="27"/><error type="add" category="副词 关联副词" revised="还" id="28"/>看<error type="delete move" category="短语 介词短语" revised="" id="29">除了学习以外</error>那个人做了什么事、努力<error type="add" category="助词 时态助词" revised="了" id="30"/>什么、得到了什么，知道那个人在工作中会不会有用。</paragraph>
+      <paragraph>所以课外活动很重要。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

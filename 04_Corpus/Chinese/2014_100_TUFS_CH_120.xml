@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_120</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語・英語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_100_TUFS_CH_120.xml</title>
+    <text>
+      <paragraph>﻿    我觉得大学生一定要重视学习。很多日本学生考上大学以后就不拼命地学习自己的专业，<error type="add" category="连词 复句 转折复句" revised="反而" id="1"/><error type="replace" category="动词" revised="花费" id="2">费</error>太长<error type="add" category="助词 结构助词" revised="的" id="3"/>时间<error type="replace" category="介词" revised="在" id="4">为</error>课外活动和打工<error type="add" category="方位词 短语 方位短语" revised="上" id="5"/>了。有些人说，大学生<error type="add" category="介词 句式 “被”字句" revised="被" id="6"/><error type="replace" category="动词" revised="录用" id="7">录取</error>的时候，他们的大学成绩不太重要，<error type="replace" category="副词 语气副词" revised="甚至" id="8">而</error><error type="add" category="副词 范围副词" revised="只" id="9"/><error type="add" category="动词 存现动词" revised="有" id="10"/>不太多<error type="add" category="助词 结构助词" revised="的" id="11"/>人选择跟他们的专业有关系<error type="replace" category="助词 结构助词" revised="的" id="12">地</error>工作，<error type="add" category="连词 复句 因果复句" revised="所以" id="13"/><error type="add" category="连词 复句 让步复句" revised="即使" id="14"/>在大学不努力<error type="delete" category="助词 结构助词" revised="" id="15">的</error>学习<error type="replace" category="副词 关联副词" revised="也" id="16">就</error>没问题。但是，我<error type="add" category="助词 结构助词" revised="的" id="17"/>意见跟这些人不一样<error type="delete" category="助词 语气助词" revised="" id="18">的</error>。</paragraph>
+      <paragraph>第一，专业知识就是我们的<error type="replace" category="名词" revised="宝贵财产" id="19">珍物</error>，也是生活手段。<error type="add" category="连词 复句 转折复句" revised="虽然" id="20"/><error type="add" category="动词 存现动词" revised="有" id="21"/>很多大学生选择与自己的专业没有关系的工作<error type="replace" category="标点符号" revised="，" id="22">。</error>但是<error type="delete" category="标点符号" revised="" id="23">，</error>积极地找跟自己的专业有关系的<error type="add" category="表现 短语 “的”字短语" revised="工作的" id="24"/>学生比他们一定有更大的成功机会。发挥自己的专业知识和能力就是<error type="add" category="短语 量词短语" revised="一个" id="25"/>人<error type="replace" category="短语 “的”字短语" revised="最大的愉快" id="26">的最大愉快</error>，<error type="add" category="连词" revised="这样" id="27"/><error type="add" category="副词 关联副词" revised="就" id="28"/>可以过更充实的生活了。</paragraph>
+      <paragraph>第二，不但<error type="add" category="动词 存现动词" revised="有" id="29"/>几个大企业<error type="replace" category="动词" revised="计划" id="30">计算</error>从2015年开始重视大学生的成绩，<error type="add" category="连词 复句 递进复句" revised="而且" id="31"/>还<error type="add" category="动词 存现动词" revised="有" id="32"/>很多日本企业最近录取越来越多的从国外大学毕业的学生。国外<error type="add" category="助词 结构助词" revised="的" id="33"/>大学生比日本<error type="add" category="短语 “的”字短语" revised="的大学生" id="34"/>基本上更努力<error type="replace" category="助词 结构助词" revised="地" id="35">的</error>学习自己的专业，大部分的专业能力<error type="add" category="短语 介词短语 句式 比较句" revised="比日本大学生" id="36"/>高<error type="replace" category="助词 结构助词" revised="得" id="37">的</error>多。日本大学生要注意在这个激烈的竞争上<error type="add" category="副词 否定副词" revised="不" id="38"/><error type="add" category="动词 能愿动词" revised="能" id="39"/>落后。</paragraph>
+      <paragraph>第三，虽然每个人<error type="delete" category="助词 结构助词" revised="" id="40">的</error><error type="replace" category="动词" revised="上" id="41">去</error>大学的目标不一样，但<error type="delete" category="代词 指示代词" revised="" id="42">这</error>就是学习。我们毕业以后不太<error type="delete" category="副词 否定副词" revised="" id="43">没</error>有学习的机会了，现在就是最好的<error type="replace" category="表现 名词" revised="时机" id="44">时间</error>。<error type="replace" category="介词" revised="根据" id="45">据闻</error>最近<error type="add" category="助词 结构助词" revised="的" id="46"/><error type="add" category="短语 量词短语" revised="一个" id="47"/>调查，日本成年人的大半后悔他们在大学的时候没好好学习。我觉得，如果你的目标不是学习的话，<error type="add" category="连词 复句 条件复句" revised="那" id="48"/><error type="add" category="副词 关联副词" revised="就" id="49"/>不用上大学，应该去找工作。<error type="replace" category="介词" revised="以" id="50">对</error>我高中的朋友来说，有的人<error type="replace" category="副词 否定副词" revised="没" id="51">不</error>上大学，在工作。<error type="add" category="连词 复句 转折复句" revised="而" id="52"/>有的人不想学习<error type="replace" category="副词 关联副词" revised="却" id="53">可</error>上<error type="add" category="助词 时态助词" revised="了" id="54"/>大学。前后对比起来看，前者看起来很开心，生活<error type="add" category="副词 关联副词" revised="也" id="55"/>充实得多<error type="add" category="助词 语气助词" revised="了" id="56"/>。在大学不学习就是<error type="replace" category="错别字" revised="白" id="57">百</error>花时间和学费。<error type="add" category="连词 复句 转折复句" revised="虽然" id="58"/>在大学的课外活动<error type="add" category="方位词 短语 方位短语" revised="中，" id="59"/>你会认识很多好朋友<error type="replace" category="标点符号" revised="，" id="60">。</error>不过你在别的地方也有一样的机会。我们国立大学的学生<error type="replace" category="副词 语气副词" revised="尤其" id="61">特别</error>应该重视学习，因为我们的学费<error type="replace" category="表现" revised="来自" id="62">考上</error>国民的税金，决不能<error type="replace" category="动词" revised="浪费" id="63">百花</error>学费。</paragraph>
+      <paragraph>我是羽毛球队的队长，联系非常多，每天<error type="replace" category="副词 程度副词" revised="非常" id="64">大</error>忙<error type="delete" category="助词 语气助词" revised="" id="65">了</error>。我很重视课外活动，但是更重视学习。我<error type="replace" category="表现 动词 状态动词" revised="觉得" id="66">感到</error><error type="delete" category="标点符号" revised="" id="67">，</error>努力地参加课外活动是<error type="add" category="短语 量词短语" revised="一件" id="68"/>好<error type="delete" category="助词 结构助词" revised="" id="69">的</error>事，顾此失彼<error type="add" category="动词 关系动词 句式 强调句" revised="是" id="70"/>不好的。</paragraph>
+      <paragraph/>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

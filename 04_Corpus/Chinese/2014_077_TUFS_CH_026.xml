@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_026</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>中国語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_077_TUFS_CH_026.xml</title>
+    <text>
+      <paragraph>﻿    通过这次讨论，我觉得学业和课外活动都各有它们的好处，<error type="add move" category="短语 介词短语" revised="对我们来说" id="1"/>哪一个都是<error type="delete move" category="短语 介词短语" revised="" id="2">对我们来说</error>非常重要的。当然，做为一个学生，我们必须用心努力学习，学得<error type="replace" category="副词 程度副词" revised="越" id="3">更</error>多，我们就会拥有<error type="replace" category="副词 程度副词" revised="越" id="4">更</error>多的知识<error type="replace" category="标点符号" revised="、" id="5">。</error>更多的自信和判断能力。但<error type="delete" category="标点符号" revised="" id="6">，</error>这并不代表我们应该把所有的时间都用在学习上。我们应该抽出一些时间，通过课外活动来锻炼自己。参加课外活动既可以陶冶性情，又可以交更多的好朋友。此外，还可以学到如何和别人相处，这些都是在书本上学不到的东西。现在，大学的课外活动种类很多，只要细心挑选，一定能够找到一个适合自己，又有益身心的活动。</paragraph>
+      <paragraph>虽然<error type="delete" category="标点符号" revised="" id="7">，</error>学习和课外活动<error type="delete" category="助词 结构助词" revised="" id="8">的</error><error type="add" category="动词 能愿动词" revised="要" id="9"/>两立不是很容易<error type="delete" category="强调句" revised="" id="10">的</error>，但在<error type="replace" category="形容词" revised="有限" id="11">有限度</error>的时间里，发挥最大的能力去做更多的事，并且把每一件都做好也是一个很好的锻炼自己的机会。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

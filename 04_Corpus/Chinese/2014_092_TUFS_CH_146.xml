@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_146</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_092_TUFS_CH_146.xml</title>
+    <text>
+      <paragraph>﻿    我想大学生活应该以课外活动为主。以课外活动为主的大学生活<error type="add" category="动词 能愿动词" revised="可以" id="1"/>帮助学生们打通人脉。人脉是通过课外活动，跟同事交流还有跟客户交流<error type="add" category="连词" revised="而" id="2"/>建立的。实际上以学习为主的大学生活虽然不是不会帮助学生们打通人脉，但是为了<error type="add" category="动词" revised="过" id="3"/>这样的生活<error type="add" category="标点符号" revised="，" id="4"/>学生们<error type="add" category="动词 能愿动词" revised="必须" id="5"/>认真预习复习，看书<error type="add move" category="及物动词" revised="好好研究" id="6"/>关于<error type="replace" category="名词" revised="课业" id="7">课</error>的内容<error type="delete move" category="及物动词" revised="" id="8">好好研究</error>，<error type="add" category="动词 能愿动词" revised="会" id="9"/>很闭塞的。这样的生活给他们<error type="add" category="表现 动词 补语 趋向补语" revised="带来" id="10"/>的人脉，比如，要是学生们<error type="add" category="副词 程度副词" revised="很" id="11"/>努力学习，<error type="add" category="连词 复句 因果复句" revised="因而" id="12"/>有个老师对他们感兴趣的话，<error type="add" category="连词 复句 承接复句" revised="这样的话" id="13"/><error type="add" category="动词 能愿动词" revised="可以" id="14"/>跟那个研究班的老师建立<error type="delete" category="助词 结构助词" revised="" id="15">的</error>人脉，至多是学术方面有好影响的人脉。通过课外活动建立的人脉<error type="add" category="关联副词" revised="却" id="16"/>不一样。这个人脉在社会<error type="add" category="名词 方位词 短语 方位短语" revised="上" id="17"/><error type="add" category="副词 程度副词" revised="很" id="18"/>有用。比如要是有个课外活动<error type="add" category="代词 人称代词" revised="它" id="19"/>的历史很长，<error type="delete" category="表现" revised="" id="20">那个课外活动的</error>学长非常多，那么学生们可以跟在社会<error type="add" category="名词 方位词 短语 方位短语" revised="上" id="21"/><error type="replace" category="表现 动词 状态动词" revised="活跃" id="22">活</error><error type="delete" category="补语 趋向补语" revised="" id="23">下去</error>的人相互认识，得到的信息<error type="add" category="动词 能愿动词" revised="会" id="24"/>更多<error type="delete" category="助词 语气助词" revised="" id="25">了</error>。这样找工作的时候一定<error type="add" category="动词 能愿动词" revised="会" id="26"/><error type="add" category="副词 程度副词" revised="很" id="27"/>活跃。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

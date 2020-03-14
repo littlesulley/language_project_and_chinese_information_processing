@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_147</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_093_TUFS_CH_147.xml</title>
+    <text>
+      <paragraph>﻿    你们<error type="replace" category="表现 名词 时间名词" revised="以前" id="1">从前</error>一定听<error type="delete" category="补语 结果补语" revised="" id="2">到</error><error type="add" category="助词 时态助词" revised="过" id="3"/>这句话<error type="replace" category="标点符号" revised="：" id="4">，</error>“学生的本分是学习”。今天的努力<error type="add" category="副词 时间副词" revised="将" id="5"/>决定<error type="delete" category="助词 时态助词" revised="" id="6">了</error>明天的收获，专业<error type="delete" category="助词 结构助词" revised="" id="7">的</error>知识是我们走上社会立足生存的<error type="replace" category="名词" revised="根本" id="8">根法</error>。我们大学生是日本社会未来的建设者，所以我们一直都该做的就是学习。但是，现在很多日本大学生<error type="add" category="副词 范围副词" revised="只" id="9"/>专心<error type="add" category="动词" revised="参加" id="10"/>课外活动<error type="delete" category="名词" revised="" id="11">小组</error>。<error type="replace" category="副词 语气副词" revised="的确" id="12">确实</error>，大学的校园生活是丰富多彩的，比如说我们有自由的时间，独立的生活环境，和<error type="add" category="副词 程度副词" revised="很" id="13"/>有意思的活动等等。我也是<error type="replace" category="表现" revised="其中一个" id="14">一个在其中</error>专心课外活动的人，所以<error type="add" category="动词 能愿动词" revised="能" id="15"/><error type="delete" category="副词 程度副词" revised="" id="16">很</error>理解他们。但是课外活动<error type="delete" category="名词" revised="" id="17">小组</error>不<error type="replace" category="动词 能愿动词" revised="应该" id="18">要</error>在大学生活<error type="add" category="方位词 短语 方位短语" revised="中" id="19"/><error type="delete" category="介词" revised="" id="20">为</error><error type="add" category="动词" revised="影响" id="21"/>学习<error type="delete" category="名词" revised="" id="22">主义</error>。</paragraph>
+      <paragraph>有一个公司的调查<error type="add" category="动词" revised="指出" id="23"/>，大约<error type="add" category="动词 存现动词" revised="有" id="24"/>60%的<error type="replace" category="表现" revised="已经就业的人" id="25">社会人</error>有后悔的事在大学生活<error type="add" category="方位词 短语 方位短语" revised="中" id="26"/>没做。其中最多的<error type="delete" category="名词" revised="" id="27">后悔事</error>是“要是当初好好<error type="replace" category="表现 动词" revised="学习" id="28">学</error>就好了！”他们说：“在进入社会之前我要认真学习...。那么在进入社会之后我一定不<error type="replace" category="动词 能愿动词" revised="用" id="29">要</error>再学习了。”顺便说一下，第二<error type="add" category="量词 短语 量词短语" revised="个" id="30"/><error type="delete" category="助词 结构助词" revised="" id="31">的</error>后悔<error type="add" category="结构助词 短语 “的”字短语" revised="的" id="32"/>事是“学习外语，比如英语”。第一<error type="add" category="量词 短语 量词短语" revised="个" id="33"/>和第二<error type="add" category="量词 短语 量词短语" revised="个" id="34"/><error type="delete" category="助词 结构助词" revised="" id="35">的</error>后悔<error type="add" category="结构助词 短语 “的”字短语" revised="的" id="36"/>事都<error type="add" category="动词 关系动词 句式 强调句" revised="是" id="37"/>关于学习<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="38"/>。他们说：“要是我们好好<error type="replace" category="表现 动词" revised="学习" id="39">学</error>，会说外语<error type="add" category="助词 其他助词 复句 条件复句" revised="的话" id="40"/>，<error type="add" category="连词 复句 条件复句" revised="那么" id="41"/>我们一定<error type="add" category="动词 能愿动词" revised="能" id="42"/><error type="replace" category="动词 补语 结果补语" revised="找到" id="43">就</error>更好的工作。在求职时，我们<error type="add" category="动词 能愿动词" revised="能" id="44"/><error type="replace" category="表现" revised="选择的" id="45">的选择</error>项目<error type="add" category="副词 关联副词" revised="就" id="46"/>更多了。<error type="replace" category="连词 复句 转折复句" revised="相反地" id="47">一面</error>，课外活动是<error type="add" category="动词" revised="排名" id="48"/>第六<error type="replace" category="助词 结构助词" revised="的" id="49">任</error>后悔的事。最近，企业也<error type="add" category="动词 状态动词" revised="开始" id="50"/><error type="replace" category="动词" revised="寻求" id="51">要求</error>努力学习的人。为了<error type="add" category="动词 使令动词 句式 使役句" revised="让" id="52"/>我们<error type="add" category="句式 能愿动词" revised="能" id="53"/><error type="replace" category="表现 动词" revised="成为" id="54">成</error><error type="delete" category="助词 时态助词" revised="" id="55">了</error><error type="add" category="短语 量词短语" revised="一个" id="56"/><error type="replace" category="表现 形容词" revised="有用" id="57">好</error><error type="add" category="助词 结构助词" revised="的" id="58"/>社会人，我们在大学生活<error type="add" category="方位词 短语 方位短语" revised="中" id="59"/>要努力学习。</paragraph>
+      <paragraph/>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

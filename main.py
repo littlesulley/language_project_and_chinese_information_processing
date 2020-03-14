@@ -1,3 +1,8 @@
+"""
+Author: Sulley
+Date: 2020.2.29
+"""
+
 import chardet
 import codecs
 import os
@@ -6,10 +11,11 @@ import csv
 import xlrd
 import docx
 import jieba
+import itertools, string
 from pypinyin import pinyin, lazy_pinyin, Style
 from PyQt5.Qt import *
 from utils import Converter, Counter, Extractor
-from window import Window
+from window import Window, EmittingStream
 
 
 

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_096</id>
+      <nationality>中国</nationality>
+      <sex>男</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>1</school_year>
+      <month_of_study>239</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_117_TUFS_CH_096.xml</title>
+    <text>
+      <paragraph>上海可以分成三个部分——以黄浦江为界，东边是浦东，西边是浦西，苏州河的北边是沪北。浦东在1990年<error type="add" category="介词 句式 “被”字句" revised="被" id="1"/>开发<error type="add" category="标点符号" revised="，" id="2"/>开发之前是一片宽阔的农田。旧上海的市区中心在浦西豫园一带。自从租界时代<error type="add" category="助词 其他助词" revised="起" id="3"/>，金融、商业街都在浦西。当时被誉为“东方的巴黎”。在浦西有两个必去的景点，一是外滩，南起延安东路中山东一路，北至苏州河上的外白渡桥。长达1.5km，它曾经是上海的十里洋场。是以哥特式、罗马式、巴洛克式、中西合壁式等52栋各种风格的大楼所组成的旧上海时期的金融中心、外贸机构的集中地，被称为“万国建筑博览群”。早期的外滩是一个对外贸易的中心，这里洋行林立、贸易繁荣。从19世纪后期开始，许多外资和华资银行在外滩建立，这里成了上海的“金融街”，又有“东方华尔街”之称。于是，外滩就成了一块“风水宝地”。在外滩拥有<error type="delete" category="代词 指示代词" revised="" id="4">这么</error>一块土地，不仅是财富的象征，更是名誉的象征。外滩的夜景在世界上也非常著名。二是城隍庙，由豫园和传统商店、小吃店组成。其中一家建立于1900年的南翔馒头店是最为有名的。在那里可以品尝到美味的南翔小笼包。它以皮薄馅<error type="replace" category="表现 形容词" revised="多" id="5">大</error>为特色，内含卤汁，配以姜丝。用来佐餐的食醋也是经过特殊加工的。从浦西渡江至浦东有多种方法，如乘船、走隧道、坐地铁等等。其中我<error type="delete" category="副词 情态副词" revised="" id="6">特意</error><error type="add" category="动词 能愿动词" revised="要" id="7"/>推荐两座大桥——杨浦大桥和南浦大桥。两座大桥<error type="delete" category="标点符号" revised="" id="8">，</error>有如两条巨龙横卧于黄浦江上，中间是东方明珠电视塔，正好构成了一幅“二龙戏珠”的巨幅画卷。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

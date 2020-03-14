@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_159</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_115_TUFS_CH_159.xml</title>
+    <text>
+      <paragraph>﻿    首先，我为自己上个星期不能<error type="add" category="动词 趋向动词 句式 连动句" revised="来" id="1"/>上课的事情感到抱歉。</paragraph>
+      <paragraph>这主要是因为这几天我花费了很多时间和精力在校园节上面。作为校园节的执行人员，我必须<error type="add" category="介词 短语 介词短语" revised="在" id="2"/>每天早上七点钟的时候<error type="add" category="副词 时间副词" revised="就" id="3"/>到<error type="delete" category="表现" revised="" id="4">达</error>学校，<error type="replace" category="连词" revised="然后" id="5">之后</error>晚上十二点左右才能回家。因此，对于我来说，上一周是很忙碌的一周。而且在<error type="replace" category="表现" revised="校园节" id="6">学校节日</error><error type="replace" category="动词 状态动词" revised="结束" id="7">完成</error>以后，我就生病了。身体的不适让我无法继续学习，因此不得已缺席了上一周的课。现在，校园节已经结束了，我也有了更多<error type="add" category="助词 结构助词" revised="的" id="8"/>时间<error type="add" category="助词 语气副词" revised="了" id="9"/>。我以后要按时上专业课，<error type="replace" category="错别字" revised="决" id="10">绝</error>不会再无缘无故<error type="add" category="助词 结构助词" revised="地" id="11"/>缺席<error type="add" category="助词 语气副词" revised="了" id="12"/>。</paragraph>
+      <paragraph>最后，我喜欢看中文<error type="delete" category="助词 结构助词" revised="" id="13">的</error>电影。我最近看<error type="add" category="助词 时态助词" revised="了" id="14"/>“叶问”“中国合伙人”等等。中国电影很有意思，<error type="replace" category="连词 复句 递进复句" revised="而且" id="15">并</error><error type="add" category="副词 关联副词" revised="还" id="16"/>可以提高我的中文听力。</paragraph>
+      <paragraph>如果老师有<error type="add" category="动词 能愿动词" revised="可以" id="17"/>推荐的中国电影的话，请告诉我。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

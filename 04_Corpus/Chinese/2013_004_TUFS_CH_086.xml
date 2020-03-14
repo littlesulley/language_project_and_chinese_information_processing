@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_086</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>13</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS/004_TUFS_CH_086.xml</title>
+    <text>
+      <paragraph><error type="replace move" category="短语 “的”字短语" revised="我们的房地产公司" id="1">我们房地产的公司</error> <error type="add" category="动词 状态动词" revised="想" id="2"/>在阿拉伯的迪拜建一棟<error type="replace" category="表现" revised="百层高的" id="3">百次建的高层</error>公寓楼。<error type="replace" category="代词 指示代词" revised="那个" id="4">这个</error>地方是<error type="add" category="短语 量词短语" revised="一个" id="5"/>度假村,而且产很多的石油,所以很多有钱人.除了国内的有钱人<error type="add" category="方位词" revised="以外" id="6"/>,还有很多外国<error type="add" category="助词 结构助词" revised="的" id="7"/>有名人来这里<error type="delete" category="动词" revised="" id="8">过</error>度假。我们打算把公寓的房间卖给这样的人.</paragraph>
+      <paragraph>我们<error type="delete" category="短语 “的”字短语" revised="" id="9">的</error>公寓楼的很大<error type="delete" category="短语 “的”字短语" revised="" id="10">的</error>特色是面向大海。每个房间里<error type="add" category="副词 范围副词" revised="都" id="11"/>有客厅、厨房、厕所、浴室<error type="replace" category="连词" revised="和" id="12">、</error>卧式。房间里有五十平米的客厅。<error type="delete" category="介词" revised="" id="13">在</error>客厅<error type="add" category="方位词" revised="里" id="14"/>有很大的窗户,从这<error type="replace" category="量词" revised="些" id="15">个</error>窗户你们可以欣赏海景和夜景。房间里还有很大的按摩浴池。<error type="replace" category="连词" revised="并且" id="16">又</error>房间的墙<error type="delete" category="动词 关系动词" revised="" id="17">是</error>很厚,所以即使你<error type="replace" category="动词" revised="开" id="18">在</error>很大的音量听音乐或者唱歌儿<error type="delete" category="复句 让步复句" revised="" id="19">的话</error>,你<error type="add" category="副词 关联副词" revised="也" id="20"/><error type="replace" category="副词 否定副词" revised="不" id="21">没</error><error type="add" category="动词 能愿动词" revised="会" id="22"/>打扰<error type="add" category="补语 结果补语" revised="到" id="23"/>邻居。在楼顶上有游泳池、水疗中心、酒吧、健身房、 赌场等等。住的人可以随便利用这些设施。<error type="replace" category="连词" revised="并且" id="24">还</error>在一楼,有个很宽的客房。住的人可以邀请客人<error type="replace" category="动词 趋向动词" revised="来" id="25">做</error>聚会。</paragraph>
+      <paragraph>这个公寓的附近有新建的购物中心<error type="replace" category="连词" revised="和" id="26">、</error>海滩。<error type="delete" category="介词" revised="" id="27">把</error>这么好的立地条件很难找。大概人们最想知道的是这个很好<error type="add" category="助词 结构助词" revised="的" id="28"/>公寓楼的价格。一个房间的价格是二百万美元，<error type="add" category="连词" revised="也就是说" id="29"/>两亿多日元。听起来<error type="add" category="连词" revised="虽然" id="30"/>很贵,但是<error type="replace move" category="动词" revised="值得买" id="31">买值得</error>。我们有<error type="delete" category="助词 时态助词" revised="" id="32">了</error>信心推荐这个<error type="replace" category="名词" revised="房产" id="33">财产</error>。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

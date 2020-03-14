@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_029</id>
+      <nationality>中国</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>84</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken>準1級</chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_095_TUFS_CH_029.xml</title>
+    <text>
+      <paragraph>﻿    这次的讨论，我站在了“学生应该以学习为主的立场”。因为我觉得我们的父母让我们上大学，<error type="replace" category="介词" revised="为" id="1">给</error>我们交学费的主要目的是<error type="delete" category="标点符号" revised="" id="2">，</error>让我们好好学习，所以即使参加课外活动也要<error type="replace" category="短语 介词短语" revised="以不影响学习为前提" id="3">在不影响学习的前提下</error>。可是我觉得这次的讨论很难说服对方。因为参加课外活动也有它的好处，很多是在课堂上学不到的。讨论时，对方提出了许多课外活动的好处，比如，可以学到怎么处理人际关系，能锻炼自己的能力<error type="delete" category="标点符号" revised="" id="4">，</error>等等。我对这些意见是完全同意的。因为我也参加课外活动，从<error type="replace" category="代词 指示代词" revised="那里" id="5">这里</error><error type="add" category="主语 代词 人称代词" revised="我" id="6"/>学到了不少事情。我觉得我最大的收获<error type="add" category="副词 范围副词" revised="就" id="7"/>是学到了一个团体是怎么运转的。为了让<error type="add" category="短语 量词短语" revised="一个" id="8"/>团体很好<error type="replace" category="助词 结构助词" revised="地" id="9">的</error>运转需要不少人的努力。这是在书本上体会不到的。所以我在讨论的时候很为难。可是对于学生<error type="add" category="助词 其他助词" revised="而言" id="10"/>，课外活动<error type="add" category="连词 复句 让步复句" revised="即使" id="11"/>再重要也不能耽误学习。所以我的意见最终<error type="add" category="副词 关联副词" revised="也" id="12"/>没有改变。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

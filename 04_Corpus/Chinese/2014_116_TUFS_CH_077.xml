@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_077</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>21</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>3</school_year>
+      <month_of_study>28</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken>2級(2013.03)</chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_116_TUFS_CH_077.xml</title>
+    <text>
+      <paragraph>我<error type="add" category="动词 趋向动词" revised="来" id="1"/>介绍<error type="add" category="补语 数量补语" revised="一下" id="2"/>我的家乡<error type="delete" category="表现 动词" revised="" id="3">叫</error>宫崎。宫崎在九州的东南部，平均气温<error type="delete" category="动词 关系动词" revised="" id="4">是</error>比其他<error type="delete" category="助词 结构助词" revised="" id="5">的</error>九州的县还温暖。所以住在宫崎县的话，我们很少<error type="add" category="动词 存现动词" revised="有" id="6"/>机会可以看到雪。我在宫崎的三年<error type="delete" category="助词 结构助词" revised="" id="7">的</error><error type="replace" category="名词 时间名词" revised="期间" id="8">其间</error><error type="delete" category="方位词" revised="" id="9">内</error>，只有两天下雪。</paragraph>
+      <paragraph>我来介绍几个宫崎的有名的地方。首先是青岛，岛的范围之内生长着亚热带植物，<error type="add" category="介词" revised="由" id="10"/>被称做“鬼的搓衣板”<error type="add" category="助词 结构助词" revised="的" id="11"/>波状岩石包围着。岛上有青岛神社<error type="replace" category="标点符号" revised="、" id="12">，</error>日向神话馆<error type="replace" category="标点符号" revised="、" id="13">，</error>亚热带植物馆等。此外，附近还有温泉可以泡。第二是FLORANTE宫崎<error type="replace" category="标点符号" revised="，" id="14">。</error><error type="add" category="动词 关系动词" revised="是" id="15"/><error type="add" category="短语 量词短语" revised="一个" id="16"/>一年四季<error type="add" category="副词 范围副词" revised="都" id="17"/>能<error type="replace" category="表现 动词" revised="欣赏" id="18">享受</error>到鲜花与绿叶的公园<error type="replace" category="标点符号" revised="，" id="19">。</error>公园内可以看到各种各样的植物<error type="replace" category="标点符号" revised="，" id="20">。</error>你可以在那里体验园艺。最后是日南海岸<error type="replace" category="标点符号" revised="，" id="21">。</error>你在<error type="replace" category="代词 指示代词" revised="那里" id="22">这里</error>可以看<error type="add" category="补语 结果补语" revised="到" id="23"/>美丽的景色。此外，你<error type="add" category="副词 关联副词" revised="也" id="24"/>可以看到日本唯一的摩艾石像<error type="replace" category="标点符号" revised="，" id="25">。</error>这是智利政府公认的真正的石像。</paragraph>
+      <paragraph>接下来我来介绍宫崎的美食。首先是<error type="replace" category="表现 名词" revised="南蛮鸡肉" id="26">鸡南蛮</error>，这道菜是宫崎<error type="delete" category="方位词" revised="" id="27">里</error>最有名的<error type="add" category="短语 量词短语" revised="一道菜" id="28"/>。油炸<error type="add" category="助词 时态助词" revised="过" id="29"/>的鸡块，蘸着甜酸<error type="add" category="名词" revised="酱" id="30"/>，浇上调味汁就完成了。如果<error type="add" category="主语" revised="你" id="31"/>来到宫崎的话，<error type="replace" category="副词 语气副词" revised="一定" id="32">非</error>得<error type="replace" category="表现 重叠动词" revised="尝尝看" id="33">吃</error>这道菜。第二个是凉汁，这道菜是宫崎的传统家常菜。先把竹荚鱼<error type="replace" category="标点符号" revised="、" id="34">，</error>麻油<error type="replace" category="标点符号" revised="、" id="35">，</error>调味料等放在钵中煮出香味，然后浇上凉汤汁，最后加上豆腐<error type="replace" category="标点符号" revised="、" id="36">，</error>黄瓜等和热饭一起吃。宫崎有各种各样的<error type="add" category="动词" revised="充满" id="37"/>魅力的地方和食物，如果有机会的话，请来<error type="delete" category="介词 补语 介词短语补语" revised="" id="38">到</error>宫崎<error type="replace" category="表现 动词" revised="体验" id="39">享受</error><error type="add" category="重叠动词" revised="看看" id="40"/>吧。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

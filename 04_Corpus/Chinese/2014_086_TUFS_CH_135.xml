@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_135</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_086_TUFS_CH_135.xml</title>
+    <text>
+      <paragraph>﻿    直到<error type="replace move" category="动词 不及物动词" revised="高中毕业" id="1">毕业高中</error><error type="add" category="助词 其他助词" revised="为止" id="2"/>大家差不多都被限制怎么花费自己的时间，<error type="add" category="连词 复句 因果复句" revised="因为" id="3"/><error type="add" category="介词 短语 介词短语" revised="在" id="4"/>高中的时候<error type="add" category="连词" revised="无论" id="5"/>学习<error type="replace" category="连词" revised="还是" id="6">和</error>课外活动大家差不多都拼命<error type="add" category="助词 结构助词 副词 情态副词" revised="地" id="7"/>努力，而且<error type="replace" category="副词 语气副词" revised="特别是" id="8">特别</error>在高中三年级的时候因为要准备高考，大家都不得不专心<error type="replace" category="副词 情态副词" revised="好好地" id="9">好多的</error>学习。上大学<error type="add" category="名词 时间名词" revised="后" id="10"/>就可以抽出<error type="replace" category="副词 程度副词" revised="更" id="11">挺</error>多自由的时间了，<error type="replace" category="副词 关联副词" revised="也" id="12">还</error>可以说有责任怎么<error type="add" category="动词 存现动词" revised="有" id="13"/>效率地花费时间。<error type="replace move" category="短语 介词短语" revised="对自己的将来来说大家" id="14">大家对自己的将来来说</error>到底<error type="add" category="动词 能愿动词" revised="应该" id="15"/><error type="replace" category="表现 句式 “把”字句" revised="把时间花在什么地方" id="16">对什么花时间</error>才好呢？这次我们按照这样的情况<error type="add" category="标点符号" revised="，" id="17"/>从大学生的学习和课外活动的角度<error type="replace" category="表现 助词 其他助词" revised="来看" id="18">看来</error><error type="add" category="动词" revised="进行" id="19"/><error type="replace move" category="助词 时态助词" revised="了辩论" id="20">辩论了</error>。<error type="replace" category="表现 短语 方位短语" revised="辩论中" id="21">那时候</error>我说了大学生应该重视课外活动的几个理由。</paragraph>
+      <paragraph/>
+      <paragraph>1.大学生应该重视课外活动</paragraph>
+      <paragraph>大学生拼命地努力<error type="add" category="动词" revised="参加" id="22"/>课外活动大概有三个好处。第一是能抓住<error type="replace" category="表现 动词" revised="交" id="23">找到</error>朋友的机会。其实在大学<error type="replace" category="表现 动词" revised="交" id="24">找</error>到朋友的机会可能很少，<error type="replace" category="副词 程度副词" revised="尤其" id="25">特别</error><error type="delete" category="副词 程度副词" revised="" id="26">很</error>难的是找到有<error type="replace" category="表现 形容词" revised="共同" id="27">共通</error>兴趣的朋友。如果参加有兴趣的课外活动，就很容易找到合得来的朋友<error type="delete" category="助词 其他助词" revised="" id="28">们</error>。第二是能学到怎么<error type="replace" category="介词 句式 “把”字句" revised="把" id="29">使</error>工作和兴趣相结合<error type="add" category="补语 趋向补语" revised="起来" id="30"/>。大家找到工作以后<error type="delete" category="表现" revised="" id="31">除此之外</error>一定想做别的有兴趣的活动，因此要学会<error type="add" category="动词 存现动词" revised="有" id="32"/>效率<error type="add" category="助词 结构助词" revised="地" id="33"/>抽出时间的方法。第三是能学到从<error type="replace" category="短语 方位短语" revised="书本中" id="34">读书来</error>学不到的经验。在课外活动<error type="add" category="名词 方位词 短语 方位短语" revised="中" id="35"/>能体验<error type="add" category="补语 结果补语" revised="到" id="36"/>各种各样的事情，比方说忍耐力、责任感、协调性等等。<error type="replace" category="代词 指示代词" revised="这些" id="37">那些</error>要素<error type="delete move" category="副词 语气副词" revised="" id="38">一定</error>是除了在大学以外在人生之中<error type="add move" category="副词 语气副词" revised="一定" id="39"/>不可缺少的，当然在工作<error type="add" category="名词 方位词 短语 方位短语" revised="中" id="40"/>也是。</paragraph>
+      <paragraph/>
+      <paragraph>2.大学生应该重视学习</paragraph>
+      <paragraph>虽然我<error type="replace" category="动词 动作动词" revised="介绍" id="41">说</error>了课外活动的几个好处，但是对方<error type="add" category="助词 结构助词" revised="的" id="42"/><error type="add" category="代词 指示代词" revised="一些" id="43"/><error type="delete move" category="副词 关联副词" revised="" id="44">也</error>有意义的意见我<error type="add move" category="副词 关联副词" revised="也" id="45"/>该记得。大学生拼命地努力学习有三个好处。第一是<error type="replace" category="介词" revised="通过" id="46">从</error>读书<error type="delete" category="动词 趋向动词" revised="" id="47">来</error>学到的知识<error type="add" category="动词 能愿动词" revised="能" id="48"/>成为各种各样经验的基础。这说明如果没有优异的思考能力，有可能会错过宝贵的<error type="replace" category="名词" revised="机会" id="49">经验</error>，加上<error type="add" category="介词 短语 介词短语" revised="在" id="50"/>面临各种各样的经验的时候，有可能会<error type="replace" category="补语 可能补语" revised="看不出" id="51">认定不了</error>那些经验的价值。第二是<error type="replace" category="表现" revised="就业" id="52">求业</error>的时候越来越多的日本企业开始重视大学生的成绩。也许<error type="delete" category="动词 能愿动词" revised="" id="53">会</error><error type="add" category="动词 关系动词" revised="是" id="54"/>因为日本企业<error type="add" category="副词 时间副词" revised="已经" id="55"/>开始模仿美国的制度<error type="add" category="助词 语气助词" revised="了" id="56"/>。第三是<error type="add" category="介词 短语 介词短语" revised="在" id="57"/>日本企业<error type="replace" category="名词 方位词" revised="里" id="58">里面</error><error type="add" category="标点符号" revised="，" id="59"/>作为和日本人一样的员工<error type="add" category="标点符号" revised="，" id="60"/>越来越多的外国年轻人被录用<error type="add" category="助词 语气助词" revised="了" id="61"/>，这说明如果大学生没有外语的能力，<error type="add" category="连词 复句 条件复句" revised="那么" id="62"/>外国人<error type="add" category="副词 时间副词" revised="将" id="63"/><error type="add" category="动词 能愿动词" revised="会" id="64"/>有更<error type="replace" category="形容词" revised="强" id="65">高</error>的<error type="replace" category="表现 名词" revised="竞争力" id="66">价值</error>。</paragraph>
+      <paragraph/>
+      <paragraph>3.结论</paragraph>
+      <paragraph>看起来课外活动和学习有的特色明明都<error type="add move" category="动词 关系动词 句式 强调句" revised="是" id="67"/>肯定<error type="delete move" category="动词 关系动词 句式 强调句" revised="" id="68">是</error>不可缺少<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="69"/>。不过我不觉得大学生得专心<error type="add" category="动词 动作动词" revised="做" id="70"/>这两个活动<error type="delete" category="表现" revised="" id="71">，就是学习和课外活动</error>。我觉得最重要的不是大学生<error type="add" category="动词 能愿动词" revised="应该" id="72"/>做什么，而是<error type="replace" category="介词" revised="通过" id="73">从</error>自己的选择<error type="delete" category="动词 趋向动词" revised="" id="74">来</error>学会<error type="add" category="助词 时态助词" revised="了" id="75"/>什么。大学生应该有权利选择做什么，如果自己的选择对别人来说虽不<error type="replace" category="形容词" revised="重要" id="76">突出</error>，但<error type="add" category="连词 复句 条件复句" revised="只要" id="77"/>能学会很多有意思的事情，那<error type="add" category="副词 关联副词" revised="就" id="78"/>一定是非常有价值的<error type="add" category="助词 语气助词" revised="了" id="79"/>。</paragraph>
+      <paragraph/>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

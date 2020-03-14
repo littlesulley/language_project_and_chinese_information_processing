@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_022</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>3</school_year>
+      <month_of_study>25</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS/010_TUFS_CH_022.xml</title>
+    <text>
+      <paragraph>我在大学参加<error type="add" category="助词 时态助词" revised="了" id="1"/>一个练习汉语会话的课外活动小组，叫中文缘。在中文缘，我们利用第四节课的时间练习会话、<error type="add" category="动词" revised="利用" id="2"/>第五节课的时间练习讨论、辩论、习惯用语等等。低年级的时候，<error type="replace" category="介词" revised="由" id="3">从</error>留学回来的学长学姐们<error type="replace" category="动词" revised="带领" id="4">领导</error>我们进行会话。现在我也算高年级了，该<error type="add" category="介词" revised="由" id="5"/>我们来照顾低年级的学生了。我觉得压力很大。可是通过教别人，我可以复习一下以前学过的语法，有时候还能学到新的单词。和会话比起来，讨论<error type="replace" category="连词" revised="和" id="6">或者</error>辩论更难。为了说服对方，讨论和辩论<error type="replace" category="动词" revised="需要" id="7">要求</error><error type="add" category="存现动词" revised="有" id="8"/>逻辑性。我觉得<error type="add" category="副词 时间副词" revised="本来" id="9"/>用日语也<error type="add" category="副词 语气副词" revised="就" id="10"/>够难<error type="add" category="助词 语气助词" revised="的" id="11"/>了，用中文的话更不用说。虽然很难，<error type="add" category="连词" revised="但是" id="12"/>这种练习很重要。因为学习语言应该是为了<error type="replace" category="动词" revised="表达" id="13">表现</error>自己的想法。每次参加讨论或辩论，我可以学到<error type="replace" category="介词" revised="关于" id="14">对</error>各个题目的<error type="add" category="表现" revised="各种不同的" id="15"/>观点。当然也能增加<error type="replace" category="名词" revised="词汇量" id="16">词汇</error>。为了提高自己的汉语能力，我想继续参加中文缘。<error type="add" category="介词" revised="在" id="17"/>不远的将来，我<error type="replace" category="副词 时间副词" revised="就要" id="18">要</error>开始<error type="replace" category="表现" revised="找工作" id="19">就职活动</error>了，我相信现在的努力一定会带来自己希望的结果。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

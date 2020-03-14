@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_122</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_101_TUFS_CH_122.xml</title>
+    <text>
+      <paragraph>﻿    我觉得大学生应该重视学习，我有几个理由。</paragraph>
+      <paragraph>第一<error type="add" category="标点符号" revised="，" id="1"/>现在很多的企业<error type="add" category="副词 范围副词" revised="都" id="2"/>重视大学生的成绩，所以求职的时候努力地学习，得到好成绩很有利。第二，<error type="delete" category="介词" revised="" id="3">据</error>有的调查说，<error type="add" category="动词 存现动词" revised="有" id="4"/>很多的社会成员后悔<error type="replace" category="表现 名词" revised="大学时代" id="5">大学生的时候</error><error type="replace" category="副词 否定副词" revised="没" id="6">不</error>认真地学习。大学生为了<error type="add" category="副词 时间副词" revised="将来" id="7"/>不后悔，应该认真地学习。第三<error type="add" category="标点符号" revised="，" id="8"/><error type="add" category="动词 存现动词" revised="有" id="9"/>很多的企业<error type="add" category="副词 时间副词" revised="正在" id="10"/><error type="add" category="动词" revised="推广" id="11"/>国际化，我们有很多机会跟外国人一起工作。日本大学生的学习时间比外国的大学生短得多，所以<error type="add" category="连词 复句 目的复句" revised="为了" id="12"/>跟外国的大学生处于<error type="replace" category="表现 名词" revised="同一水平" id="13">平等关系</error>，日本<error type="add" category="助词 结构助词 短语 “的”字短语" revised="的" id="14"/>大学生应该重视学习。通过这些理由<error type="add" category="主语" revised="我们" id="15"/>可以知道<error type="delete" category="标点符号" revised="" id="16">，</error>大学生应该优先学习。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

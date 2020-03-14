@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_153</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken>3級(2014.03)</chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_108_TUFS_CH_153.xml</title>
+    <text>
+      <paragraph>﻿    在<error type="replace" category="代词 指示代词" revised="上次" id="1">下次</error>的课<error type="replace" category="方位词" revised="上" id="2">前</error>，我觉得<error type="add move" category="短语 介词短语" revised="比起课外活动" id="3"/>学生<error type="add" category="副词 程度副词" revised="更" id="4"/>应该<error type="add" category="副词 情态副词" revised="多" id="5"/><error type="delete" category="动词" revised="" id="6">做</error>学习<error type="delete move" category="短语 介词短语" revised="" id="7">比课外活动多</error>。因为<error type="replace" category="主语 代词 人称代词" revised="我们" id="8">人们</error><error type="add" category="动词 关系动词 句式 强调句" revised="是" id="9"/>为了学习各个专业<error type="add" category="副词 关联副词" revised="才" id="10"/>上大学<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="11"/>，不是为了参加课外活动<error type="delete" category="助词 语气助词" revised="" id="12">的</error>。如果有个参加<error type="replace" category="表现 名词" revised="舞蹈队" id="13">跳舞队</error>的大学生想努力地练习跳舞，他觉得课外活动最重要，<error type="add" category="连词 复句 条件复句" revised="那么" id="14"/>他<error type="add" category="副词 关联副词" revised="就" id="15"/>不<error type="replace" category="动词 能愿动词" revised="需要" id="16">要</error>上学，在别的地方努力参加课外活动<error type="replace" category="表现" revised="就行了" id="17">比较好</error>。</paragraph>
+      <paragraph>同学们说学习是学生的特色，大学毕业以后我们要去公司工作，<error type="add" category="连词 复句 因果复句" revised="所以" id="18"/>没有时间学习。大约<error type="add" category="动词 存现动词" revised="有" id="19"/>百分之七十五的<error type="replace" category="表现 名词" revised="上班族" id="20">公司工作的人</error>后悔在大学生时没<error type="replace" category="副词 情态副词" revised="好好地" id="21">多</error>学习。所以在<error type="replace" category="表现" revised="上大学" id="22">学生</error>时应该学习。并且<error type="replace" category="连词" revised="一般来说" id="23">一般说</error>，日本的大学生<error type="delete" category="助词 结构助词" revised="" id="24">的</error>学习时间比其他国家的学生少。我们还是<error type="add" category="动词 能愿动词" revised="要" id="25"/>努力地学习。</paragraph>
+      <paragraph>不过，我<error type="add" category="代词 人称代词" revised="自己" id="26"/>也是个参加课外活动的学生，我不能停止活动<error type="delete" category="连词" revised="" id="27">然后</error>只学习。虽然<error type="replace" category="连词" revised="一般来说" id="28">一般说</error>大学是<error type="add" category="短语 量词短语" revised="一个" id="29"/><error type="add" category="句式 使役句" revised="让人" id="30"/>学习的地方<error type="delete" category="助词 语气助词" revised="" id="31">的</error>，但是<error type="add" category="主语" revised="学生" id="32"/>上大学的目的是各种各样的。我喜欢汉语、英语、<error type="replace" category="表现 名词" revised="语言学" id="33">言语学</error>等等，但是我<error type="replace move" category="副词 关联副词" revised="也喜欢" id="34">喜欢也</error>参加课外活动。<error type="delete" category="副词 语气副词" revised="" id="35">到底</error>我觉得最重要<error type="add" category="助词 结构助词" revised="的" id="36"/>是<error type="replace" category="不及物动词 句式 “把”字句" revised="把学习和课外活动相结合" id="37">两立学习和课外活动</error>，只学习的学生<error type="add" category="副词 关联副词" revised="也" id="38"/>不一定正确，<error type="add" category="副词 范围副词" revised="只" id="39"/><error type="add" category="动词 存现动词" revised="有" id="40"/>能<error type="replace" category="不及物动词 句式 “把”字句" revised="把学习和课外活动相结合" id="41">两立学习和课外活动</error>的人将来<error type="add" category="副词 关联副词" revised="才" id="42"/><error type="replace" category="动词 能愿动词" revised="能" id="43">会</error>找到好工作。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

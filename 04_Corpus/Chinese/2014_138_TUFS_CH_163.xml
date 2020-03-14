@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_163</id>
+      <nationality></nationality>
+      <sex></sex>
+      <age></age>
+      <first_language></first_language>
+      <major></major>
+      <school_year></school_year>
+      <month_of_study></month_of_study>
+      <educational_language></educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_138_TUFS_CH_163.xml</title>
+    <text>
+      <paragraph>﻿    我<error type="replace" category="表现" revised="理想中的工作有三个条件" id="1">有三个理想</error>。</paragraph>
+      <paragraph>第一个是福利保健<error type="add" category="动词 能愿动词" revised="要" id="2"/>很充实<error type="delete" category="助词 结构助词" revised="" id="3">的</error>。休息是<error type="add" category="副词 程度副词" revised="很" id="4"/>重要<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="5"/>，所以我<error type="replace" category="动词" revised="希望" id="6">想</error>公司<error type="add" category="动词 能愿动词" revised="能" id="7"/>给我<error type="replace" category="表现 形容词" revised="充足" id="8">十分</error>的<error type="replace" category="表现 名词" revised="假期" id="9">休假</error>。我特别喜欢去旅行。当上<error type="replace" category="表现 名词" revised="上班族" id="10">社会人</error>以后，我也<error type="add" category="动词 能愿动词" revised="想" id="11"/>利用休假去外国旅行。</paragraph>
+      <paragraph>第二个是<error type="add" category="动词 能愿动词" revised="要" id="12"/>对社会有用<error type="delete" category="助词 结构助词" revised="" id="13">的</error>。我喜欢看<error type="add" category="补语 结果补语" revised="到" id="14"/>人们的<error type="replace" category="表现 名词" revised="笑脸" id="15">笑颜</error>，所以我想成为<error type="add" category="短语 量词短语" revised="一个" id="16"/><error type="add" category="动词 能愿动词" revised="能" id="17"/><error type="replace" category="动词 使令动词 句式 使役句" revised="让" id="18">作</error>人们<error type="delete" category="助词 结构助词" revised="" id="19">的</error>高兴的人。</paragraph>
+      <paragraph>第三个是<error type="add" category="动词 能愿动词" revised="要" id="20"/>有成长性和专业性<error type="delete" category="助词 结构助词" revised="" id="21">的</error>。进公司以后，我想成长<error type="add" category="介词 补语 介词短语补语" revised="为" id="22"/><error type="add" category="短语 量词短语" revised="一个" id="23"/>像样的人和专家。为了<error type="add" category="动词 能愿动词" revised="能" id="24"/><error type="replace" category="表现 副词 情态副词" revised="继续" id="25">连续</error>不断<error type="add" category="助词 结构助词 副词 情态副词" revised="地" id="26"/><error type="replace" category="动词" revised="提高" id="27">取得</error>能力，我打算继续学习新的知识。</paragraph>
+      <paragraph>我<error type="add" category="动词 能愿动词" revised="想" id="28"/>在这样的理想<error type="add" category="方位词 短语 方位短语" revised="下" id="29"/>选择<error type="delete" category="助词 时态助词" revised="" id="30">了</error>工作。<error type="replace" category="表现 动词" revised="符合" id="31">有</error>这<error type="replace" category="量词" revised="些" id="32">个</error>条件的工作不太多，不过我认为这三个<error type="replace" category="名词" revised="条件" id="33">理想</error>是很重要<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="34"/>。我想工作与专业不一定<error type="add" category="动词 能愿动词" revised="要" id="35"/><error type="replace" category="表现" revised="有关系" id="36">有关</error>。在日本的工作大概<error type="add" category="副词 范围副词" revised="都" id="37"/>使用日语或是<error type="delete" category="表现 动词" revised="" id="38">使用</error>英语，所以使用汉语的机会<error type="add" category="副词 语气副词" revised="可能" id="39"/><error type="add" category="动词 能愿动词" revised="会" id="40"/>比较少。不过，汉语的知识<error type="add" category="副词 语气副词" revised="还是" id="41"/>很有用<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="42"/>。<error type="replace" category="表现 名词 时间名词" revised="短期之内" id="43">不久时间</error>我有<error type="replace" category="名词" revised="可能" id="44">可能性</error>使用汉语。结婚，生孩子后我想继续工作。辞去公司职务<error type="replace" category="句式 强调句" revised="是很可惜的" id="45">很可惜</error>，而且再<error type="replace" category="表现 动词" revised="就业" id="46">就职</error><error type="add" category="副词 关联副词" revised="也" id="47"/>非常困难。现在生孩子后<error type="replace" category="表现 动词" revised="辞职" id="48">退职</error>的女性很少，所以我们一定<error type="add" category="副词 程度副词" revised="很" id="49"/>容易<error type="add" category="副词 语气副词" revised="就" id="50"/><error type="add" category="动词 能愿动词" revised="能" id="51"/>继续工作。我从明年<error type="add" category="助词 其他助词" revised="起" id="52"/><error type="add move" category="动词" revised="开始" id="53"/><error type="add" category="动词 能愿动词" revised="要" id="54"/>在银行<error type="delete move" category="动词" revised="" id="55">开始</error>工作<error type="add" category="助词 语气助词" revised="了" id="56"/>。<error type="replace" category="名词 表现" revised="银行职员" id="57">银行员</error>的工作是不容易<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="58"/>，<error type="delete" category="连词" revised="" id="59">不过</error><error type="add" category="动词 能愿动词" revised="要" id="60"/><error type="replace" category="动词" revised="面对" id="61">对</error>各种各样的企业和顾客。我想努力学习专业的知识，对整个社会提供优良的服务，<error type="add" category="连词 复句 递进复句" revised="并" id="62"/><error type="replace" category="副词 情态副词" revised="高高兴兴地" id="63">高兴</error>工作。    </paragraph>
+    </text>
+  </body>
+</composition>

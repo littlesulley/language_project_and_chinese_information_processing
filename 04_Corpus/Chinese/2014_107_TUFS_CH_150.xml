@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_150</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_107_TUFS_CH_150.xml</title>
+    <text>
+      <paragraph>﻿    我<error type="replace" category="动词" revised="认为" id="1">想</error>课外活动很重要。</paragraph>
+      <paragraph>第一，<error type="add" category="连词" revised="因为" id="2"/>只<error type="add" category="动词 存现动词" revised="有" id="3"/>大学生<error type="add" category="副词 关联副词" revised="才" id="4"/>有自由<error type="add" category="助词 结构助词" revised="的" id="5"/>时间。<error type="replace" category="动词" revised="成为" id="6">成</error>了社会<error type="add" category="助词 结构助词" revised="的" id="7"/>一员后，我们<error type="add" category="副词 关联副词" revised="就" id="8"/>没有时间专心致志地做我们想做的事<error type="add" category="助词 语气助词" revised="了" id="9"/>。可以做我们想做的事是大学生的权利。不仅<error type="add" category="动词 关系动词" revised="是" id="10"/>课外活动，<error type="add" category="动词 趋向动词 句式 连动句" revised="去" id="11"/>外国旅行或者外国留学也很有奇效。<error type="replace" category="介词" revised="通过" id="12">经过</error>这样的活动，我们可以学到<error type="replace" category="表现" revised="与人交往" id="13">人际交往</error>和交流的能力，会交到更多<error type="add" category="助词 结构助词" revised="的" id="14"/>朋友，会使别人入迷，能<error type="replace" category="表现 动词" revised="培养" id="15">养</error>创造力<error type="add" category="连词" revised="和" id="16"/>想象力，能学<error type="add" category="补语 结果补语" revised="会" id="17"/><error type="add" category="表现 宾语" revised="如何处理" id="18"/>对人<error type="add" category="助词 结构助词" revised="的" id="19"/>关系，会感觉<error type="add" category="补语 结果补语" revised="到" id="20"/>很多的事，我们可以<error type="add" category="副词 程度副词" revised="更" id="21"/>有意义地度过学生生活。我们还可以开拓视野，激发<error type="add" category="代词 人称代词" revised="自己的" id="22"/>兴趣爱好，也可以获得一个了解社会的好机会。例如体育部可以<error type="replace" category="动词" revised="体验" id="23">经验</error><error type="replace" category="表现 名词" revised="上班族" id="24">社会人</error>的<error type="replace" category="表现" revised="待人" id="25">对人</error>关系和机制，因为日本的公司<error type="add" category="副词 程度副词" revised="很" id="26"/>像大学<error type="add" category="方位词 短语 方位短语" revised="里" id="27"/>的体育部。</paragraph>
+      <paragraph>第二，要是你<error type="replace" category="错别字" revised="光" id="28">关</error>学习<error type="add" category="副词 关联副词" revised="却" id="29"/>没有<error type="add" category="代词 指示代词" revised="任何的" id="30"/>爱好，你<error type="add" category="副词 语气副词" revised="可能" id="31"/><error type="add" category="动词 能愿动词" revised="会" id="32"/>成为<error type="add" category="短语 量词短语" revised="一个" id="33"/>没有<error type="replace" category="表现 名词" revised="内涵" id="34">内容</error>的<error type="replace" category="表现 名词" revised="人" id="35">人物</error>。如果<error type="add" category="介词" revised="除了" id="36"/>学习以外<error type="add" category="标点符号" revised="，" id="37"/>你<error type="add" category="副词 关联副词" revised="还" id="38"/>有<error type="add" category="代词 指示代词" revised="其他" id="39"/>坚持<error type="add" category="表现" revised="想做" id="40"/>的事，<error type="add" category="连词 复句 条件复句" revised="那么" id="41"/><error type="delete" category="副词 关联副词" revised="" id="42">也</error>在<error type="replace" category="表现" revised="求职" id="43">就职</error>面试<error type="add" category="名词 时间名词" revised="时" id="44"/>你会说<error type="add" category="补语 趋向补语" revised="出" id="45"/><error type="add" category="副词 程度副词" revised="很" id="46"/>有意思的话。<error type="replace" category="连词 复句 递进复句" revised="还有" id="47">还</error>在人生里，有各种各样经验的人<error type="add" category="副词 程度副词" revised="比较" id="48"/>可以<error type="replace" category="表现" revised="和很多人相处" id="49">游玩别人</error>，因为这<error type="replace" category="量词" revised="种" id="50">个</error>人有很多<error type="delete" category="表现" revised="" id="51">会说话的</error>故事。</paragraph>
+      <paragraph><error type="add" category="副词 语气副词" revised="当然" id="52"/>学习也很重要。我们<error type="add" category="副词 范围副词" revised="就" id="53"/><error type="add" category="动词 关系动词" revised="是" id="54"/><error type="replace" category="介词" revised="为了" id="55">为</error>学习去大学<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="56"/>。学习是大前提，但是只学习<error type="add" category="动词 能愿动词" revised="会" id="57"/>没有意思。<error type="replace" category="介词" revised="通过" id="58">经过</error>课外活动，我们可以学到很多的事。如果大学生有时间<error type="replace" category="助词 其他助词 复句 条件复句" revised="的话" id="59">的时候</error>，<error type="delete" category="主语" revised="" id="60">我们</error>应该<error type="add" category="副词 情态副词" revised="多" id="61"/>做<error type="delete" category="补语 结果补语" revised="" id="62">到</error>想做的事。所以<error type="delete" category="标点符号" revised="" id="63">，</error>我<error type="replace" category="动词" revised="认为" id="64">想</error>课外活动很重要。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

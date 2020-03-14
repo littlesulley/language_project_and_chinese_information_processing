@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_022</id>
+      <nationality></nationality>
+      <sex></sex>
+      <age></age>
+      <first_language></first_language>
+      <major></major>
+      <school_year></school_year>
+      <month_of_study></month_of_study>
+      <educational_language></educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_137_TUFS_CH_022.xml</title>
+    <text>
+      <paragraph>﻿    我理想中的工作是加班少、工作环境好的<error type="add" category="名词 短语 “的”字短语" revised="工作" id="1"/>。因为我很重视生活<error type="add" category="助词 结构助词" revised="的" id="2"/>节奏，如果加班多了<error type="add" category="标点符号" revised="，" id="3"/>就不能拥有自己的时间，有时候还会影响健康的生活。很多日本<error type="add" category="助词 结构助词" revised="的" id="4"/>上班族给我一种为了工作而活的感觉。当然我很欣赏他们对工作的热情和责任感，不过同时也觉得这样的生活没有意思。我承认工作是形成人生或生活的一个重要<error type="add" category="助词 结构助词" revised="的" id="5"/>部分，但不应该是全部。</paragraph>
+      <paragraph>健康也是我重视的一点。因为努力挣<error type="add" category="补语 趋向补语" revised="来" id="6"/>的钱，如果没有健康的身体<error type="add" category="标点符号" revised="，" id="7"/>就不能花在自己喜欢的事上。<error type="add" category="连词 复句 条件复句" revised="如果" id="8"/><error type="replace" category="名词" revised="工作" id="9">工资</error>换来<error type="add" category="助词 结构助词 主语" revised="的" id="10"/><error type="add" category="动词 关系动词" revised="是" id="11"/>巨额<error type="add" category="助词 结构助词" revised="的" id="12"/>医疗费和痛苦的话，<error type="add" category="连词 复句 条件复句" revised="那" id="13"/><error type="add" category="副词 关联副词" revised="就" id="14"/>太不值了。除了上述的条件以外，我还重视工作<error type="add" category="助词 结构助词" revised="的" id="15"/>环境，尤其是人际关系方面。我认为公司应该是<error type="add" category="动词 能愿动词" revised="能" id="16"/>让自己<error type="add" category="助词 结构助词" revised="的" id="17"/>人生更加精彩的一个平台。公司可以提供的不仅仅是培训、发挥能力的机会，还<error type="replace" category="动词 能愿动词" revised="要" id="18">有</error><error type="add" category="双宾动词" revised="提供我们" id="19"/>认识各种各样的人的机会。人生中充满着选择，从中午吃什么，到该跟谁结婚，都是<error type="add" category="短语 量词短语" revised="一种" id="20"/>选择。而我相信，不管选择的大小，每一个选择都会间接地影响<error type="add" category="介词 补语 介词短语补语" revised="到" id="21"/>以后的人生。在选择的过程中，周围的人的意见会在潜意识里起作用。平日里一天<error type="delete" category="助词 结构助词" revised="" id="22">的</error>三分之一<error type="add" category="助词 结构助词" revised="的" id="23"/>时间要在公司<error type="add" category="方位词 短语 方位短语" revised="里" id="24"/>过，所以在公司<error type="delete" category="动词 能愿动词" revised="" id="25">能</error>认识到的人<error type="replace" category="介词" revised="对" id="26">给</error>一个人的影响应该是很大的。他们的想法、态度等等都会影响<error type="add" category="代词 人称代词 宾语" revised="我们" id="27"/>一天的心情或工作<error type="add" category="助词 结构助词" revised="的" id="28"/>效率，甚至<error type="add" category="代词 指示代词" revised="整个" id="29"/>人生。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

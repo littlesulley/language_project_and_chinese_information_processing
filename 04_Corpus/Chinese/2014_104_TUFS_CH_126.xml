@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_126</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_104_TUFS_CH_126.xml</title>
+    <text>
+      <paragraph>﻿    我觉得我们学生应该重视课外活动。</paragraph>
+      <paragraph>第一，学习<error type="replace move" category="副词 范围副词" revised="大概是" id="1">是大概</error>一个人<error type="add" category="副词 关联副词" revised="就" id="2"/><error type="add" category="动词 能愿动词" revised="可以" id="3"/>做的，但是课外活动不能一个人做。课外活动要跟别人互相帮助。所以我觉得通过课外活动，我们可以学会<error type="add" category="补语 数量补语" revised="一些" id="4"/>在社会上重要的事。<error type="replace move" category="短语 量词短语" revised="社会上一个" id="5">一个社会上</error>重要的事<error type="add" category="副词 范围副词" revised="就" id="6"/>是责任感。课外活动有分派的任务，比如说，我参加的日本<error type="add" category="连词" revised="与" id="7"/>台湾学生会议<error type="add" category="方位词 短语 方位短语" revised="里" id="8"/>有代表、副代表、外事人员<error type="delete" category="标点符号" revised="" id="9">、</error>等等<error type="add" category="短语 “的”字短语" revised="的职务" id="10"/>。他们都对自己的任务有责任，<error type="add" category="副词 关联副词" revised="也" id="11"/>可以提高自己的能力。</paragraph>
+      <paragraph>第二，我们毕业以后，没有很多时间做自己喜欢的事。所以我觉得学生生活很宝贵，要<error type="delete" category="动词 存现动词" revised="" id="12">有</error>用得<error type="replace" category="形容词" revised="值得" id="13">费那个时间</error>。还有<error type="add" category="介词 短语 介词短语" revised="在" id="14"/><error type="replace" category="表现 名词" revised="求职" id="15">工作</error>的面试时<error type="add" category="主语 代词 人称代词" revised="我们" id="16"/>可以<error type="replace" category="动词 重叠动词" revised="说说" id="17">说</error>在课外活动<error type="replace" category="方位词" revised="中" id="18">上</error><error type="add" category="副词 范围副词" revised="都" id="19"/>做<error type="add" category="助词 时态助词" revised="了" id="20"/><error type="add" category="补语 数量补语" revised="些" id="21"/>什么<error type="delete" category="助词 语气助词" revised="" id="22">了</error>。企业需要<error type="add" category="助词 结构助词" revised="的" id="23"/><error type="add" category="动词 关系动词" revised="是" id="24"/>过<error type="add" category="助词 时态助词" revised="过" id="25"/>充实的学生生活的学生。我们找工作的时候<error type="replace move" category="副词 关联副词" revised="课外活动也" id="26">也课外活动</error>很重要。</paragraph>
+      <paragraph><error type="replace" category="介词" revised="基于" id="27">由于</error>这两个理由，我觉得学生应该重视课外活动。讨论的时候，我觉得课外活动的定义不太明确。我现在参加的日本<error type="add" category="连词" revised="与" id="28"/>台湾学生会议上有学中文的机会。我们中文系的学生在大学<error type="add" category="副词 语气副词" revised="原本" id="29"/><error type="add" category="副词 范围副词" revised="就" id="30"/><error type="add" category="动词 关系动词" revised="是" id="31"/>学中文，所以我觉得课外活动也包含学习。这也是一个理由<error type="add" category="动词 使令动词 句式 使役句" revised="让" id="32"/>我觉得课外活动很重要。因为在课外活动<error type="replace" category="方位词" revised="中" id="33">上</error><error type="add" category="主语 代词 人称代词" revised="我们" id="34"/><error type="add" category="动词 能愿动词" revised="能" id="35"/>学<error type="replace" category="补语 结果补语" revised="到" id="36">会</error><error type="replace" category="表现 宾语 短语 “的”字短语" revised="各种各样很多的事" id="37">的事各种各样，很多</error>。<error type="add" category="连词" revised="所以" id="38"/>我觉得课外活动很重要。</paragraph>
+      <paragraph/>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_032</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>13</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS/002_TUFS_CH_032.xml</title>
+    <text>
+      <paragraph>在这世界上有两种要求，一个是需要，另一个是供给。商业的作用<error type="add" category="副词 范围副词" revised="就" id="1"/>是把这两个要求连接在<error type="delete" category="助词 时态助词" revised="" id="2">了</error>一起。比方说<error type="add" category="标点符号" revised="，" id="3"/>假如你想新开个游乐园，那就需要很多器材。可是<error type="add" category="连词" revised="如果" id="4"/>你几乎没有<error type="replace" category="介词" revised="关于" id="5">对</error>资材<error type="replace" category="标点符号" revised="、" id="6">，</error>材料方面的知识的话<error type="add" category="标点符号" revised="，" id="7"/><error type="add" category="副词 关联副词" revised="就" id="8"/>无法得到这种器材。那时候商业（一般都是商社）可以<error type="add" category="动词 动作动词" revised="提供" id="9"/>帮助。商社知道哪个公司想卖铁板那样的<error type="replace" category="错别字" revised="资材" id="10">资财</error>，也知道哪个公司想买<error type="replace" category="错别字" revised="资材" id="11">资财</error>。现在中国的发展是令人吃惊的。从中国和日本的关系的角度来看，还是商社有发展性。</paragraph>
+      <paragraph><error type="add" category="副词 时间副词" revised="再" id="12"/>看商社和通讯业的关系，<error type="delete" category="代词 人称代词" revised="" id="13">我</error>可以说<error type="add" category="动词 关系动词" revised="是" id="14"/><error type="replace" category="形容词" revised="一样" id="15">同样</error>的<error type="delete" category="名词" revised="" id="16">事情</error>。比如说<error type="add" category="标点符号" revised="，" id="17"/>某一个公司想做<error type="replace move" category="短语 量词短语" revised="一个新" id="18">新一个</error><error type="add" category="结构助词" revised="的" id="19"/>智能手机的时候需要零部件。<error type="replace" category="代词 指示代词" revised="这些" id="20">那些</error>零部件<error type="delete" category="代词 人称代词" revised="" id="21">我们</error><error type="add" category="动词 能愿动词" revised="要" id="22"/>从哪里拿过来？<error type="add" category="副词 情态副词" revised="仍然" id="23"/>还是商社让那个公司知道哪个公司想卖零部件。</paragraph>
+      <paragraph>商社，作为世界上所有的公司的媒介，扮演<error type="add" category="助词 时态助词" revised="着" id="24"/>很重要的角色。</paragraph>
+      <paragraph/>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_155</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_110_TUFS_CH_155.xml</title>
+    <text>
+      <paragraph>﻿    在<error type="replace" category="表现 短语 “的”字短语" revised="大学生活" id="1">大学生的生活</error><error type="add" category="方位词 短语 方位短语" revised="中" id="2"/>，最重要<error type="replace" category="助词 结构助词" revised="的" id="3">的话</error>是课外活动。参加课外活动有几个好处。<error type="add" category="动词 能愿动词" revised="会" id="4"/><error type="replace move" category="副词 情态副词" revised="这样认为" id="5">认为这样</error>，我有三个理由。</paragraph>
+      <paragraph>第一个<error type="add" category="名词" revised="理由" id="6"/>是，课外活动不仅<error type="add" category="动词 能愿动词" revised="能" id="7"/>锻炼学生们的身体，还能扩大知识面。课外活动不仅<error type="replace" category="动词 存现动词" revised="有" id="8">是</error>运动，也<error type="replace" category="动词 存现动词" revised="有" id="9">是</error>文化活动。结合教室<error type="add" category="方位词 短语 方位短语" revised="里" id="10"/><error type="add" category="助词 结构助词" revised="的" id="11"/>教学内容参加课外活动，学生们<error type="add" category="动词 能愿动词" revised="会" id="12"/>受<error type="add" category="补语 结果补语" revised="到" id="13"/>感动，课外活动又不受教室里教学内容<error type="add" category="助词 结构助词" revised="的" id="14"/>限制，<error type="add" category="连词" revised="又" id="15"/>可以扩大知识面。</paragraph>
+      <paragraph>第二是有利于学生<error type="add" category="助词 结构助词" revised="的" id="16"/>全面发展。通过发展课外活动可以丰富学生的<error type="replace" category="表现 名词" revised="课余" id="17">业余</error>生活，促进学生<error type="add" category="助词 结构助词" revised="的" id="18"/>全面发展。还可以开拓视野，锻炼多方面的才能。</paragraph>
+      <paragraph>第三是大学生可以接触<error type="replace" category="连词" revised="并" id="19">和</error>了解社会。参加课外活动时，不是一个人做<error type="delete" category="助词 结构助词" revised="" id="20">的</error>，<error type="replace" category="连词 复句 并列复句" revised="而是" id="21">是</error>和同学们一起做的。所以<error type="delete" category="标点符号" revised="" id="22">，</error>可以促进同学间的友谊，促进合作和集体精神。<error type="replace" category="代词 指示代词" revised="这些" id="23">那个</error>是我们<error type="replace move" category="短语 介词短语" revised="在教室里学不到" id="24">学不到在教室</error><error type="delete" category="表现" revised="" id="25">学习</error>的内容。课外活动在发挥学生特长方面也有重要<error type="add" category="助词 结构助词" revised="的" id="26"/>作用。我们不仅<error type="delete move" category="动词" revised="" id="27">提高</error><error type="add" category="介词 短语 介词短语" revised="在" id="28"/>运动和知识方面<error type="add" category="动词 能愿动词" revised="能" id="29"/><error type="add move" category="动词" revised="提高" id="30"/>，也<error type="add" category="动词 能愿动词" revised="可以" id="31"/>提高社会性<error type="delete" category="短语 “的”字短语" revised="" id="32">的水平</error>。</paragraph>
+      <paragraph>在日本<error type="add" category="助词 结构助词" revised="的" id="33"/>大学里，<error type="add" category="动词 存现动词" revised="有" id="34"/>很多大学生参加课外活动。课外活动有很多好处，但是不要<error type="add move" category="副词 范围副词" revised="只" id="35"/>努力<error type="delete move" category="副词 范围副词" revised="" id="36">只</error><error type="add" category="动词 宾语" revised="参加" id="37"/>课外活动，<error type="add move" category="副词 关联副词" revised="也" id="38"/>一定要<error type="delete move" category="副词 关联副词" revised="" id="39">也</error>努力学习。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

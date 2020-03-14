@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_053</id>
+      <nationality></nationality>
+      <sex></sex>
+      <age></age>
+      <first_language></first_language>
+      <major></major>
+      <school_year></school_year>
+      <month_of_study></month_of_study>
+      <educational_language></educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_118_TUFS_CH_053.xml</title>
+    <text>
+      <paragraph>我来介绍一个游览的胜地，叫小田原。你们知道小田原吗？<error type="add" category="主语 代词 人称代词" revised="它" id="1"/>是在神奈川县的南边儿，所以从东京到小田原很近。我先介绍从东京站去小田原的<error type="replace" category="名词" revised="路线" id="2">路径</error>，你要在东京站乘坐开往名古屋的东海道新干线（叫kodama），坐新干线仅仅三十五分钟（当然可以观赏车窗外的景致）<error type="replace" category="副词 时间副词" revised="就" id="3">快要</error><error type="add" category="动词 能愿动词" revised="能" id="4"/>到<error type="delete" category="助词 时态助词" revised="" id="5">了</error>小田原站。到了以后，你<error type="replace" category="动词 能愿动词" revised="可以" id="6">要</error>体验<error type="replace" category="名词 方位词" revised="以下" id="7">以后</error>的事情。第一个是小田原城。1417年（战国时代）<error type="add" category="短语 量词短语" revised="一个" id="8"/>叫大森頼春<error type="replace" category="短语 “的”字短语" revised="的艺术家" id="9">（是一个艺术家）</error><error type="replace" category="动词" revised="建造" id="10">筑</error><error type="add" category="助词 时态助词" revised="了" id="11"/>这<error type="replace" category="量词" revised="座" id="12">个</error>很豪华的<error type="replace" category="名词" revised="城堡" id="13">城</error>和宏大的天守阁，瞭望楼耸立在城<error type="delete" category="助词 结构助词" revised="" id="14">的</error>中央。还有这<error type="replace" category="量词" revised="座" id="15">个</error>城<error type="replace" category="动词 存现动词" revised="有" id="16">感</error>一个传说，<error type="add" category="连词 复句 注解复句" revised="那就是" id="17"/>如果诸侯<error type="add" category="主语 代词 疑问代词" revised="谁" id="18"/><error type="replace" category="动词 存现动词" revised="拥有" id="19">具有</error>这个小田原城，他<error type="add" category="副词 关联副词" revised="就" id="20"/>一定<error type="replace" category="动词 能愿动词" revised="能" id="21">要</error>获得胜利。在小田原附近<error type="add" category="助词 结构助词" revised="的" id="22"/>博物馆也<error type="add" category="动词 关系动词" revised="是" id="23"/><error type="add" category="短语 量词短语" revised="一个" id="24"/>很有兴趣的设施，如果你对日本<error type="add" category="助词 结构助词" revised="的" id="25"/>历史有兴趣的话，你一定<error type="replace" category="动词 能愿动词" revised="会" id="26">要</error><error type="add" category="副词 程度副词" revised="很" id="27"/>开心。第二个是竹圈鱼糕。<error type="add" category="连词 复句 因果复句" revised="因为" id="28"/>这个<error type="replace" category="表现 名词" revised="城市" id="29">市街</error>沿着海，所以<error type="replace" category="表现 名词" revised="海产" id="30">海产品</error><error type="add" category="副词 程度副词" revised="很" id="31"/>丰富。要是<error type="add move" category="短语 介词短语" revised="沿着海岸" id="32"/>访问<error type="replace" category="表现 名词" revised="流动餐车" id="33">饮食售货车</error><error type="delete move" category="短语 介词短语" revised="" id="34">沿着海</error>的话，你一定<error type="replace" category="动词 能愿动词" revised="要" id="35">可以</error>试吃鱼糕。在小田原，做鱼糕的手艺人<error type="add" category="介词 短语 介词短语" revised="在" id="36"/>锻炼十年以后，才可以被别的手艺人承认<error type="add" category="介词 补语 介词短语补语" revised="为" id="37"/>够格的人。我第一次听<error type="add" category="补语 结果补语" revised="到" id="38"/>这<error type="replace" category="量词" revised="件" id="39">个</error>事情的时候，很吃惊。并且在每<error type="replace" category="量词" revised="家" id="40">个</error>特产品店，有时<error type="add" category="动词 能愿动词" revised="会" id="41"/><error type="replace" category="动词" revised="举行" id="42">实行</error><error type="delete" category="短语 量词短语" revised="" id="43">一个</error>体验会，你们能体验<error type="add" category="句式 “把”字句" revised="把鲜鱼" id="44"/>做<error type="add" category="补语 结果补语" revised="成" id="45"/>鱼糕<error type="delete" category="短语 介词短语" revised="" id="46">从鲜鱼</error>。这样，你们去小田原的话，不但<error type="add" category="动词 能愿动词" revised="可以" id="47"/><error type="add" category="动词 趋向动词 句式 连动句" revised="去" id="48"/>看历史上很重要的建筑物，知道当地的起源，而且<error type="add" category="副词 关联副词" revised="还" id="49"/><error type="add" category="动词 能愿动词" revised="可以" id="50"/><error type="add" category="动词 趋向动词 句式 连动句" revised="去" id="51"/>吃新鲜的<error type="replace" category="表现 名词" revised="海鲜" id="52">海产品</error>，<error type="add" category="连词" revised="还有" id="53"/><error type="add" category="副词 情态副词" revised="亲自" id="54"/><error type="add" category="句式 连动句" revised="动手" id="55"/>做名产。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

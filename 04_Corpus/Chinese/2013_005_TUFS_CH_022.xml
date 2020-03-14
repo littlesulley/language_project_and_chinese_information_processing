@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_022</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>3</school_year>
+      <month_of_study>25</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS/005_TUFS_CH_022.xml</title>
+    <text>
+      <paragraph>我买东西的时候每次都会货比三家。这是因为我妈妈一直教我<error type="add" category="动词 能愿动词" revised="要" id="1"/>买高质量、低价格、自己满意的东西。我觉得这样就能把一个东西用很长时间，不<error type="add" category="动词 能愿动词" revised="会" id="2"/>浪费。我去买东西的时候，对自己想买的东西大概都<error type="add" category="动词 能愿动词" revised="会" id="3"/>有明确的<error type="replace" category="名词" revised="印象" id="4">形象</error>。比如裙子的话，颜色、长短、面料、价格什么的。买之前还一定要试穿。<error type="add" category="连词" revised="如果" id="5"/>长短跟自己的理想有两厘米以上的差距，我会放弃它。因为我相信以后一定能找到更接近我理想的东西。除了商品的条件以外，我还认为服务员的态度很重要。买东西的时候，我不只是对商品付钱，而且还对买东西的乐趣付钱。如果服务员的态度不好，我就不能很高兴地买东西，有时候还觉得不想让他赚钱。对我来说，服务也是一种商品。决定买不买是根据自己对商品的综合评价<error type="add" category="表现" revised="来决定的" id="6"/>。用这样不妥协的标准来买东西，一般需要很长<error type="add" category="助词 结构助词" revised="的" id="7"/>时间。可是<error type="replace" category="复句 目的复句" revised="为了购物不会后悔" id="8">为了不后悔的购物</error>，我以后也会继续采用这个方式。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

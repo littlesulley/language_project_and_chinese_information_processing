@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_155</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_111_TUFS_CH_155.xml</title>
+    <text>
+      <paragraph>﻿    <error type="delete" category="名词 时间名词" revised="" id="1">现在</error>我学习中文快两年了。我的听力和<error type="replace move" category="表现" revised="口语" id="2">说话</error>水平提高了很多。学了两年<error type="replace" category="助词 语气助词" revised="了" id="3">的时候</error>，我<error type="replace" category="表现 动词" revised="考虑" id="4">觉得</error><error type="delete" category="主语" revised="" id="5">我</error>为什么学汉语？<error type="delete" category="表现" revised="" id="6">到了那个时候，</error>我一直<error type="add" category="副词 时间副词" revised="在" id="7"/>想汉语的重要性。汉语很重要。我觉得学不好汉语比学不好英语更严重。汉语又优美又实用。现在，我<error type="add" category="动词 趋向动词 句式 连动句" revised="来" id="8"/>说明一下<error type="add" category="补语 数量补语" revised="几个" id="9"/><error type="replace" category="表现 名词" revised="重点" id="10">要点</error>。</paragraph>
+      <paragraph>汉语在世界上各种各样的文字中<error type="add" category="动词 存现动词" revised="有" id="11"/>五大特色：第一，汉语<error type="add" category="方位词 短语 方位短语" revised="里" id="12"/><error type="add" category="助词 结构助词" revised="的" id="13"/>汉字是当今世界上历史最悠久的语言文字体系。第二，<error type="delete" category="名词" revised="" id="14">汉语</error>汉字是当今世界上唯一仍在使用的方块字体系，这个体系对人们的理解和记忆<error type="add" category="助词 其他助词" revised="来说" id="15"/>很方便。真了不起。第三，<error type="delete" category="名词" revised="" id="16">汉语</error>汉字可以用同样的<error type="add" category="名词 短语 “的”字短语" revised="文字" id="17"/>表达更多的内容，同样的内容<error type="add" category="副词 关联副词" revised="也" id="18"/>可以用更多的汉字和音节来表达。</paragraph>
+      <paragraph>我也<error type="replace" category="表现 动词" revised="考虑" id="19">想</error>了基本<error type="add" category="助词 结构助词" revised="的" id="20"/>学习方法。第一是“制定计划”，计划是行动的指南，也是<error type="replace" category="及物动词" revised="实现目标" id="21">目标实现</error>的基本保证。为了保证学习目标的实现，就必须制定学习计划。第二是“主动预习”，找出课文中的重点，难点和自己有兴趣的生词。第三是...</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

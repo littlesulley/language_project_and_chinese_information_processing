@@ -12,8 +12,9 @@ import xlrd
 import docx
 import jieba
 import string
+import time
 from pypinyin import lazy_pinyin
-from tqdm import tqdm
+from PyQt5.Qt import *
 
 class Converter(object):
     def __init__(self):
@@ -170,6 +171,7 @@ class Counter(object):
         
         for file in os.listdir(srcPath):
             file_path = os.path.join(srcPath, file)
+            QApplication.processEvents()
 
             if os.path.isdir(file_path):
                 self.countFile(file_path, os.path.join(tgtPath, file))
@@ -187,17 +189,26 @@ class Counter(object):
                 stats = {}
                 textLength = len(text)
 
-                for i in tqdm(range(textLength)):
+                print("*******Start Processing File: " + file_path + "*******")
+
+                for i in range(textLength):
+                    time.sleep(0.0001)
+                    QApplication.processEvents()
+
                     char = text[i]
                     if char < u'\u4e00' or char > u'\u9fa5': continue
                     if char not in stats.keys(): 
                         stats[char] = 1
                     else: 
                         stats[char] += 1
+                
 
                 stats = [[item[0], int(item[1])] for item in stats.items()]
 
                 for row in stats:
+                    time.sleep(0.0001)
+                    QApplication.processEvents()
+
                     char = row[0]
                     row.append(str(self.converter.dict_char_to_unicode.get(char, "-1")))
                     row.append(str(self.converter.dict_char_to_utf8.get(char, "-1")))
@@ -216,6 +227,8 @@ class Counter(object):
                     f_csv = csv.writer(fopen)
                     f_csv.writerow(['character', 'frequency', 'unicode', 'utf8', 'gbk', 'big5', 'pinyin', 'stroke'])
                     f_csv.writerows(stats)
+                
+                print("*********************Complete!*********************")
     
     def sortBy(self, statsFile, mode="frequency", reverse=False):
         with codecs.open(statsFile, 'r', encoding='utf_8_sig') as fopen:
@@ -250,12 +263,16 @@ class Counter(object):
             f_csv.writerow(headings)
             f_csv.writerows(stats)
 
+        print("*********************Complete!*********************")
+        
     def groupBy(self, srcPath, tgtPath):
         if not os.path.isdir(tgtPath):
             os.mkdir(tgtPath)
 
         for file in os.listdir(srcPath):
             file_path = os.path.join(srcPath, file)
+            time.sleep(0.0001)
+            QApplication.processEvents()
 
             if os.path.isdir(file_path):
                 self.groupBy(file_path, tgtPath)
@@ -279,8 +296,13 @@ class Counter(object):
                 puncNum = 0
                 otherNum = 0
 
-                for i in tqdm(range(textLength)):
+                print("*******Start Processing File: " + file_path + "*******")
+
+                for i in range(textLength):
                     char = text[i]
+                    time.sleep(0.0001)
+                    QApplication.processEvents()
+
                     if char >= u'\u4e00' and char <= u'\u9fa5':
                         charNum += 1
                     elif char.isalpha() or (char >= u'\uff21' and char <= u'\uff3a') or (char >= u'\uff41' and char <= u'\uff5a'):
@@ -299,6 +321,8 @@ class Counter(object):
                     fopen.write('    ****The number of digits is ' + str(digitNum) + '\n')
                     fopen.write('    ****The number of punctuations is ' + str(puncNum) + '\n')
                     fopen.write('    ****The number of other characters is ' + str(otherNum) + '\n\n')
+                
+                print("*********************Complete!*********************")
 
 class Extractor(object):
     def __init__(self, converter):
@@ -325,16 +349,21 @@ class Extractor(object):
                     textLines = fopen.readlines()
 
                 newLines = []
-                print("*****************Segmenting Words******************")
-                for line in tqdm(textLines):
+
+                print("*******Start Processing File: " + file_path + "*******")
+                for line in textLines:
                     newLine = ' '.join(jieba.cut(line.strip()))
                     newLines.append(newLine+'\n')
-                print("*********************Complete**********************")
+                    time.sleep(0.001)
+                    QApplication.processEvents()
+                
 
                 tgtPath = os.path.join(tgtPath, 'segmented_' + file)
 
                 with codecs.open(tgtPath, 'w', encoding='utf_8') as fopen:
                     fopen.writelines(newLines)
+                
+                print("*********************Complete**********************")
 
     def countSegmentedFile(self, srcPath, tgtPath):
         if not os.path.isdir(tgtPath):
@@ -342,6 +371,8 @@ class Extractor(object):
         
         for file in os.listdir(srcPath):
             file_path = os.path.join(srcPath, file)
+            time.sleep(0.001)
+            QApplication.processEvents()
 
             if os.path.isdir(file_path):
                 self.countSegmentedFile(file_path, os.path.join(tgtPath, file))
@@ -358,9 +389,15 @@ class Extractor(object):
 
                 stats = {}
 
-                for line in tqdm(text):
+                print("*******Start Processing File: " + file_path + "*******")
+
+                for line in text:
                     words = line.strip().split(' ')
+                    time.sleep(0.001)
+                    QApplication.processEvents()
                     for word in words:
+                        time.sleep(0.001)
+                        QApplication.processEvents()
                         if word not in stats.keys(): 
                             stats[word] = 1
                         else: 
@@ -369,6 +406,8 @@ class Extractor(object):
                 stats = [[item[0], int(item[1])] for item in stats.items()] # [word, frequency]
 
                 for row in stats:
+                    time.sleep(0.001)
+                    QApplication.processEvents()
                     word = row[0]
                     wordUnicode = ''
                     wordUtf8 = ''
@@ -376,6 +415,8 @@ class Extractor(object):
                     wordBig5 = ''
                     wordStroke = 0
                     for character in word:
+                        time.sleep(0.001)
+                        QApplication.processEvents()
                         characterUnicode = str(self.converter.dict_char_to_unicode.get(character, "-1"))
                         characterUtf8 = str(self.converter.dict_char_to_utf8.get(character, "-1"))
                         characterGBK = str(self.converter.dict_char_to_gbk.get(character, "-1"))
@@ -405,6 +446,8 @@ class Extractor(object):
                     f_csv = csv.writer(fopen)
                     f_csv.writerow(['word', 'frequency', 'unicode', 'utf8', 'gbk', 'big5', 'pinyin', 'stroke'])
                     f_csv.writerows(stats)           
+
+                print("*********************Complete**********************")
     
     def sortBy(self, statsFile, mode="frequency", reverse=False):
         with codecs.open(statsFile, 'r', encoding='utf_8_sig') as fopen:
@@ -438,3 +481,5 @@ class Extractor(object):
             f_csv = csv.writer(fopen)
             f_csv.writerow(headings)
             f_csv.writerows(stats)
+        
+        print("*********************Complete**********************")

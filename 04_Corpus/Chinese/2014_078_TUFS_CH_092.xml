@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_092</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>19</age>
+      <first_language>中国語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>235</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken>準1級</chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_078_TUFS_CH_092.xml</title>
+    <text>
+      <paragraph>﻿    我觉得首先应该结合个人的特点，考虑个人的志向以及兴趣等方面的问题。参加课外活动固然重要，通过社会实践锻炼自己，避免了大学生“一心只读圣贤书”的问题，积累了经验，但是多参加势必会影响学习，结果自己学的专业知识基础都不<error type="replace" category="表现 形容词" revised="牢固" id="1">牢</error>，找不到自己的目标。<error type="replace" category="表现 名词" revised="大学生" id="2">大学</error>，当然应该以<error type="replace" category="表现 动词" revised="学习" id="3">学</error>为主，况且读书学习本身就是一大乐趣。我们在书中也可以找到做人的道理，同时结合自己所学的专业知识，再扩展<error type="add" category="介词 补语 介词短语补语" revised="到" id="4"/><error type="delete" category="补语 数量补语" revised="" id="5">一些</error>文学，哲学等方面，这些都<error type="add" category="动词 能愿动词" revised="会" id="6"/>自然<error type="add" category="助词 结构助词 副词 情态副词" revised="地" id="7"/>让我们有一种内在的气质，通过这种修炼，在参加课外活动时也有促进作用。所以大学生活应该以<error type="replace" category="表现 动词" revised="学习" id="8">学</error>为主。</paragraph>
+      <paragraph>来到大学，我们的目的是什么？是学习。那学习是什么？是知识的积累。我们国家，有些地方赶不上别的国家，为什么呢？原因很简单，就是因为我们的技术跟不上。我们，作为一个国家未来的接班人，没有理由不好好学习。努力掌握知识去跟人比，所以我认为我们更应该多学习知识，掌握知识。大学的定义就是更多<error type="add" category="助词 结构助词 副词 情态副词" revised="地" id="9"/>去学习一些东西。这些东西主要的就是专业知识。需要我们更深层<error type="add" category="助词 结构助词 副词 情态副词" revised="地" id="10"/>去学习，为将来贡献于社会，学生的天职就是学习。在大学里积累知识最重要。但我所说的只是更偏重于“经验”。仅仅靠教材是学不到多少东西的。大学四年的学习是人生道路上不可复制的黄金时间，错过了就错过。虽说活到老学到老，但是学习<error type="delete" category="助词 结构助词 短语 “的”字短语" revised="" id="11">的</error>最重要的阶段还是在大学<error type="replace" category="名词 方位词" revised="里" id="12">中</error><error type="delete" category="表现" revised="" id="13">进行中</error>对于知识的积累，用来打造自己迈向社会的基石。所以我认为大学生应该以学习为主。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

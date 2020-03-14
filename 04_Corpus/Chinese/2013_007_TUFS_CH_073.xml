@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_073</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS/007_TUFS_CH_073.xml</title>
+    <text>
+      <paragraph>我们这个星期讨论的内容是小学英语教育应该不应该。我的意见是不应该。</paragraph>
+      <paragraph>最初<error type="add" category="动词" revised="认为" id="1"/>应该的<error type="replace" category="名词" revised="组" id="2">集团</error>主张现在大部分的小学生认为学英语很开心<error type="replace" category="连词" revised="而且" id="3">和</error>很重要。我们反驳现在小学进行的英语教育<error type="add" category="副词 语气副词" revised="就" id="4"/>好像玩儿，特别简单<error type="replace" category="标点符号" revised="，" id="5">。</error>所以他们<error type="delete" category="助词 结构助词" revised="" id="6">的</error>对英语的印象很好。</paragraph>
+      <paragraph>然后我们<error type="add" category="副词 时间副词" revised="还" id="7"/>说<error type="add" category="助词 时态助词" revised="了" id="8"/>日本人为什么不<error type="replace" category="动词" revised="善于" id="9">拿手</error>学<error type="delete" category="补语 结果补语" revised="" id="10">会</error>英语。为了提高语言水平，练习用<error type="delete" category="代词 指示代词" revised="" id="11">那个</error>外语讲自己的意见<error type="add" category="表现" revised="的方法" id="12"/>很有用。但是，日本人<error type="replace move" category="“连”字句" revised="甚至连用日语讲自己的意见都不擅长" id="13">不擅长甚至连用日语讲自己的意见</error>。所以日本的学生们<error type="add" category="动词 能愿动词" revised="要" id="14"/>先练习在人们的面前说话，然后<error type="add" category="副词 时间副词" revised="再" id="15"/>学英语。<error type="add" category="介词" revised="按照" id="16"/> <error type="replace" category="代词 指示代词" revised="这个" id="17">那个</error>顺序，效率<error type="add" category="动词 能愿动词" revised="会" id="18"/>高<error type="replace" category="补语 程度补语" revised="得" id="19">的</error>多。英语只是<error type="add" category="短语 量词短语" revised="一种" id="20"/>手段。<error type="add" category="连词" revised="如果" id="21"/>没有说话的内容和说话时候的逻辑思想的话，即使可以流利<error type="replace" category="助词 结构助词" revised="地" id="22">的</error>说英语，<error type="add" category="复句 副词 让步复句 关联副词" revised="也" id="23"/><error type="add" category="强调句" revised="是" id="24"/>不行<error type="add" category="强调句" revised="的" id="25"/> 。</paragraph>
+      <paragraph>不过<error type="add" category="动词" revised="认为" id="26"/>应该的<error type="replace" category="名词" revised="人" id="27">人们</error>反驳<error type="add" category="连动句" revised="说" id="28"/>，从小就习惯用英语<error type="replace" category="表现" revised="是一个很有用的方法" id="29">很有用</error>。而且学外语的最好年龄是十二岁以下。</paragraph>
+      <paragraph>通过这<error type="replace" category="量词" revised="次" id="30">个</error>讨论，我觉得事先<error type="replace" category="动词" revised="准备" id="31">预备</error><error type="add" category="补语 数量补语" revised="一下" id="32"/>别的<error type="replace" category="名词" revised="组" id="33">集团</error><error type="add" category="动词 能愿动词" revised="会" id="34"/>说什么<error type="replace" category="强调句" revised="是有必要的" id="35">必要</error>。因为我们<error type="delete" category="短语 “的”字短语" revised="" id="36">的</error>讨论<error type="add" category="表现" revised="的气氛" id="37"/>不<error type="add" category="副词 程度副词" revised="太" id="38"/>活泼。<error type="add" category="连词" revised="而且" id="39"/><error type="replace" category="动词" revised="考虑" id="40">想一想</error>怎么反驳的时间太长 。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

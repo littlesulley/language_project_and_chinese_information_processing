@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_088</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>3</school_year>
+      <month_of_study>26</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_124_TUFS_CH_088.xml</title>
+    <text>
+      <paragraph>在日本的４７<error type="add" category="量词" revised="个" id="1"/>都道府县中，我最推荐你们<error type="add" category="动词 句式 兼语句" revised="去" id="2"/><error type="add" category="助词 结构助词" revised="的" id="3"/>是神奈川县。<error type="add" category="介词 短语 介词短语" revised="自从" id="4"/><error type="replace" category="动词 及物动词" revised="生" id="5">出生</error>了我以后，我的父母就从东京都搬到<error type="add" category="助词 时态助词" revised="了" id="6"/>神奈川县，所以现在我在神奈川县住了二十多年了。神奈川县有许多好处，但这里我<error type="add" category="副词 范围副词" revised="只" id="7"/>略举两个好处。</paragraph>
+      <paragraph>第一是交通方便。神奈川县在东京都的<error type="replace" category="方位词" revised="南边" id="8">下边儿</error>，从我住的地方到新宿站只<error type="replace move" category="副词 范围副词" revised="大概需要" id="9">需要大概</error>三十分钟。如果你们来日本住在神奈川县的话<error type="add" category="标点符号" revised="，" id="10"/><error type="add" category="副词 程度副词" revised="很" id="11"/>容易地<error type="add" category="副词 关联副词" revised="就" id="12"/><error type="add" category="动词 能愿动词" revised="能" id="13"/>去东京<error type="replace" category="动词 重叠动词" revised="玩" id="14">玩玩</error>，而且<error type="add" category="副词 关联副词" revised="也" id="15"/>可以去神奈川县的<error type="add" category="代词 指示代词" revised="其他的" id="16"/>好地方。</paragraph>
+      <paragraph>第二是有<error type="replace" category="副词 程度副词" revised="很" id="17">好</error>多值得去看的地方。神奈川县比东京都<error type="replace" category="副词 程度副词" revised="还要" id="18">比较</error>安全<error type="add" category="标点符号" revised="，" id="19"/>所以你们<error type="add" category="动词 能愿动词" revised="可以" id="20"/>放心<error type="add" category="助词 结构助词" revised="地" id="21"/>逛逛。<error type="replace" category="代词 指示代词" revised="所有" id="22">有数</error>的好地方<error type="add" category="方位词 短语 方位短语" revised="中" id="23"/>我最喜欢的是镰仓。这座古老的城市，是与奈良，京都同属政治中心，<error type="delete" category="连词" revised="" id="24">并</error><error type="replace" category="动词 关系动词" revised="是" id="25">作为</error>日本<error type="replace" category="表现 代词 指示代词" revised="第一个" id="26">最初的</error>武士政权“镰仓幕府政权”的发源地<error type="replace" category="标点符号" revised="，" id="27">。</error><error type="add" category="连词 复句 递进复句" revised="并且" id="28"/>创造了它<error type="add" category="代词 人称代词" revised="自己" id="29"/>独特的文化。<error type="add" category="介词 短语 介词短语" revised="从" id="30"/>１９世纪以来，<error type="add" category="主语" revised="镰仓" id="31"/>作为海水浴场，度假村和住宅区而受到<error type="add" category="助词 时态助词" revised="了" id="32"/>关注。拥有得天独厚的海洋和绿色的<error type="replace" category="表现 名词" revised="大自然" id="33">自然</error>的镰仓吸引着大量游客。</paragraph>
+      <paragraph>在镰仓我<error type="replace" category="动词" revised="推荐" id="34">劝</error>你们去两个很有名的地方。第一<error type="add" category="量词" revised="个" id="35"/>是鹤岗八幡宫<error type="replace" category="标点符号" revised="，" id="36">。</error><error type="add" category="动词 关系动词" revised="是" id="37"/>１０６３<error type="add" category="名词 时间名词" revised="年" id="38"/>源赖义在材木座为了祭祀作为源氏一族的氏族神<error type="add" category="连词" revised="而" id="39"/><error type="add" category="动词" revised="建盖" id="40"/><error type="add" category="助词 结构助词" revised="的" id="41"/>。在秋天这个地方的红叶很美丽。第二<error type="add" category="量词" revised="个" id="42"/>是高德院。高德院有<error type="add" category="短语 量词短语" revised="一座" id="43"/>以镰仓大佛之名而闻名的大佛。大佛高为１１米，重量大概<error type="add" category="动词 存现动词" revised="有" id="44"/>１２１吨<error type="replace" category="标点符号" revised="，" id="45">。</error><error type="add" category="动词 关系动词" revised="是" id="46"/>镰仓唯一被指定<error type="add" category="动词 关系动词" revised="为" id="47"/>日本国宝的佛像。从东京站<error type="add" category="介词" revised="到" id="48"/>镰仓<error type="add" category="连词 复句 转折复句" revised="虽然" id="49"/>比较远，但是镰仓<error type="add" category="标点符号" revised="，" id="50"/>特别是镰仓大佛<error type="add" category="副词 语气副词" revised="真的" id="51"/>值得去看。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_132</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_083_TUFS_CH_132.xml</title>
+    <text>
+      <paragraph>﻿    我认为大学生的最大的目的是学习。开始工作以后，<error type="add" category="动词 能愿动词" revised="想要" id="1"/>有学习的时间<error type="add" category="动词 关系动词 句式 强调句" revised="是" id="2"/>很难<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="3"/>，所以在大学<error type="replace" category="名词 时间名词" revised="期间" id="4">之间</error>要学习，得到很多知识。</paragraph>
+      <paragraph>但在这次辩论中我是<error type="add" category="动词 关系动词" revised="属于" id="5"/><error type="add" category="标点符号" revised="“" id="6"/>大学生应该以课外活动为主<error type="add" category="标点符号" revised="”" id="7"/><error type="replace" category="表现 短语 “的”字短语" revised="的小组" id="8">方面了</error>，我们<error type="replace" category="动词" revised="考虑" id="9">想</error><error type="add" category="助词 时态助词" revised="了" id="10"/>很多参加课外活动的优点。比如<error type="add" category="动词 能愿动词" revised="可以" id="11"/><error type="replace" category="动词" revised="培养" id="12">得到</error>忍耐力，<error type="add" category="动词 存现动词" revised="有" id="13"/>礼貌，集中精力<error type="delete" category="标点符号" revised="" id="14">，</error><error type="add" category="连词" revised="和" id="15"/>协调性。还有<error type="add" category="动词 能愿动词" revised="可以" id="16"/>习惯胜负的紧张<error type="delete" category="助词 结构助词" revised="" id="17">的</error>气氛<error type="delete" category="标点符号" revised="" id="18">，</error><error type="add" category="连词" revised="和" id="19"/><error type="replace" category="表现 名词" revised="上下级的人际关系" id="20">上下关系</error>。参加课外活动的话，能认识各种各样的人，人际关系很复杂，所以<error type="replace" category="连词" revised="既" id="21">一边</error>可以交很多朋友，<error type="replace" category="连词 动词 能愿动词" revised="又" id="22">一边</error><error type="add" category="动词 能愿动词" revised="可以" id="23"/>学会怎么解决各种问题。虽然学习很重要，但是<error type="replace" category="介词" revised="跟" id="24">对</error>将来更有直接的关系的不是在大学学习的内容，<error type="add" category="连词" revised="而" id="25"/>是参加课外活动后得到的各种能力。</paragraph>
+      <paragraph>不过，听<error type="delete" category="补语 结果补语" revised="" id="26">到</error><error type="add" category="助词 时态助词" revised="了" id="27"/>对方的意见<error type="add" category="名词 时间名词" revised="后" id="28"/>，我明白<error type="add" category="助词 时态助词" revised="了" id="29"/>重要的不是<error type="delete" category="副词 范围副词" revised="" id="30">只</error>学习的内容，<error type="add" category="连词" revised="而" id="31"/>是学习的过程。还有<error type="add" category="介词 短语 介词短语" revised="在" id="32"/>得到各种有用的能力之前，要学<error type="add" category="补语 结果补语" revised="好" id="33"/><error type="replace" category="表现 形容词" revised="主要的" id="34">主</error>基础的知识。</paragraph>
+      <paragraph>所以我认为学习当然重要，但是最好<error type="add" category="副词 关联副词" revised="也" id="35"/>参加课外活动，然后得到<error type="add move" category="补语 数量补语" revised="更多" id="36"/>将来<error type="delete" category="副词 程度副词" revised="" id="37">很</error>有用的<error type="delete move" category="补语 数量补语" revised="" id="38">更多</error>能力。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

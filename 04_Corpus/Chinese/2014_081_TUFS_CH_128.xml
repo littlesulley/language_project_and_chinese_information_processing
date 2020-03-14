@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_128</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>21</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_081_TUFS_CH_128.xml</title>
+    <text>
+      <paragraph>﻿    这次讨论<error type="add" category="短语 “的”字短语" revised="的题目" id="1"/>是学习与课外活动我们应该以哪个为主<error type="delete" category="助词 结构助词" revised="" id="2">的</error>。我属于<error type="add" category="介词" revised="以" id="3"/>课外活动<error type="add" category="短语 介词短语" revised="为主" id="4"/>的组。我们的意见<error type="add move" category="副词 范围副词" revised="主要" id="5"/>是<error type="delete move" category="副词 范围副词" revised="" id="6">主要</error>，参加课外活动<error type="add" category="动词 能愿动词" revised="能" id="7"/>让我们得到我们只<error type="add" category="介词" revised="通过" id="8"/>学习的话<error type="replace" category="补语 可能补语" revised="学不到" id="9">不可以得到</error>的事，比如说，<error type="replace" category="表现 名词" revised="责任感" id="10">责任</error>，人际关系，丰富人生等等。<error type="replace" category="表现 名词" revised="责任感" id="11">责任</error><error type="delete" category="关系动词" revised="" id="12">像</error>，比如说，作为队中的<error type="replace" category="表现 名词" revised="一员" id="13">一个人</error>有责任<error type="add" category="标点符号" revised="，" id="14"/>或者<error type="add" category="介词 短语 介词短语" revised="像" id="15"/>对胜利有责任<error type="delete" category="助词 结构助词" revised="" id="16">的</error>一样。<error type="replace" category="介词" revised="就" id="17">对</error>人际关系来说，参加课外活动<error type="add" category="动词 能愿动词" revised="可以" id="18"/>增加跟别人沟通的机会，<error type="replace" category="连词 复句 承接复句" revised="这样" id="19">于是</error>可以<error type="replace" category="动词" revised="培养" id="20">养成</error><error type="replace" category="表现 名词" revised="协调性" id="21">协调</error>和忍耐力等等。对丰富人生来说，一开始工作<error type="add" category="名词 时间名词" revised="之后" id="22"/><error type="add move" category="副词 程度副词" revised="差不多" id="23"/>就<error type="delete move" category="副词 程度副词" revised="" id="24">差不多</error>没有运动的机会了。还有发现新<error type="add" category="助词 结构助词" revised="的" id="25"/>爱好的机会<error type="add" category="副词 关联副词" revised="也" id="26"/>太少了。但是如果<error type="add" category="介词 短语 介词短语" revised="在" id="27"/>学生的时代参加课外活动的话，那课外活动<error type="add" category="副词 关联副词" revised="就" id="28"/><error type="add" category="动词 能愿动词" revised="能" id="29"/><error type="add" category="副词 程度副词" revised="很" id="30"/><error type="replace" category="副词 情态副词" revised="容易地" id="31">简单</error>成为<error type="add" category="代词 指示代词" revised="自己的" id="32"/>爱好。课外活动的经验<error type="add" category="动词 能愿动词" revised="会" id="33"/>让我们<error type="add" category="助词 结构助词 短语 “的”字短语" revised="的" id="34"/>人生<error type="add" category="副词 程度副词" revised="更" id="35"/>丰富。</paragraph>
+      <paragraph>但是，这些理由都只是课外活动的优点，不是应该牺牲学习<error type="add" category="连词" revised="而" id="36"/>以课外活动为主<error type="delete move" category="形容词" revised="" id="37">明确</error>的<error type="add move" category="形容词" revised="明确" id="38"/>根据。这次<error type="add" category="助词 结构助词 短语 “的”字短语" revised="的" id="39"/>讨论我觉得学习组比课外活动组更有利。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

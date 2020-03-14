@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_139</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_090_TUFS_CH_139.xml</title>
+    <text>
+      <paragraph>﻿    我认为大学生应该以课外活动为主。我有三个理由。</paragraph>
+      <paragraph>第一个<error type="add" category="名词 主语" revised="理由" id="1"/>是从人脉上<error type="delete move" category="助词 其他助词" revised="" id="2">看</error>的观点<error type="add move" category="助词 其他助词" revised="看" id="3"/>。如果我们参加课外活动，我们<error type="add" category="副词 关联副词" revised="就" id="4"/>有更多的机会跟别人交流，可以跟更多<error type="add" category="助词 结构助词" revised="的" id="5"/>人交朋友。与此相反，如果我们不参加课外活动，我们交流的<error type="delete" category="动词 关系动词" revised="" id="6">是</error><error type="add" category="副词 语气副词" revised="就" id="7"/>只有同学或者老师<error type="add" category="助词 语气助词" revised="了" id="8"/>。<error type="replace" category="介词 句式 比较句" revised="比起" id="9">比</error>参加课外活动的人，跟很多人交流的机会更少。比如说，在这个大学里参加课外活动，我们不仅<error type="add" category="动词 能愿动词" revised="可以" id="10"/>跟同系的<error type="replace" category="表现 名词" revised="同学" id="11">人们</error>交朋友，而且<error type="add" category="副词 关联副词" revised="还" id="12"/><error type="add" category="动词 能愿动词" revised="能" id="13"/>跟别<error type="add" category="助词 结构助词" revised="的" id="14"/>系的<error type="replace" category="表现 名词" revised="同学" id="15">人们</error>交朋友。<error type="add" category="连词 复句 条件复句" revised="要是" id="16"/>不参加的话，我们差不多没有机会跟别<error type="add" category="助词 结构助词" revised="的" id="17"/>系的人交流。<error type="replace" category="代词 指示代词" revised="这样" id="18">那样</error>，我们可以扩展自己的人脉。</paragraph>
+      <paragraph>第二，通过参加课外活动的体验，我们可以培养自己的社会性。课外活动是跟很多人一起<error type="replace" category="动词" revised="从事" id="19">做</error>的活动。<error type="add" category="短语 方位短语" revised="团体里" id="20"/>有各种各样的人，所以我们一定要考虑<error type="add" category="补语 结果补语" revised="到" id="21"/>大家的意见，然后想想为了团员的关系<error type="add" category="动词 能愿动词" revised="能" id="22"/><error type="add" category="副词 程度副词" revised="更" id="23"/>好<error type="add" category="标点符号" revised="，" id="24"/><error type="replace" category="代词 疑问代词" revised="什么样" id="25">怎么样</error>的办法<error type="add" category="副词 程度副词" revised="最" id="26"/>好。<error type="add" category="连词 复句 条件复句" revised="如果" id="27"/>只学习的话，<error type="replace" category="补语 可能补语" revised="学不会" id="28">不能学会</error>这样的解决方法。其实，开始工作后，<error type="replace" category="表现 补语 结果补语" revised="做好人际关系" id="29">跟人们关系好</error>的<error type="replace" category="表现 名词" revised="方法" id="30">办法</error>是一定很有用的。因为公司是<error type="add" category="短语 量词短语" revised="一个" id="31"/>很多人一起工作的地方，员工的关系一定<error type="add" category="动词 能愿动词" revised="会" id="32"/>影响到工作。</paragraph>
+      <paragraph>因此，我认为大学生应该以课外活动为主。大学生通过课外活动可以提高自己的能力，准备开始工作。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

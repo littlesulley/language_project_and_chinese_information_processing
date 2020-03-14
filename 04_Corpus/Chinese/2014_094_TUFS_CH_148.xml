@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_148</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_094_TUFS_CH_148.xml</title>
+    <text>
+      <paragraph>﻿    我认为大学生活应该以学习为主。</paragraph>
+      <paragraph>第一，上大学的第一个目的<error type="add" category="副词 范围副词" revised="就" id="1"/>是学习。大学生有用大学<error type="add" category="方位词 方位短语" revised="里" id="2"/>的完善的设备<error type="add" category="连词" revised="以及" id="3"/>随时<error type="replace" category="不及物动词" revised="向高水平的老师请教" id="4">请教高水平的老师</error>的权利。所以<error type="replace move" category="表现 短语 介词短语" revised="对学习来说，我们处于" id="5">我们处于对学习来说，</error>非常好的环境。毕业后很难<error type="add" category="副词 时间副词" revised="再" id="6"/>得到这么好的环境，<error type="add" category="连词 复句 因果复句" revised="所以" id="7"/>在大学<error type="add" category="方位词 短语 方位短语" revised="里" id="8"/>不努力学习<error type="add" category="动词 关系动词 句式 强调句" revised="是" id="9"/>很可惜<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="10"/>。      第二，最近<error type="replace" category="代词 指示代词" revised="有些" id="11">有个</error>有名的企业，比如富士通，三菱等录用新员工时<error type="add" category="动词 能愿动词" revised="会" id="12"/>考虑大学的成绩。<error type="replace" category="表现 副词 语气副词" revised="一般来说" id="13">一般地说</error><error type="replace" category="介词" revised="通过" id="14">从</error>录用考试的面试或自荐信<error type="add" category="标点符号" revised="，" id="15"/>企业能知道学生们喜欢做什么，做什么拿手，希望做什么等，因为这些大部分<error type="add" category="副词 范围副词" revised="都" id="16"/>是课外活动的话题。但是工作以后我们常常遇到困难或我们不愿意做的事儿。通过<error type="add" category="动词" revised="参考" id="17"/>大学成绩，企业能知道学生们能不能努力做<error type="delete" category="连词" revised="" id="18">不仅</error>自己喜欢的工作<error type="add" category="标点符号" revised="，" id="19"/><error type="replace" category="副词 语气副词" revised="甚至" id="20">而且</error>自己不善于<error type="add" category="表现 动词" revised="做" id="21"/>的工作。</paragraph>
+      <paragraph>第三，据Recruit的调查<error type="add" category="标点符号" revised="，" id="22"/><error type="add" category="动词 存现动词" revised="有" id="23"/>百分之七十的<error type="add" category="副词 时间副词" revised="已经" id="24"/>工作的人后悔<error type="add" category="介词 短语 介词短语" revised="在" id="25"/>大学时<error type="delete" category="动词 能愿动词" revised="" id="26">应该</error><error type="add" category="副词 否定副词" revised="没有" id="27"/><error type="delete" category="副词 程度副词" revised="" id="28">更</error>努力学习。在日本很多人认为大学的学问跟以后的工作没有直接<error type="add" category="助词 结构助词 短语 “的”字短语" revised="的" id="29"/>关系，大学生活是“人生中的暑假”，而实际上许多<error type="add" category="副词 时间副词" revised="已经" id="30"/>工作的人觉得在大学<error type="add" category="名词 时间名词" revised="时" id="31"/>应该努力学习，<error type="add" category="副词 范围副词" revised="只" id="32"/><error type="add" category="动词 存现动词" revised="有" id="33"/><error type="replace" category="表现 形容词" revised="很少" id="34">不多</error>的人觉得上大学时应该更努力参加课外活动。</paragraph>
+      <paragraph>根据这三个理由我认为大学生活应该以学习为主。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

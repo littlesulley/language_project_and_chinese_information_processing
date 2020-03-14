@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_043</id>
+      <nationality></nationality>
+      <sex></sex>
+      <age></age>
+      <first_language></first_language>
+      <major></major>
+      <school_year></school_year>
+      <month_of_study></month_of_study>
+      <educational_language></educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_126_TUFS_CH_043.xml</title>
+    <text>
+      <paragraph>日本的北海道是<error type="add" category="短语 量词短语" revised="一个" id="1"/>很大<error type="replace" category="标点符号" revised="、" id="2">，</error>很美丽的地方。每年<error type="add" category="副词 范围副词" revised="都" id="3"/><error type="add" category="动词 存现动词 句式 存现句" revised="有" id="4"/>很多人从全国和<error type="add" category="代词 指示代词" revised="全" id="5"/>世界各地来<error type="add" category="介词 补语 介词短语补语" revised="到" id="6"/>北海道。有的人想接触北海道的大自然，有的人想滑雪，还有<error type="add" category="副词 情态副词" revised="顺便" id="7"/>尝尝<error type="replace" category="表现 名词" revised="海鲜" id="8">海产品</error>。</paragraph>
+      <paragraph>北海道有各种各样的地方，<error type="replace" category="代词 指示代词" revised="每个" id="9">各</error>地方<error type="add" category="副词 范围副词" revised="都" id="10"/>有<error type="replace" category="代词 指示代词" revised="各自的" id="11">各</error>特色。各地方的气候，<error type="replace" category="名词" revised="特产" id="12">特产品</error>，历史和人口<error type="replace" category="副词 范围副词" revised="都" id="13">完全</error>不一样。我想介绍<error type="add" category="补语 数量补语" revised="一下" id="14"/>札幌市和钏路市。</paragraph>
+      <paragraph>札幌市的面积大概<error type="add" category="动词 存现动词" revised="有" id="15"/>一千一百二十平方<error type="replace" category="表现 名词" revised="公里" id="16">千米</error>，札幌市比东京的市区<error type="replace" category="副词 程度副词" revised="还要" id="17">很</error>大，在札幌你可以过<error type="add" category="助词 时态助词" revised="着" id="18"/><error type="add" category="副词 程度副词" revised="很" id="19"/>方便的生活。札幌的中心有各种各样的商店。你可以<error type="replace" category="动词" revised="买" id="20">得</error>到<error type="add" category="副词 时间副词" revised="正在" id="21"/>流行的商品，衣服，杂货，漫画，食品等等。札幌也有<error type="replace" category="表现 名词" revised="大自然" id="22">自然</error>，树木繁茂的山和澄清的<error type="replace" category="表现 名词" revised="河川" id="23">川</error>，这里有各种各样的野生动物，比如，熊，鹿，<error type="replace" category="表现 名词" revised="狐狸" id="24">狐</error>，鱼等等。在札幌你能<error type="add" category="动词 存现动词" revised="有" id="25"/><error type="add" category="副词 程度副词" revised="很多" id="26"/>娱乐<error type="add" category="标点符号" revised="，" id="27"/><error type="add" category="连词" revised="比如" id="28"/>爬山和钓鱼。札幌还有天然温泉，<error type="add" category="介词 短语 介词短语" revised="当" id="29"/><error type="add" category="主语" revised="你" id="30"/><error type="replace" category="动词 重叠动词" revised="游玩" id="31">玩玩儿</error>以后，你<error type="add" category="副词 关联副词" revised="也" id="32"/>能休息一下。札幌<error type="add" category="副词 关联副词" revised="还" id="33"/>有<error type="add" category="形容词" revised="很多" id="34"/>农家，<error type="add" category="动词 存现动词" revised="有" id="35"/><error type="replace" category="短语 “的”字短语" revised="种蔬菜的农家" id="36">野菜农家</error>，<error type="add" category="动词" revised="种" id="37"/>米的农家，<error type="add" category="连词" revised="还有" id="38"/><error type="add" category="动词" revised="产" id="39"/>牛奶的农家。我的一个高中的朋友<error type="add" category="主语 句式 主谓谓语句" revised="他家" id="40"/><error type="add" category="副词 语气副词" revised="就" id="41"/>是<error type="add" category="动作动词" revised="产" id="42"/>米的<error type="delete" category="短语 “的”字短语" revised="" id="43">农家</error>。</paragraph>
+      <paragraph>札幌有很多<error type="replace" category="表现 形容词" revised="季节性的" id="44">季节的</error><error type="replace" category="表现 名词" revised="活动" id="45">大事</error>。札幌的夏天气候很舒适，比较凉快。冬天<error type="add" category="动词 能愿动词" revised="会" id="46"/>下很多雪，很寒冷。但是<error type="add" category="连词 复句 因果复句" revised="因为" id="47"/>札幌有各<error type="add" category="量词" revised="个" id="48"/>季节的活动，<error type="add" category="连词 复句 因果复句" revised="所以" id="49"/>我<error type="replace" category="表现 补语 情态补语" revised="四季都能过得很愉快" id="50">能高兴地过四季</error>。每年<error type="add" category="助词 结构助词" revised="的" id="51"/>二月有札幌冰雪节。冰雪<error type="add" category="助词 结构助词" revised="的" id="52"/>雕塑作品<error type="delete" category="助词 结构助词 句式 主谓谓语句" revised="" id="53">的</error>数量大概有250尊。冰雪节是<error type="add" category="介词 短语 介词短语" revised="在" id="54"/>“纯白的梦想世界广场”<error type="add" category="动词" revised="举行" id="55"/>。很多人<error type="add" category="副词 范围副词" revised="都" id="56"/><error type="add" category="动词 能愿动词" revised="会" id="57"/>来札幌看冰雪雕塑。</paragraph>
+      <paragraph>钏路市在北海道的<error type="replace" category="方位词" revised="东部" id="58">东方</error>。钏路的气候比较冷，非常潮湿，常常浓雾弥漫。我的堂兄弟<error type="add" category="副词 时间副词" revised="在" id="59"/>上钏路的大学，他说洗的衣服很难<error type="replace" category="表现 动词 状态动词" revised="干" id="60">干燥</error>，衣服<error type="add" category="动词 能愿动词" revised="会" id="61"/>有点儿臭。但是湿气<error type="add" category="动词 能愿动词" revised="会" id="62"/>培育<error type="add" category="补语 趋向补语" revised="出" id="63"/>各种各样的野生动物和植物。钏路有阿寒湖<error type="replace" category="标点符号 连词" revised="和" id="64">，</error>钏路<error type="replace" category="名词" revised="湿地" id="65">湿原</error>。阿寒湖的球藻很有名。钏路<error type="replace" category="名词" revised="湿地" id="66">湿原</error>是日本<error type="delete" category="助词 结构助词" revised="" id="67">的</error>最大的<error type="replace" category="名词" revised="湿地" id="68">湿原</error>，在<error type="replace" category="代词 指示代词" revised="那儿" id="69">这儿</error>你可以看<error type="add" category="补语 结果补语" revised="到" id="70"/>非常多的鹤。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

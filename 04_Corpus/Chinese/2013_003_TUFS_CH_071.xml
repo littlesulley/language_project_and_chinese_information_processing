@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_071</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>13</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS/003_TUFS_CH_071.xml</title>
+    <text>
+      <paragraph>【宣传文章】</paragraph>
+      <paragraph>想住在<error type="replace" category="形容词" revised="美丽" id="1">丰美</error>的乡下吗？喜欢泡温泉吗？希望住在一个宽大的平房<error type="add" category="方位词" revised="里" id="2"/>吗？</paragraph>
+      <paragraph>B2班房地产能介绍给您符合这些要求的一个新房！这个房子一定会为您提供又安静又方便的生活，您一定会很满足。地点在大分县，就在大分市和别府市的中间，周围环境也是<error type="add" category="介词" revised="位于" id="3"/>都会和乡下的中间，<error type="replace" category="副词 程度副词" revised="很" id="4">真</error>方便。为什么<error type="add" category="动词 能愿动词" revised="要" id="5"/>搬到大分呢？大分的生活比东京，大阪等<error type="replace" category="副词 程度副词" revised="更" id="6">比较</error>便宜，没有城市那么热闹。而且吃<error type="replace" category="助词 结构助词" revised="的" id="7">得</error>东西<error type="replace" category="副词 程度副词" revised="很" id="8">真</error>美味，最受欢迎的是面条。如果搬到大分的话，您每天可以享受<error type="replace" category="副词 程度副词" revised="很" id="9">真</error>好吃的面条和美丽的风景。</paragraph>
+      <paragraph/>
+      <paragraph>【B2班房地产的介绍】我们从二〇一三年春天开业，介绍品质优良的房子和又可靠又优秀的搬家公司。曾经为<error type="delete" category="助词 时态助词" revised="" id="10">了</error>八百万以上<error type="add" category="助词 结构助词" revised="的" id="11"/>顾客<error type="delete" category="动词 动作动词" revised="" id="12">服务，</error>提供<error type="add" category="助词 时态助词" revised="过" id="13"/>又热情又周到的咨询。</paragraph>
+      <paragraph>电话<error type="replace" category="名词" revised="号码" id="14">号</error>：814-88888888  举报邮箱：某某某@b2.co.jp 网址：某某某@b2.co.jp</paragraph>
+      <paragraph/>
+      <paragraph>【主要的对象】希望<error type="add" category="动词 动作动词" revised="过" id="15"/>安静的日子的<error type="replace" category="名词" revised="中老年人" id="16">中老人</error></paragraph>
+      <paragraph>【房子的种类】新房、外面有小院子、可以建造另外一个院子或者<error type="replace" category="名词" revised="车库" id="17">停车处</error>；顾客可以选择。</paragraph>
+      <paragraph>【风格】日式古典（有<error type="replace" category="名词" revised="日式" id="18">日本</error>房间和24/7<error type="add" category="助词 结构助词" revised="的" id="19"/>露天浴室），卧室也能改装为欧美款式；可以商量。</paragraph>
+      <paragraph>【房子的周围】房子<error type="replace" category="介词" revised="到" id="20">离</error>车站<error type="replace move" category="连动句" revised="走路只要" id="21">只要走路</error>十分钟，房子旁边儿有银行、图书馆、医院、超级市场、邮局、公车车站、非常方便。马路也很平坦。白天有不少行人，夜里很安静，治安很好。</paragraph>
+      <paragraph>【内装】有客厅、厨房、卧室、浴室、厕所、已<error type="replace" category="动词 动作动词" revised="添置" id="22">设备</error>必需的家具。</paragraph>
+      <paragraph>【宠物】猫、小狗、小鸟、鱼、龟都可以；请<error type="replace" category="副词 时间副词" revised="提前" id="23">首先</error>商量。</paragraph>
+      <paragraph>【价格】4000万日币</paragraph>
+      <paragraph>【优惠】决定购买以后我们能介绍搬家公司,可以减少搬家<error type="add" category="助词 结构助词" revised="的" id="24"/>开支。</paragraph>
+      <paragraph>【特点】因为这个房子的对象是<error type="replace" category="名词" revised="中老年人" id="25">中老人</error>,旁边的建筑物<error type="replace move" category="副词 关联副词" revised="对他们来说也" id="26">也对他们来说</error>很重要.他们可以开心地泡温泉,放松放松。虽然这个房子没有二楼,但是每个房间<error type="add" category="副词 范围副词" revised="都" id="27"/>很宽大。</paragraph>
+      <paragraph/>
+      <paragraph>【我的感想】</paragraph>
+      <paragraph>因为我们要从顾客的角度来<error type="replace" category="表现" revised="设计" id="28">造内容</error>,<error type="add" category="连词" revised="所以" id="29"/>我们得发挥想象力,看各种情况。比如说<error type="replace" category="名词" revised="中老年人" id="30">中老人</error>的要求是什么、大分有什么好处、顾客选择房子和我选择房子有什么不一样等。</paragraph>
+      <paragraph>我自己的条件是(1)离<error type="replace" category="名词" revised="车站" id="31">车间</error><error type="delete" category="副词 程度副词" revised="" id="32">很</error>近 (2)什么时候都很安全 (3)附近有超级市场、银行和邮局 (4)房间在三楼以上(没有虫子) (5)邻居的样子等。 现在我住在国分寺市的女学生<error type="delete" category="助词 结构助词" revised="" id="33">的</error>宿舍,虽然那里的规定很严格(关门时间是晚上11点),但是晚上也很安全，(<error type="replace" category="连词" revised="虽然" id="34">可是</error>有不少酒吧的招揽客人的),而且旁边有许多可以买东西的地方。</paragraph>
+      <paragraph><error type="replace" category="副词 范围副词" revised="大部分" id="35">差不多</error>的内容<error type="add" category="副词 范围副词" revised="都" id="36"/>是<error type="replace" category="表现" revised="不现实" id="37">假</error>的(怎么可能在家里有自己的<error type="replace" category="名词" revised="露天浴室" id="38">露天</error>!?),可是没有限制也挺好,可以自由自在地想象理想的房子。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

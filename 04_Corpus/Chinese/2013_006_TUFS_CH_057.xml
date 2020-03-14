@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_057</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>21</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS/006_TUFS_CH_057.xml</title>
+    <text>
+      <paragraph>我们介绍的房子是在北海道的知床。我们卖这<error type="replace" category="错别字" revised="座" id="1">坐</error>房子<error type="add" category="动词 趋向动词" revised="来" id="2"/>作为中国顾客<error type="replace" category="表现" revised="冬天使用的别墅" id="3">的冬天别墅</error>。<error type="replace" category="错别字" revised="因为" id="4">应为</error> <error type="replace" category="存现句" revised="在中国南方滑雪场很少" id="5">在中国南方有很少滑雪场</error>，<error type="add" category="连词" revised="所以" id="6"/>每年<error type="add" category="动词 存现动词" revised="有" id="7"/>很多中国人到北海道去滑雪。我们认为有钱的中国人一定会研究买这种房子。因为离滑雪场很近，<error type="add" category="连词" revised="所以" id="8"/>你可以随时在滑雪场玩儿。另外，屋顶上有一个展望台。从那儿你可以游览知床的流冰。在日本，知床的流冰是一个很著名的景观。对中国人<error type="add" category="短语 介词短语" revised="来说" id="9"/>，去北海道旅游的目的不是滑雪，<error type="replace" category="复句 条件复句" revised="就是" id="10">还是</error>看美丽的景观。这座房子可以满足这两个愿望。价格是２亿日元。考虑到这些优点，可以说是非常便宜的。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

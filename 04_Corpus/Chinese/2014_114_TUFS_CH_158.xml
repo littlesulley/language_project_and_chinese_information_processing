@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_158</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_114_TUFS_CH_158.xml</title>
+    <text>
+      <paragraph>﻿    我觉得<error type="delete" category="表现" revised="" id="1">双方</error>努力地学习和积极地参加课外活动<error type="add" category="副词 范围副词" revised="都" id="2"/>是非常重要<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="3"/>。特别是参加课外活动是必须做的。</paragraph>
+      <paragraph>我觉得学习，看书，讨论，查各种各样的事<error type="delete" category="标点符号" revised="" id="4">，</error>等等是学生的本分，要尽力地<error type="add" category="动词 趋向动词 句式 连动句" revised="去" id="5"/>做。但是<error type="delete" category="标点符号" revised="" id="6">，</error>学生<error type="add move" category="短语 介词短语" revised="在学习以外的时候" id="7"/><error type="add move" category="副词 关联副词" revised="也" id="8"/>应该<error type="replace move" category="短语 介词短语" revised="跟别人交流" id="9">交流跟别人</error><error type="delete" category="助词 其他助词" revised="" id="10">们</error><error type="delete move" category="副词 关联副词" revised="" id="11">也</error><error type="delete move" category="短语 介词短语" revised="" id="12">以外学习的时候</error>。比如说，参加学校内的运动，课外活动，打工，委员会<error type="delete" category="标点符号" revised="" id="13">，</error>等等。参加这样的活动的时候<error type="replace" category="标点符号" revised="，" id="14">。</error>人们可以学习礼貌，<error type="replace" category="动词" revised="了解" id="15">思考</error>别人的心情，<error type="add" category="补语 结果补语" revised="学会" id="16"/><error type="add" category="动词" revised="负" id="17"/>责任，<error type="delete" category="表现" revised="" id="18">多么贵重</error>跟朋友<error type="delete" category="助词 结构助词" revised="" id="19">的</error><error type="add" category="动词" revised="保持" id="20"/>联系。并且，<error type="replace move" category="短语 介词短语" revised="跟很多人交流" id="21">交流跟很多的人</error><error type="delete" category="表现 短语 “的”字短语" revised="" id="22">的事</error><error type="add" category="动词 能愿动词" revised="可以" id="23"/>大开眼界。我觉得<error type="add move" category="短语 介词短语" revised="对学生来说" id="24"/>知道各种各样的人的想法是最重要<error type="add" category="助词 结构助词" revised="的" id="25"/>事情之一<error type="delete move" category="短语 介词短语" revised="" id="26">对学生</error>。因为<error type="delete" category="标点符号" revised="" id="27">，</error>他们应该知道世界是很大<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="28"/>，自己的常识不是<error type="replace" category="代词 指示代词" revised="所有的" id="29">全</error>人的常识。因为这样的理由，我觉得学生应该<error type="add" category="副词 情态副词" revised="多" id="30"/>参加课外活动。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

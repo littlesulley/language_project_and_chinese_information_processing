@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_076</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>3</school_year>
+      <month_of_study>26</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_125_TUFS_CH_076.xml</title>
+    <text>
+      <paragraph>我<error type="add" category="动词 能愿动词" revised="要" id="1"/>来介绍一下枥木县。枥木县位于北关东，从东京坐新干线一个小时左右就<error type="add" category="动词 能愿动词" revised="可以" id="2"/><error type="replace" category="表现 动词" revised="到达" id="3">达到</error>。枥木县有三个新干线<error type="replace" category="表现 名词" revised="的停靠站" id="4">车站</error>；小山、宇都宫<error type="replace" category="标点符号 连词" revised="和" id="5">、</error>那须盐原，所以交通很方便。枥木县最有名的是<error type="add" category="短语 量词短语" revised="一种" id="6"/><error type="replace" category="表现 短语 “的”字短语" revised="叫“とちおとめ(tochiotome)的草莓" id="7">草莓叫“とちおとめ(tochiotome)”</error>和宇都宫的饺子。枥木县的草莓生产量<error type="add" category="动词 关系动词" revised="是" id="8"/>全国最多<error type="add" category="助词 语气助词" revised="的" id="9"/>，“とちおとめ”是<error type="add" category="方位词" revised="其中" id="10"/>最有名的草莓的品牌之一。宇都宫市是枥木县的<error type="replace" category="表现 名词" revised="县政府" id="11">县厅</error>所在地，饺子的消费量<error type="add" category="副词 关联副词" revised="也" id="12"/><error type="add" category="动词 关系动词" revised="是" id="13"/>全国的城市里最多<error type="add" category="助词 语气助词" revised="的" id="14"/>。在宇都宫饺子店特别多，能品尝<error type="add" category="补语 结果补语" revised="到" id="15"/>各种各样的水饺、锅贴等等。宇都宫站<error type="add" category="方位词" revised="里" id="16"/>还有<error type="add" category="短语 量词短语" revised="一座" id="17"/>“饺子像”，来到宇都宫的人<error type="delete" category="助词 其他助词" revised="" id="18">们</error>常常<error type="add" category="动词 能愿动词" revised="会" id="19"/>拍照留念。</paragraph>
+      <paragraph>我<error type="add" category="副词 关联副词" revised="还" id="20"/><error type="add" category="动词 能愿动词" revised="想" id="21"/>推荐的<error type="add" category="短语 量词短语" revised="一个" id="22"/>地方是那须盐原。那里有那须山，秋天能看到很漂亮的红叶。那须山是一座火山，所以周围有很多温泉，盐原温泉是很有名的。那须还有很多牧场，<error type="add" category="短语 介词短语" revised="在那里" id="23"/>我们可以参加挤牛奶<error type="add" category="助词 结构助词" revised="的" id="24"/>体验<error type="add" category="名词" revised="活动" id="25"/>，还能<error type="replace" category="表现 动词" revised="品尝" id="26">品味</error><error type="add" category="补语 结果补语" revised="到" id="27"/>非常新鲜的牛奶。牛奶的生产量全国最多的是北海道，其实第二是枥木县。在牧场<error type="add" category="方位词 短语 方位短语" revised="里" id="28"/>卖的牛奶<error type="replace" category="表现 名词" revised="霜激凌" id="29">软冰激凌</error><error type="add" category="主语 句式 主谓谓语句" revised="味道" id="30"/>很浓厚，特别好吃。那须还有一个有名的动物园<error type="add" category="标点符号" revised="，" id="31"/>叫“那须动物王国”，在那里我们可以跟很可爱的羊驼一起玩儿。</paragraph>
+      <paragraph><error type="replace" category="连词" revised="像这样" id="32">如此</error>，枥木县<error type="replace" category="句式 存现句" revised="有美丽的大自然和很多好吃的东西" id="33">美丽的自然和好吃的东西很丰富</error>，大家务必<error type="add" category="动词 能愿动词" revised="要" id="34"/>到枥木县去玩儿。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

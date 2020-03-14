@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_154</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>16</month_of_study>
+      <educational_language></educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_109_TUFS_CH_154.xml</title>
+    <text>
+      <paragraph>﻿    大学的学生生活很自由，所以我们想做什么，就能做什么。反过来说，如果我们没有想做的事，<error type="add" category="连词 复句 条件复句" revised="那么" id="1"/>也许什么也<error type="replace" category="副词 否定副词" revised="没" id="2">不</error>做就毕业<error type="add" category="助词 语气助词" revised="了" id="3"/>。可是，那<error type="add" category="副词 关联副词" revised="就" id="4"/>太可惜了，我们在<error type="replace" category="表现" revised="大学" id="5">学生</error>生活中，应该学习。我们从大学毕业成为社会的一员以后，就没有<error type="add" category="介词" revised="像" id="6"/>大学生那么多的学习时间了。很多人从大学毕业后，后悔<error type="replace" category="代词 人称代词" revised="他们" id="7">他</error><error type="add" category="副词 时间副词" revised="还" id="8"/><error type="add" category="动词 关系动词" revised="是" id="9"/>学生的时候，没有认真地学习。还有，如果<error type="replace" category="表现" revised="上大学" id="10">学生</error>的时候我们努力<error type="delete" category="助词 结构助词" revised="" id="11">地</error>学习的话，将来<error type="add" category="动词 能愿动词" revised="会" id="12"/><error type="replace" category="介词" revised="对" id="13">为</error>自己特别有用。因为<error type="delete" category="动词 存现动词" revised="" id="14">有</error>这样<error type="add" category="助词 结构助词" revised="的" id="15"/>理由<error type="add" category="标点符号" revised="，" id="16"/>我觉得学生生活<error type="add" category="动词 能愿动词" revised="应该" id="17"/><error type="replace" category="短语 介词短语" revised="以学习为主" id="18">为主学习</error>。</paragraph>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

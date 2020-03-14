@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_165</id>
+      <nationality></nationality>
+      <sex></sex>
+      <age></age>
+      <first_language></first_language>
+      <major></major>
+      <school_year></school_year>
+      <month_of_study></month_of_study>
+      <educational_language></educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_139_TUFS_CH_165.xml</title>
+    <text>
+      <paragraph>﻿我<error type="add" category="动词 趋向动词" revised="来" id="1"/>给<error type="replace" category="代词 人称代词" revised="你们" id="2">你</error>介绍<error type="add" category="补语 数量补语" revised="一下" id="3"/>我的老家。我的老家是<error type="add" category="动词 存现动词" revised="在" id="4"/>北海道的函馆市。函馆市是北海道南部的一个港口城市。函馆市有很多特产。第一个是海鲜。函馆市的渔业相当发达<error type="replace" category="标点符号" revised="，" id="5">。</error>自古以来就是<error type="add" category="短语 量词短语" revised="一个" id="6"/>优良的渔港。函馆车站附近有个函馆早市，那里云集了<error type="add" category="代词 指示代词" revised="所有" id="7"/>函馆又新鲜又美味的食物。函馆早市从清晨五点开市，一直营业到中午。函馆早市的“盖饭横丁市场”里聚集了20几家餐厅。那里<error type="delete" category="助词 结构助词" revised="" id="8">的</error><error type="add" category="动词 存现动词 句式 存现句" revised="有" id="9"/><error type="add" category="短语 量词短语" revised="一种" id="10"/>在米饭上放<error type="add" category="补语 趋向补语" revised="上" id="11"/>生鱼片的“海鲜盖饭”<error type="add" category="标点符号" revised="，" id="12"/><error type="add" category="副词 程度副词" revised="很" id="13"/>值得吃。第二个是只有函馆市<error type="add" category="副词 关联副词" revised="才" id="14"/><error type="add" category="动词 存现动词" revised="有" id="15"/>的汉堡店“LUCKY　PIERROT”。店里的东西吃起来<error type="replace" category="表现 形容词" revised="很有趣" id="16">热热闹闹</error><error type="delete" category="助词 语气助词" revised="" id="17">的</error>，既有差不多<error type="add" category="介词" revised="像" id="18"/>圆桌那么大<error type="delete" category="表现" revised="" id="19">提到</error>的八人份的咖喱饭，又有超大型的汉堡。店里使用的是当天产的鸡蛋，当天<error type="replace" category="动词" revised="送" id="20">发</error>来的蔬菜<error type="delete" category="标点符号" revised="" id="21">，</error><error type="add" category="连词" revised="和" id="22"/>亲手和的肉馅，<error type="add" category="连词 复句 递进复句" revised="而且" id="23"/>没有使用任何防腐剂。函馆人大概<error type="add" category="副词 范围副词" revised="都" id="24"/>不去麦当劳<error type="add" category="标点符号" revised="，" id="25"/><error type="add" category="连词 复句 转折复句" revised="而" id="26"/><error type="replace" category="副词 范围副词" revised="只" id="27">就</error>去“LUCKY　PIERROT”吃汉堡。还有不得不提<error type="delete" category="补语 结果补语" revised="" id="28">到</error>的是从函馆山<error type="replace" category="动词 能愿动词" revised="可以" id="29">可</error><error type="replace" category="表现 动词" revised="瞭望" id="30">一眼望到</error>整个函馆市的夜景。函馆市的夜景被日本人称为「百万元<error type="add" category="助词 结构助词" revised="的" id="31"/>夜景」。跟香港，那不勒斯一起被称为“世界三大夜景”。坐<error type="replace" category="表现 名词" revised="缆车" id="32">索道</error><error type="add" category="副词 范围副词" revised="只" id="33"/><error type="add" category="动词" revised="要" id="34"/>三分钟就<error type="add" category="动词 能愿动词" revised="可以" id="35"/><error type="replace" category="表现 动词" revised="到达" id="36">达到</error>山顶。<error type="add" category="连词 复句 条件复句" revised="如果" id="37"/><error type="add" category="主语" revised="你们" id="38"/>去函馆旅游的话<error type="add" category="标点符号" revised="，" id="39"/>应该去看<error type="add" category="补语 数量补语" revised="一下" id="40"/>。    </paragraph>
+    </text>
+  </body>
+</composition>

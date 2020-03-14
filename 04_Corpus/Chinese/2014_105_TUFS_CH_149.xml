@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_149</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_105_TUFS_CH_149.xml</title>
+    <text>
+      <paragraph>﻿    学生不<error type="add" category="副词 范围副词" revised="仅" id="1"/>应该专心学习，还<error type="replace" category="动词 能愿动词" revised="应该" id="2">要</error>参加课外活动。<error type="delete" category="介词" revised="" id="3">当</error>成为社会的一员<error type="add" category="助词 其他助词" revised="所" id="4"/>需要的能力<error type="add" category="动词 能愿动词" revised="可以" id="5"/><error type="add" category="介词" revised="通过" id="6"/>参加课外活动<error type="replace" category="表现" revised="得到提高" id="7">好体会得多</error>。还有，只专心学习不能做<error type="add" category="补语 结果补语" revised="到" id="8"/>的事，课外活动就<error type="add" category="副词 范围副词" revised="都" id="9"/>可以做<error type="add" category="补语 结果补语" revised="到" id="10"/>。</paragraph>
+      <paragraph><error type="replace" category="连词" revised="第一，" id="11">一个是</error>跟<error type="add" category="代词 指示代词" revised="其他的" id="12"/>成员协力一起<error type="replace" category="表现 动词" revised="完成" id="13">做完</error><error type="replace" category="表现 短语 量词短语" revised="一件事" id="14">什么</error>。虽说在学习方面也能跟朋友协力，但是那<error type="replace" category="副词 关联副词" revised="还" id="15">就</error><error type="add" category="动词 关系动词 句式 强调句" revised="是" id="16"/>有<error type="replace" category="表现 名词" revised="限度" id="17">限极</error><error type="replace" category="助词 语气助词 句式 强调句" revised="的" id="18">了</error>。参加课外活动就<error type="add" category="动词 能愿动词" revised="要" id="19"/>跟更多<error type="add" category="助词 结构助词" revised="的" id="20"/>人协力，加上如果有<error type="replace" category="补语 可能补语" revised="自己办不到" id="21">不能自己办</error>的事你<error type="replace" category="副词 关联副词" revised="还" id="22">就</error><error type="add" category="动词 能愿动词" revised="能" id="23"/>学到怎么请教<error type="replace" category="表现 名词" revised="学长" id="24">先辈</error>，如果有人不知道应该怎么办你就<error type="add" category="动词 能愿动词" revised="可以" id="25"/>学到怎么<error type="replace" category="及物动词" revised="指导别人" id="26">给别人指导</error>，通过协力你也可以知道<error type="add" category="宾语" revised="怎么和人" id="27"/>沟通。</paragraph>
+      <paragraph><error type="replace" category="连词" revised="第二，" id="28">一个是</error><error type="add" category="主语" revised="你" id="29"/><error type="add" category="动词 能愿动词" revised="可以" id="30"/><error type="add" category="动词" revised="学习" id="31"/>怎么跟<error type="replace" category="表现 名词" revised="学长学弟" id="32">先辈晚辈</error>交流。你可以<error type="replace" category="表现 短语 介词短语" revised="在最近的距离" id="33">最在身边</error>体会这种交流。只专心学习不能培养跟不同期的人怎么交流。据说，在学校<error type="replace" category="表现" revised="有问题" id="34">闹出</error>的学生中有很多<error type="add" category="动词 关系动词 句式 强调句" revised="是" id="35"/>不参加课外活动的。</paragraph>
+      <paragraph><error type="replace" category="连词" revised="第三，" id="36">一个是</error>决定目标，为了<error type="replace" category="动词" revised="达到" id="37">完成</error><error type="add" category="代词 指示代词" revised="这个" id="38"/>目标<error type="add" category="副词 情态副词" revised="不断" id="39"/>努力，<error type="add" category="连词" revised="并且" id="40"/>培养自立精神。参加课外活动<error type="add" category="助词 其他助词 复句 条件复句" revised="的话" id="41"/>你就<error type="add" category="动词 能愿动词" revised="会" id="42"/>有<error type="delete" category="助词 时态助词" revised="" id="43">了</error><error type="delete" category="代词 疑问代词" revised="" id="44">什么</error>目标，<error type="add" category="连词 复句 递进复句" revised="并" id="45"/>为了<error type="add" category="动词" revised="达成" id="46"/>目标<error type="add" category="连词" revised="而" id="47"/><error type="add" category="副词 情态副词" revised="努力地" id="48"/>练习。在练习之际你<error type="add" category="副词 语气副词" revised="可能" id="49"/><error type="replace" category="动词 能愿动词" revised="会" id="50">要</error>发现什么<error type="replace" category="名词" revised="问题" id="51">课题</error>，<error type="add" category="连词 复句 承接复句" revised="然后" id="52"/>想<error type="add" category="动词 能愿动词" revised="要" id="53"/>怎么办才<error type="add" category="动词 能愿动词" revised="能" id="54"/>解决<error type="delete" category="表现" revised="" id="55">，进行</error>。<error type="replace" category="介词" revised="通过" id="56">经过</error>这样的经验你可以培养管理自己的能力。成为社会的一员以后，这种能力十分重要。</paragraph>
+      <paragraph>还有<error type="add" category="数词" revised="一" id="57"/>个<error type="add" category="名词" revised="理由" id="58"/>是<error type="add" category="主语 代词 人称代词" revised="我们" id="59"/><error type="add" category="动词 能愿动词" revised="可以" id="60"/>越过班，年级和学校跟各种各样的人交流，<error type="replace" category="动词 状态动词" revised="了解" id="61">知道</error><error type="replace" category="代词 指示代词" revised="各种" id="62">各样</error>的意见，<error type="add" category="连词 复句 承接复句" revised="这样" id="63"/>对你<error type="add" category="动词 能愿动词" revised="会" id="64"/>有很大的刺激。学习是自己<error type="add" category="副词 情态副词" revised="一个人" id="65"/>做的，但是课外活动是跟别人一起做的。在协力之际你可以跟<error type="replace" category="表现 名词" revised="学长与学弟" id="66">先辈，晚辈</error>交流，还可以有机会跟别的学校的人交流。<error type="replace" category="连词" revised="那样的话" id="67">那</error>你<error type="add" category="副词 关联副词" revised="就" id="68"/><error type="add" category="动词 能愿动词" revised="可以" id="69"/>从各样<error type="add" category="助词 结构助词" revised="的" id="70"/>人<error type="add" category="代词 指示代词" revised="那里" id="71"/>得到<error type="replace" category="表现 代词 指示代词" revised="各种" id="72">各样</error>的意见和知识。这种经验<error type="add" category="动词 能愿动词" revised="会" id="73"/><error type="add" category="动词" revised="带" id="74"/>给你对<error type="replace" category="名词" revised="课外活动" id="75">活动</error>的活力。</paragraph>
+      <paragraph>参加课外活动比只学习<error type="replace" category="动词 能愿动词" revised="能" id="76">会</error>学到<error type="replace" category="句式 比较句" revised="更多的东西" id="77">○得多</error>。课外活动是只<error type="add" category="动词 存现动词" revised="有" id="78"/><error type="add move" category="短语 介词短语" revised="在学校" id="79"/><error type="add" category="副词 关联副词" revised="才" id="80"/>能<error type="delete move" category="短语 介词短语" revised="" id="81">在学校</error>做的，<error type="add" category="连词 复句 因果复句" revised="所以" id="82"/>学生们应该<error type="add" category="副词 情态副词" revised="踊跃" id="83"/>参加。</paragraph>
+      <paragraph/>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_124</id>
+      <nationality>日本</nationality>
+      <sex>男</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_103_TUFS_CH_124.xml</title>
+    <text>
+      <paragraph>﻿    我认为大学生应该<error type="replace" category="表现 动词" revised="专注" id="1">贯注</error>在课外活动上。我有几个理由。</paragraph>
+      <paragraph>第一，日本<error type="delete" category="助词 结构助词" revised="" id="2">的</error><error type="replace" category="表现 名词" revised="已经工作的人" id="3">社会人</error>没有空闲时间，日本人的劳动时间很长，休息的<error type="replace" category="名词" revised="日子" id="4">日数</error>很少。所以日本的<error type="replace" category="表现 名词" revised="上班族" id="5">社会人</error>常常没有<error type="replace" category="表现 动词" revised="玩儿" id="6">游戏</error>的时间，<error type="replace" category="表现 名词" revised="大学时代" id="7">大学生的时代</error>是<error type="delete move" category="短语 “的”字短语" revised="" id="8">最后的</error>可以<error type="add" category="副词 情态副词" revised="尽情地" id="9"/><error type="replace" category="表现 动词" revised="游玩" id="10">游戏</error>的<error type="add move" category="短语 “的”字短语" revised="最后的" id="11"/>时间。</paragraph>
+      <paragraph>第二，在大学学习<error type="add" category="补语 结果补语" revised="到" id="12"/>的知识不知道<error type="replace" category="介词" revised="对" id="13">在</error>将来有什么影响<error type="delete" category="助词 语气助词" revised="" id="14">吧</error>。可是，在课外活动<error type="add" category="方位词 短语 方位短语" revised="中" id="15"/><error type="replace" category="介词" revised="通过" id="16">获得</error>实践，<error type="add" category="主语 代词 人称代词" revised="我们" id="17"/><error type="add" category="动词 能愿动词" revised="可以" id="18"/><error type="add" category="动词" revised="获得" id="19"/><error type="replace" category="表现 形容词" revised="实用" id="20">速效</error>的知识。</paragraph>
+      <paragraph>第三，在日本找工作的时候，公司的人<error type="add" category="动词 能愿动词" revised="会" id="21"/><error type="add move" category="动词 状态动词" revised="认为" id="22"/>课外活动的内容比学习的内容<error type="delete move" category="动词 状态动词" revised="" id="23">认为</error>更重要。</paragraph>
+      <paragraph>根据<error type="add" category="名词 方位词" revised="以上" id="24"/>这三个理由，我<error type="replace" category="动词 状态动词" revised="认为" id="25">想</error>课外活动比学习更重要。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

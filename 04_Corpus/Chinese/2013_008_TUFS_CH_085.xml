@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_085</id>
+      <nationality></nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language></first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language></educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS/008_TUFS_CH_085.xml</title>
+    <text>
+      <paragraph>上次我们讨论的题目是“为了保持健康你常吃什么？”金泽，熊谷和我谈了<error type="replace" category="补语 数量补语" revised="一下" id="1">一点</error>，就觉得我们不知道食物的功能。所以我们决定<error type="add" category="副词 情态副词" revised="各自" id="2"/>查了以后再集合<error type="add" category="表现" revised="来讨论" id="3"/>。我们又集合谈了三十分钟，才知道食物的作用。为了保持健康，金泽常吃番茄，熊谷常<error type="replace" category="动词" revised="喝" id="4">吃</error>豆浆。番茄有很多维他命，豆浆有很多蛋白质。维他命<error type="add" category="动词 能愿动词" revised="能" id="5"/>预防感冒，<error type="add" category="副词 时间副词" revised="还" id="6"/><error type="add" category="动词 能愿动词" revised="能" id="7"/>保持美丽的肌肤，促进血液循环。蛋白质有恢复疲劳的作用，<error type="replace" category="连词" revised="而且" id="8">而</error>如果我们不太摄取蛋白质<error type="add" category="复句 条件复句" revised="的话" id="9"/>，<error type="replace" category="表现" revised="免疫力会降低" id="10">爱降低免疫</error>。为了保持健康<error type="add" category="标点符号" revised="，" id="11"/>我常吃纳豆。<error type="replace" category="表现" revised="一般来说" id="12">一般地说</error>，它对血液很好<error type="add" category="标点符号" revised="，" id="13"/>因为它<error type="add" category="动词 能愿动词" revised="能" id="14"/>熔化血栓。血栓是血液的<error type="replace" category="名词" revised="凝块" id="15">块</error>。但这是不<error type="replace" category="形容词" revised="真实" id="16">真</error>的。纳豆有纳豆激酶。纳豆激酶比乳酸菌调整肠胃的作用大，<error type="replace" category="连词" revised="而且" id="17">而</error>作用的时间长。它比大豆有<error type="replace" category="副词 程度副词" revised="更" id="18">很</error>多<error type="add" category="助词 结构助词" revised="的" id="19"/>维他命B和氨基酸。这<error type="add" category="副词 关联副词" revised="才" id="20"/>是真的<error type="replace" category="名词" revised="功效" id="21">功能</error>。讨论以后我们知道食物的具体的功能<error type="add" category="助词 语气助词" revised="了" id="22"/>。我觉得这是很有意义的事。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

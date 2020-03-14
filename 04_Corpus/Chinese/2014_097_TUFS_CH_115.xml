@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_115</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_097_TUFS_CH_115.xml</title>
+    <text>
+      <paragraph>﻿    大学生应该重视学习。</paragraph>
+      <paragraph>在上次<error type="add" category="助词 结构助词" revised="的" id="1"/>课上，我们讨论<error type="add" category="助词 时态助词" revised="了" id="2"/>大学生应该重视学习还是课外活动。我觉得大学生活中，大学生应该最重视学习。我有三个理由。首先，大学是为了学习的<error type="replace" category="名词 处所名词" revised="场所" id="3">机关</error>，不是为了课外活动的<error type="replace" category="名词 处所名词" revised="场所" id="4">机关</error>。基本上学生们想学习才来大学。所以重视学习是<error type="replace" category="表现" revised="理所当然" id="5">当然</error>的。<error type="add" category="连词 复句 条件复句" revised="如果" id="6"/><error type="add move" category="副词 范围副词" revised="只" id="7"/><error type="replace" category="表现 动词" revised="从事" id="8">做</error><error type="delete move" category="副词 范围副词" revised="" id="9">只</error>课外活动，<error type="add" category="连词 复句 条件复句" revised="那" id="10"/><error type="add" category="副词 关联副词" revised="就" id="11"/>不用<error type="replace" category="表现 动词" revised="上" id="12">去</error>大学<error type="add" category="助词 语气助词" revised="了" id="13"/>。可以说<error type="add" category="动词 关系动词" revised="是" id="14"/>白费<error type="add" category="名词 宾语" revised="时间" id="15"/>。第二，就业以后我们恐怕<error type="replace" category="动词 能愿动词" revised="会" id="16">要</error>非常忙，没有学习的时间。在假日你们可能想休息或者做自己<error type="replace" category="表现 名词" revised="喜欢做的事" id="17">的爱好</error>。大部分的课外活动<error type="add" category="副词 范围副词" revised="都" id="18"/>是爱好<error type="replace" category="标点符号" revised="，" id="19">。</error>所以就业以后也可以做。但是大学生有的<error type="replace" category="表现 名词" revised="时间" id="20">空儿</error>比较多，<error type="add move" category="动词 能愿动词" revised="应该" id="21"/>趁这个期间<error type="delete move" category="动词 能愿动词" revised="" id="22">应该</error><error type="add" category="副词 情态副词" revised="多" id="23"/>学习。最后我做了<error type="add" category="短语 量词短语" revised="一个" id="24"/>调查，这个调查<error type="replace" category="及物动词" revised="询问了大约1000个工作人员" id="25">对大约1000个工作人员，问</error><error type="add" category="标点符号" revised="：" id="26"/>“你对你的大学生活后悔吗？”<error type="add" category="动词 存现动词" revised="有" id="27"/>60%多<error type="add" category="助词 结构助词" revised="的" id="28"/>人回答“后悔”<error type="replace" category="标点符号" revised="，" id="29">、</error>然后回答“后悔”的理由<error type="delete" category="表现" revised="" id="30">再问“你后悔什么？”</error><error type="add" category="方位词 短语 介词短语" revised="中" id="31"/>第一位是学习，第二位是语言学习。所以根据这个调查我们能<error type="replace" category="表现 动词 状态动词" revised="知道" id="32">明白</error>很多人觉得在大学生活中学习<error type="replace" category="表现 形容词" revised="最重要" id="33">就好了</error>。为了<error type="add" category="介词" revised="在" id="34"/>成为社会<error type="add" category="助词 结构助词" revised="的" id="35"/>一员以后，<error type="add" category="介词" revised="为了" id="36"/><error type="replace" category="动词" revised="避免1" id="37">免</error>这样的后悔，在大学<error type="replace" category="表现 名词" revised="期间" id="38">生活</error>我们应该<error type="add" category="副词 程度副词" revised="更" id="39"/>重视学习。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

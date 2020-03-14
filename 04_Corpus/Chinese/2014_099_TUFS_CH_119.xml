@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_119</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_099_TUFS_CH_119.xml</title>
+    <text>
+      <paragraph>﻿    我觉得在大学学习是一<error type="replace" category="量词" revised="件" id="1">个</error>很重要的事。</paragraph>
+      <paragraph><error type="replace move" category="短语 介词短语" revised="对这个想法我" id="2">我对这个想法</error>有<error type="replace" category="代词 指示代词" revised="几个" id="3">些</error>理由。<error type="replace" category="连词" revised="第一" id="4">一个是</error>，大学生们来大学的<error type="replace" category="表现 名词" revised="目的" id="5">目标</error>是<error type="replace" category="介词" revised="为了" id="6">为</error>学习。如果<error type="delete" category="标点符号" revised="" id="7">，</error>我们<error type="replace" category="补语 可能补语" revised="拿不到" id="8">没取得</error>学分，<error type="replace" category="介词" revised="为了" id="9">为</error><error type="replace move" category="短语 介词短语" revised="从大学毕业" id="10">毕业从大学</error>一定要<error type="add" category="动词" revised="花" id="11"/>很长<error type="add" category="助词 结构助词" revised="的" id="12"/>时间。可以说，<error type="add" category="连词 复句 条件复句" revised="如果" id="13"/><error type="add" category="副词 范围副词" revised="只" id="14"/><error type="add" category="动词 关系动词" revised="是" id="15"/><error type="replace" category="介词" revised="为了" id="16">为</error><error type="replace" category="表现 动词" revised="从事" id="17">做</error>课外活动，<error type="add" category="连词 复句 条件复句" revised="那" id="18"/><error type="add" category="副词 关联副词" revised="就" id="19"/>不用特地<error type="replace" category="动词 趋向动词" revised="来" id="20">去</error>大学<error type="add" category="句式 连动句" revised="学习" id="21"/><error type="add" category="助词 语气助词" revised="了" id="22"/>。就业以后的人们常常说他们有<error type="replace" category="表现 形容词" revised="足够" id="23">十分</error>的时间<error type="replace" category="表现 动词" revised="从事" id="24">做</error>他们的课外活动，比如说用工作以后的时间。<error type="replace" category="连词" revised="第二" id="25">一个是</error>，从2015年<error type="add" category="助词 其他助词 短语 介词短语" revised="起" id="26"/>，日本的企业<error type="add" category="动词 状态动词" revised="开始" id="27"/>重视大学生<error type="delete" category="助词 其他助词" revised="" id="28">们</error>的成绩。<error type="add" category="连词 复句 转折复句" revised="虽然" id="29"/>企业<error type="add" category="副词" revised="也" id="30"/><error type="add" category="动词 能愿动词" revised="会" id="31"/>考评课外活动，但是只<error type="add" category="动词" revised="参加" id="32"/>课外活动是不<error type="replace" category="形容词" revised="够" id="33">足</error>的，成绩<error type="add" category="副词 语气副词" revised="才" id="34"/>是最重要的。有些企业觉得在大学只做课外活动的人<error type="add" category="动词 关系动词" revised="是" id="35"/><error type="add" category="副词 时间副词" revised="在" id="36"/><error type="replace" category="动词" revised="浪费" id="37">白费</error>国民的<error type="replace" category="表现 名词" revised="税金" id="38">税</error><error type="replace" category="标点符号" revised="。" id="39">，</error><error type="replace" category="连词" revised="第三" id="40">一个是</error>，<error type="add" category="介词" revised="根据" id="41"/>日本的<error type="add" category="短语 量词短语" revised="一个" id="42"/><error type="replace" category="名词" revised="网络" id="43">网的</error>上<error type="add" category="助词 结构助词" revised="的" id="44"/>调查，有人说就业以后，人们常常<error type="add" category="动词 能愿动词" revised="会" id="45"/>有后悔<error type="add" category="短语 “的”字短语" revised="的事" id="46"/>。<error type="add" category="名词 方位词" revised="其中" id="47"/>第一位是在大学的学习<error type="delete" category="助词 结构助词" revised="" id="48">的</error>时间<error type="add" category="表现" revised="太少" id="49"/>。第二位是他们没有学习外国语的时间。<error type="replace" category="连词 复句 转折复句" revised="而" id="50">不过</error><error type="delete" category="标点符号" revised="" id="51">，</error>没有时间做课外活动<error type="add" category="副词 范围副词" revised="只" id="52"/>是第六位<error type="delete" category="助词 语气助词" revised="" id="53">的</error>。事实上，<error type="replace" category="表现 名词" revised="学长" id="54">先辈</error>们<error type="add" category="副词 范围副词" revised="都" id="55"/>说，在大学<error type="delete" category="标点符号" revised="" id="56">，</error>学习是十分重要<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="57"/>。最后的理由是，因为<error type="delete" category="标点符号" revised="" id="58">，</error>最近日本的企业<error type="replace" category="表现 动词" revised="开始展开" id="59">开展</error>国际化，所以就业以后，员工<error type="add" category="助词 其他助词" revised="们" id="60"/>要<error type="add" category="动词 能愿动词" revised="会" id="61"/>说英语等等。但是<error type="delete" category="标点符号" revised="" id="62">，</error>日本<error type="add" category="助词 结构助词" revised="的" id="63"/>大学生<error type="delete" category="助词 其他助词" revised="" id="64">们</error>比美国的<error type="add" category="表现 名词" revised="大学生" id="65"/><error type="delete" category="标点符号" revised="" id="66">，</error>学习的时间<error type="replace" category="副词 程度副词" revised="还要" id="67">很</error>少。为了<error type="replace" category="表现 动词" revised="迎合" id="68">参加</error>这样的国际化，我们一定要努力学习。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

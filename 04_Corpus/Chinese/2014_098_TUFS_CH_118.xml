@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_118</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>21</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>14</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_098_TUFS_CH_118.xml</title>
+    <text>
+      <paragraph>﻿    我参加<error type="add" category="助词 时态助词" revised="了" id="1"/><error type="replace" category="表现 名词" revised="划船队" id="2">船队</error>，所以我为了课外活动花费<error type="add" category="助词 时态助词" revised="了" id="3"/>很多时间。队员<error type="add" category="助词 其他助词" revised="们" id="4"/>都<error type="add" category="副词 程度副词" revised="很" id="5"/>努力地练习，但是我们对学习也<error type="add" category="副词 程度副词" revised="很" id="6"/>努力。<error type="replace" category="表现 名词" revised="划船队" id="7">船队</error>的<error type="replace" category="表现 名词" revised="学长" id="8">先辈</error><error type="add" category="助词 其他助词" revised="们" id="9"/>都说只拼命努力地参加课外活动不好，学生<error type="add" category="动词 能愿动词" revised="应该" id="10"/>要<error type="replace" category="介词 句式 “把”字句" revised="把" id="11">使</error>课外活动与学习相结合，我觉得<error type="replace" category="表现 名词" revised="划船队" id="12">船队</error>的活动<error type="replace" category="形容词" revised="很忙碌" id="13">大变化</error>，但是如果只是<error type="replace" category="表现" revised="忙这些不学习" id="14">这些就够不了</error>，毕业后我一定<error type="add" category="动词 能愿动词" revised="会" id="15"/>后悔<error type="add" category="主语 代词 人称代词" revised="自己" id="16"/>没完成<error type="replace" category="名词" revised="学业" id="17">学习</error>。<error type="replace" category="名词" revised="学长" id="18">先辈</error><error type="replace move" category="副词 情态副词" revised="那样说" id="19">说那样</error>，所以我要<error type="replace move" category="副词 情态副词" revised="像他们说的一样去做" id="20">做他们说的一样</error>，然后要完成<error type="replace" category="名词" revised="学业" id="21">学习</error>。我<error type="replace" category="不及物动词" revised="上" id="22">入学</error>这个大学的理由是我想学习中文，将来会说中文，和能<error type="replace move" category="短语 介词短语" revised="跟很多人说" id="23">说跟很多人</error><error type="add" category="宾语" revised="中文" id="24"/>。所以我<error type="delete" category="动词 能愿动词" revised="" id="25">能</error><error type="add" category="动词 趋向动词 句式 连动句" revised="来" id="26"/><error type="add" category="动词" revised="说" id="27"/>一下对大学生更重要的<error type="delete" category="名词" revised="" id="28">东西</error>是学习的理由。</paragraph>
+      <paragraph>第一，我上<error type="add" category="助词 结构助词" revised="的" id="29"/><error type="add" category="动词 关系动词" revised="是" id="30"/>国立大学，所以<error type="add" category="动词 关系动词" revised="是" id="31"/><error type="add" category="动词" revised="用" id="32"/>国民的税金<error type="delete" category="“被”字句" revised="" id="33">，被用我了</error><error type="add" category="动词 趋向动词" revised="来" id="34"/>学习<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="35"/>。<error type="add" category="连词 复句 因果复句" revised="因为" id="36"/>没有钱<error type="replace" category="连词" revised="而" id="37">所以</error>不<error type="replace" category="动词 能愿动词" revised="能" id="38">可以</error>去学校的人<error type="delete" category="助词 其他助词" revised="" id="39">们</error>也<error type="add" category="副词 时间副词" revised="在" id="40"/>付税金，既然有<error type="replace" category="代词 指示代词" revised="这样" id="41">那样</error><error type="add" category="助词 结构助词" revised="的" id="42"/>事实，国立大学的大学生<error type="add" category="副词 程度副词" revised="更加" id="43"/>要努力地学习。第二，很多企业<error type="add" category="动词 能愿动词" revised="会" id="44"/>考虑学生的成绩。<error type="replace" category="副词 语气副词" revised="的确" id="45">确实</error><error type="delete" category="动词 关系动词" revised="" id="46">是</error>努力地参加课外活动有<error type="add" category="代词 人称代词" revised="它" id="47"/>重要的<error type="replace" category="表现 名词" revised="意义" id="48">意思</error>，但是企业<error type="add" category="介词 短语 介词短语" revised="在" id="49"/>考评大学时期的成果时，<error type="delete" category="主语" revised="" id="50">我</error>只有课外活动的成果<error type="add" category="副词 关联副词" revised="还" id="51"/><error type="replace" category="形容词" revised="不够" id="52">不十分</error>。为了得到<error type="replace" category="副词 程度副词" revised="更" id="53">很</error>高的评价，我们<error type="add" category="连词 复句 递进复句" revised="不但" id="54"/>要努力地参加课外活动，<error type="add" category="连词 复句 递进复句" revised="而且" id="55"/><error type="add" category="副词 关联副词" revised="还" id="56"/>要<error type="add" category="动词 状态动词" revised="努力" id="57"/>学习。<error type="add" category="连词 复句 让步复句" revised="无论" id="58"/>怎么努力地参加课外活动也<error type="replace" category="补语 可能补语" revised="得不到" id="59">不可以得到</error>最高的评价，因为那样的人<error type="add" category="动词 能愿动词" revised="会" id="60"/>被认为<error type="add" category="动词 关系动词" revised="是" id="61"/><error type="replace" category="动词 能愿动词" revised="无法" id="62">不可以</error>兼顾学习和课外活动<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="63"/>。第三，毕业后的人<error type="add" category="动词 能愿动词" revised="会" id="64"/>后悔<error type="replace" category="副词 否定副词" revised="没" id="65">不</error>努力地学习。学生的本分是学习，所以我们努力地学习是当然<error type="delete" category="动词 能愿动词" revised="" id="66">应该</error>的事儿。</paragraph>
+      <paragraph><error type="replace" category="介词" revised="基于" id="67">与</error><error type="replace" category="表现" revised="以上所述" id="68">上述</error>我觉得学习更重要。</paragraph>
+      <paragraph/>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

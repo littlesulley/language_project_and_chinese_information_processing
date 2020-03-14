@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_136</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>19</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>15</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_087_TUFS_CH_136.xml</title>
+    <text>
+      <paragraph>﻿    我觉得<error type="replace" category="名词 表现" revised="大学生活" id="1">大学生</error>应该<error type="replace" category="介词" revised="以" id="2">住在</error>课外活动<error type="add" category="动词 关系动词" revised="为" id="3"/>中心。</paragraph>
+      <paragraph>我有三<error type="delete" category="量词" revised="" id="4">个</error>大理由。</paragraph>
+      <paragraph>第一个<error type="add" category="名词" revised="理由" id="5"/>是社团是一个<error type="delete" category="形容词" revised="" id="6">好</error>公司的模式。大学的社团大概<error type="add" category="副词 范围副词" revised="都" id="7"/>有经理部，涉外部等等。这样的形式<error type="delete move" category="动词 关系动词 句式 强调句" revised="" id="8">是</error>跟公司<error type="delete" category="助词 结构助词" revised="" id="9">的</error><error type="add move" category="动词 关系动词 句式 强调句" revised="是" id="10"/>一样<error type="add" category="助词 语气助词 句式 强调句" revised="的" id="11"/>。所以我们在大学里可以体验<error type="add" category="代词 指示代词" revised="这种" id="12"/>公司的结构。在社团里<error type="add" category="动词" revised="行" id="13"/>得通的办法不<error type="add" category="动词 关系动词" revised="是" id="14"/>都可以使用，但<error type="add" category="动词 能愿动词" revised="可以" id="15"/>增加自己的经验，对我们的将来应该<error type="add" category="动词 能愿动词" revised="会" id="16"/>有好<error type="add" category="助词 结构助词" revised="的" id="17"/>影响。</paragraph>
+      <paragraph>第二个<error type="add" category="名词" revised="理由" id="18"/>是在社团里我们<error type="replace" category="动词 能愿动词" revised="能" id="19">会</error><error type="replace" category="动词 动作动词" revised="培养" id="20">做</error>社会交际能力<error type="delete" category="补语 趋向补语" revised="" id="21">出来</error>。我觉得在公司的工作里，我们应该跟各种各样的人<error type="replace" category="表现 动词" revised="交流" id="22">交际</error>。其中，应酬话或者交往是很重要的。大学的社团里<error type="add" category="介词" revised="对" id="23"/>这样的应酬话的<error type="replace" category="名词" revised="规矩" id="24">办法</error>应该很严格，我们可以锻炼<error type="add" category="代词 人称代词" revised="自己的" id="25"/>交际能力。还有，我们的大学比较独特，但一般的大学里只有“系”，没有“班”。所以不参加社团的话，<error type="add" category="介词" revised="在" id="26"/>大学里<error type="replace" category="动词 动作动词" revised="交" id="27">做</error>朋友很难。</paragraph>
+      <paragraph>第三个<error type="add" category="名词" revised="理由" id="28"/>是现在在日本没有“<error type="add" category="介词" revised="对" id="29"/>参加课外活动的人有利<error type="add" category="助词 结构助词 短语 “的”字短语" revised="的" id="30"/>规定”。但<error type="delete" category="标点符号" revised="" id="31">，</error>在美国考<error type="delete" category="补语 趋向补语" revised="" id="32">上</error>大学的时候<error type="add" category="标点符号" revised="，" id="33"/><error type="add" category="连词 复句 条件复句" revised="如果" id="34"/>有参加<error type="add" category="助词 时态助词" revised="过" id="35"/>课外活动<error type="add" category="助词 其他助词 复句 条件复句" revised="的话" id="36"/><error type="add" category="动词 能愿动词" revised="会" id="37"/>更有利<error type="delete" category="名词" revised="" id="38">的规定</error>。现在<error type="delete" category="助词 结构助词" revised="" id="39">的</error>世界<error type="replace" category="方位词" revised="上" id="40">中</error>有很多<error type="add" category="名词 主语" revised="国家" id="41"/>模仿<error type="replace" category="名词 宾语" revised="美国" id="42">的</error>，日本也<error type="add" category="副词 时间副词" revised="在" id="43"/>模仿很多美国的规定。<error type="replace" category="连词" revised="虽然" id="44">所以</error>不是绝对<error type="add" category="助词 结构助词" revised="的" id="45"/>，但有模仿这个规定的可能性。</paragraph>
+      <paragraph>因此，我觉得大学生应该参加课外活动<error type="add" category="标点符号" revised="，" id="46"/>好好努力，<error type="delete" category="连词" revised="" id="47">但</error>当然学习也很重要，保持学习和课外活动的平衡<error type="add" category="副词 语气副词" revised="才" id="48"/>是最重要的<error type="delete" category="名词" revised="" id="49">事</error>。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_157</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>20</age>
+      <first_language>日本語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study>27</month_of_study>
+      <educational_language>日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS20142ndsemesterdbchecked/2014_113_TUFS_CH_157.xml</title>
+    <text>
+      <paragraph>﻿    我认为学生生活应该<error type="replace" category="短语 介词短语 不及物动词" revised="以学习为主" id="1">为主学习</error>。为什么呢？我有两个理由。</paragraph>
+      <paragraph>第一<error type="delete" category="动词 关系动词" revised="" id="2">是</error><error type="add" category="标点符号" revised="，" id="3"/>学习是学生的特权。毕业后，我们要工作，没有学习的时间。<error type="replace" category="代词 指示代词" revised="有个" id="4">有的</error>调查说，<error type="add" category="动词 存现动词" revised="有" id="5"/>百分之七十五的成年人后悔他们<error type="add" category="介词" revised="在" id="6"/>学生<error type="replace" category="表现 名词 时间名词" revised="时代" id="7">的时候</error><error type="replace" category="副词 否定副词" revised="没有" id="8">不</error><error type="delete" category="副词 程度副词" revised="" id="9">太</error>认真学习。所以我们在学生<error type="replace" category="表现 名词 时间名词" revised="时代" id="10">的期间</error>应该好好儿学习。</paragraph>
+      <paragraph>第二<error type="delete" category="动词 关系动词" revised="" id="11">是</error><error type="add" category="标点符号" revised="，" id="12"/>学生<error type="replace" category="表现" revised="的本分是学习" id="13">是为了学习的身份</error>。我们的父母为了我们在大学学习付<error type="add" category="助词 时态助词" revised="了" id="14"/><error type="add" category="补语 数量补语" revised="不少" id="15"/><error type="replace" category="表现 名词" revised="学费" id="16">钱</error>，我们才能在大学学习。所以我们应该感谢父母，好好儿学习，孝顺父母。很多人<error type="add" category="动词 能愿动词" revised="会" id="17"/><error type="delete" category="副词 情态副词" revised="" id="18">很容易</error>觉得毕业后在大学学习<error type="add" category="补语 结果补语" revised="到" id="19"/>的事儿可能会成为不太有用的知识。但是通过反复练习的过程，我们<error type="replace" category="动词 能愿动词" revised="能" id="20">会</error>学会从各种各样的视点<error type="add" category="动词 趋向动词 句式 连动句" revised="来" id="21"/>看<error type="replace" category="表现 名词" revised="问题" id="22">事儿</error>的<error type="replace" category="表现 名词" revised="方法" id="23">看法</error>。那样的<error type="replace" category="表现 名词" revised="方法" id="24">看法</error>很重要。<error type="delete" category="表现" revised="" id="25">学生</error>也可以说学生<error type="add" category="表现" revised="时代" id="26"/>是应该培养<error type="replace" category="代词 指示代词" revised="那种" id="27">那样</error>能力的<error type="replace" category="表现 名词" revised="时候" id="28">身份</error>。</paragraph>
+      <paragraph>因此我觉得学生生活应该<error type="replace" category="短语 介词短语 不及物动词" revised="以学习为主" id="29">为主学习</error>。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>

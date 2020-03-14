@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="../../TUFS.xsl"?>
+<composition>
+  <meta>
+    <task></task>
+    <learner_data>
+      <id>TUFS_CH_002</id>
+      <nationality>日本</nationality>
+      <sex>女</sex>
+      <age>23</age>
+      <first_language>中国語</first_language>
+      <major>中国語</major>
+      <school_year>2</school_year>
+      <month_of_study></month_of_study>
+      <educational_language>中国語・日本語</educational_language>
+      <chuken></chuken>
+    </learner_data>
+  </meta>
+  <body>
+    <title>TUFS/009_TUFS_CH_002.xml</title>
+    <text>
+      <paragraph>如果我是课文中的儿子的话，我也会像他一样选择留下来和父亲一起吃饭。从文章的内容可以判断出儿子经常不在家吃饭。虽然子女没有必要天天都要和父母一起吃饭，但我认为留出一些时间陪陪父母是非常重要的。我以前从来也没有考虑过父母的感受，觉得每天都能和他们在一起是理所应当的。可自从我上大学开始一个人住以后，我的想法有了很大的改变。有一次爸爸生病住了院，我在东京又不能赶回去，想陪陪他<error type="add" category="副词 关联副词" revised="却" id="1"/>都陪不了的时候，心里真不是滋味。那时我就反省自己，是不是平时陪父母的时间太少，他们<error type="add" category="副词 关联副词" revised="就" id="2"/>会寂寞呢？前一阵子我听妈妈说，<error type="add" category="复句 因果复句" revised="因为" id="3"/>每天和我见不着面<error type="add" category="复句 因果复句" revised="，所以" id="4"/>他们总觉得有些不放心。所以现在我每天都往家里打电话，多聊聊，让他们放心。一到学校放假的时候，我就会回鹿儿岛和他们多住一段时间。来机场接我的父母就别提有多高兴了。看到他们那欣慰的笑容，我还真有点儿心酸。<error type="add" category="连词" revised="所以" id="5"/><error type="replace" category="动词" revised="下定决心" id="6">决心</error>一有时间就多陪陪他们。通过这些经验我也深深地感触到了 “可怜天下父母心”这句话的意思。我们从小就学习到要孝敬父母。我认为孝敬父母要从小事做起，要好好了解他们，才能真正孝敬他们。</paragraph>
+      <paragraph/>
+      <paragraph/>
+    </text>
+  </body>
+</composition>
