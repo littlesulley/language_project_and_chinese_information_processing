@@ -483,3 +483,17 @@ class Extractor(object):
             f_csv.writerows(stats)
         
         print("*********************Complete**********************")
+
+class Corpus(object):
+    def __init__(self, ref, converter):
+        self.ref = ref
+        self.converter = converter
+
+    def statChar(self, file):
+        pass
+    
+    def addFile(self, file):
+        pass 
+
+    def deleteFile(self, file):
+        pass
