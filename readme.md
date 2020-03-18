@@ -18,7 +18,7 @@ Developed by **Sulley**
 
 ```shell
 pip install --upgrade pip # 更新pip
-pip install xlrd pypinyin chardet docx pyqt5 jieba xmltodict # 安装依赖包
+pip install xlrd pypinyin chardet docx pyqt5 jieba lxml # 安装依赖包
 ```
 
 ## 使用说明

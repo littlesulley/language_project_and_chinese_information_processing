@@ -38,8 +38,8 @@ class Window(QMainWindow):
         # 设置窗口大小、标题
         self.setWindowTitle('Chinese Language Processor')
         self.setWindowIcon(QIcon('./resource/emiya.jpg'))
-        self.resize(600, 400)
-        self.textBrowser = QTextBrowser(self)
+        self.resize(1000, 600)
+        self.textBrowser = QPlainTextEdit(self)
         self.textBrowser.resize(580, 340)
 
         centreWidget = QWidget(self)
@@ -49,8 +49,8 @@ class Window(QMainWindow):
         centreWidget.setLayout(layout)
 
         # 重定向输出到textBrowser
-        sys.stdout = EmittingStream(textWritten=self.outputWritten)
-        sys.stderr = EmittingStream(textWritten=self.outputWritten)
+        #sys.stdout = EmittingStream(textWritten=self.outputWritten)
+        #sys.stderr = EmittingStream(textWritten=self.outputWritten)
 
         # 设置菜单
         menubar = self.menuBar()
@@ -156,7 +156,11 @@ class Window(QMainWindow):
         self.sortMenu.addAction(self.wordSortAction)
 
     def constructCorpusMenu(self, corpusMenu):
-        pass
+        self.corpusAction = QAction('打开', self)
+        self.corpusAction.setShortcut('Alt+Ctrl+C')
+        self.corpusAction.setStatusTip('打开语料库')
+        self.corpusAction.triggered.connect(self.openCorpusDialog)
+        corpusMenu.addAction(self.corpusAction)
 
     def constructParsingMenu(self, parsingMenu):
         pass
@@ -635,6 +639,164 @@ class Window(QMainWindow):
         widget.setLayout(layout)
         widget.exec_()
 
+    def openCorpusDialog(self):
+        path = str(QFileDialog.getExistingDirectory(self, 'Open Directory', './'))
+
+        if os.path.exists(path):
+            widget = QDialog()
+            widget.setWindowTitle('语料库')
+            widget.resize(1200, 600)
+
+            addCorpusFileButton = QPushButton('添加语料')
+            delCorpusFileButton = QPushButton('删除语料')
+
+            self.corpus.addCorpusPath(path)
+            listFile = self.corpus.listFile(self.corpus.path)
+
+            layout = QGridLayout(widget)
+            
+            self.leftWidget = QListWidget()
+
+            layout.addWidget(addCorpusFileButton, 0, 0)
+            layout.addWidget(delCorpusFileButton, 0, 1)
+            layout.addWidget(self.leftWidget, 1, 0, 5, 2)
+            layout.setHorizontalSpacing(10)
+            layout.setVerticalSpacing(10)
+            layout.setContentsMargins(10, 10, 10, 10)
+            
+            # 每次点击都改变显示内容
+            self.leftWidget.currentRowChanged.connect(self.changeBrowser)
+            self.leftWidget.setFrameShape(QListWidget.NoFrame) 
+
+            listFile = self.corpus.listFile(self.corpus.path)
+
+            # 设置左边布局
+            for file in listFile:
+                item = QListWidgetItem(str(file), self.leftWidget)
+                item.setSizeHint(QSize(15,30))
+                item.setTextAlignment(Qt.AlignLeft)
+
+            # 设置右边布局
+            inLayout = QGridLayout()
+
+            idLabel = QLabel('编号')
+            nationalityLabel = QLabel('国籍')
+            sexLabel = QLabel('性别')
+            ageLabel = QLabel('年龄')
+            firstLanguageLabel = QLabel('第一语言')
+            monthStudyLabel = QLabel('学习时长(月)')
+            educationLanguageLabel = QLabel('教育语言')
+            chukenLabel = QLabel('汉语水平')
+            rawTextLabel = QLabel('原始文本')
+            modifiedTextLabel = QLabel('修改文本')
+            errorStatLabel = QLabel('偏误统计')
+            modifyStatLabel = QLabel('修改统计')
+            errorTypeStatLabel = QLabel('偏误类型统计')
+
+            idLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            nationalityLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            sexLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            ageLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            firstLanguageLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            monthStudyLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            educationLanguageLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            chukenLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            rawTextLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            modifiedTextLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            errorStatLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            modifyStatLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            errorTypeStatLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+
+            idLabel.setAlignment(Qt.AlignCenter)
+            nationalityLabel.setAlignment(Qt.AlignCenter)
+            sexLabel.setAlignment(Qt.AlignCenter)
+            ageLabel.setAlignment(Qt.AlignCenter)
+            firstLanguageLabel.setAlignment(Qt.AlignCenter)
+            monthStudyLabel.setAlignment(Qt.AlignCenter)
+            educationLanguageLabel.setAlignment(Qt.AlignCenter)
+            chukenLabel.setAlignment(Qt.AlignCenter)
+            rawTextLabel.setAlignment(Qt.AlignCenter)
+            modifiedTextLabel.setAlignment(Qt.AlignCenter)
+            errorStatLabel.setAlignment(Qt.AlignCenter)
+            modifyStatLabel.setAlignment(Qt.AlignCenter)
+            errorTypeStatLabel.setAlignment(Qt.AlignCenter)
+
+            self.idShow = QLabel()
+            self.nationalityShow = QLabel()
+            self.sexShow = QLabel()
+            self.ageShow = QLabel()
+            self.firstLanguageShow = QLabel()
+            self.monthStudyShow = QLabel()
+            self.educationLanguageShow = QLabel()
+            self.chukenShow = QLabel()
+            self.rawTextShow = QTextEdit()
+            self.modifiedTextShow = QTextEdit()
+            self.errorStatShow = QTableWidget()
+            self.modifyStatShow = QTableWidget()
+            self.errorTypeStatShow = QTableWidget()
+
+            self.idShow.setAlignment(Qt.AlignCenter)
+            self.nationalityShow.setAlignment(Qt.AlignCenter)
+            self.sexShow.setAlignment(Qt.AlignCenter)
+            self.ageShow.setAlignment(Qt.AlignCenter)
+            self.firstLanguageShow.setAlignment(Qt.AlignCenter)
+            self.monthStudyShow.setAlignment(Qt.AlignCenter)
+            self.educationLanguageShow.setAlignment(Qt.AlignCenter)
+            self.chukenShow.setAlignment(Qt.AlignCenter)
+
+
+            font = QFont('微软雅黑', 10)
+            font.setBold(True)
+
+            self.errorStatShow.horizontalHeader().setFont(font)
+            self.errorStatShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+            self.errorStatShow.setColumnCount(5)
+            self.errorStatShow.setHorizontalHeaderLabels(['序号','原文','修改','修改方式','偏误类型'])
+
+            self.modifyStatShow.horizontalHeader().setFont(font)
+            self.modifyStatShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+            self.modifyStatShow.setColumnCount(2)
+            self.modifyStatShow.setHorizontalHeaderLabels(['修改方式','次数'])
+
+            self.errorTypeStatShow.horizontalHeader().setFont(font)
+            self.errorTypeStatShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+            self.errorTypeStatShow.setColumnCount(2)
+            self.errorTypeStatShow.setHorizontalHeaderLabels(['偏误类型', '次数'])
+
+            layout.addWidget(idLabel, 0, 2)
+            layout.addWidget(nationalityLabel, 0, 3)
+            layout.addWidget(sexLabel, 0, 4)
+            layout.addWidget(ageLabel, 0, 5)
+            layout.addWidget(firstLanguageLabel, 0, 6)
+            layout.addWidget(monthStudyLabel, 0, 7)
+            layout.addWidget(educationLanguageLabel, 0, 8)
+            layout.addWidget(chukenLabel, 0, 9)
+            layout.addWidget(rawTextLabel, 2, 2, 1, 4)
+            layout.addWidget(modifiedTextLabel, 2, 6, 1, 4)
+            layout.addWidget(errorStatLabel, 4, 2, 1, 4)
+            layout.addWidget(modifyStatLabel, 4, 6, 1, 2)
+            layout.addWidget(errorTypeStatLabel, 4, 8, 1, 2)
+
+            layout.addWidget(self.idShow, 1, 2)
+            layout.addWidget(self.nationalityShow, 1, 3)
+            layout.addWidget(self.sexShow, 1, 4)
+            layout.addWidget(self.ageShow, 1, 5)
+            layout.addWidget(self.firstLanguageShow, 1, 6)
+            layout.addWidget(self.monthStudyShow, 1, 7)
+            layout.addWidget(self.educationLanguageShow, 1, 8)
+            layout.addWidget(self.chukenShow, 1, 9)
+            layout.addWidget(self.rawTextShow, 3, 2, 1, 4)
+            layout.addWidget(self.modifiedTextShow, 3, 6, 1, 4)
+            layout.addWidget(self.errorStatShow, 5, 2, 1, 4)
+            layout.addWidget(self.modifyStatShow, 5, 6, 1, 2)
+            layout.addWidget(self.errorTypeStatShow, 5, 8, 1, 2)
+                
+            widget.setLayout(layout)
+            widget.exec_()
+
+        else:
+            reply = QMessageBox.warning(self, '警告', '访问的路径不存在', QMessageBox.Yes,QMessageBox.Yes) 
+
     def windowCenter(self):
         screenSize = QDesktopWidget().screenGeometry()
         windowSize = self.geometry()
@@ -813,3 +975,63 @@ class Window(QMainWindow):
         else:
             self.sortWordConfirmLabel.setText("Error")
             self.sortWordConfirmLabel.setStyleSheet("color:red;font-weight:bold;")
+    
+    def changeBrowser(self, index):
+        file = self.leftWidget.item(index).text()
+        filePath = os.path.join(self.corpus.path, file)
+    
+        self.idShow.setText(self.corpus.getId(filePath))
+        self.nationalityShow.setText(self.corpus.getNationality(filePath))
+        self.sexShow.setText(self.corpus.getSex(filePath))
+        self.ageShow.setText(self.corpus.getAge(filePath))
+        self.firstLanguageShow.setText(self.corpus.getLanguage(filePath))
+        self.monthStudyShow.setText(self.corpus.getMonthStudy(filePath))
+        self.educationLanguageShow.setText(self.corpus.getEduLanguage(filePath))
+        self.chukenShow.setText(self.corpus.getChuken(filePath))
+        self.rawTextShow.setText(self.corpus.getRawText(filePath))
+        self.modifiedTextShow.setHtml(self.corpus.getModifiedText(filePath))
+        
+        errorList = self.corpus.getErrorStat(filePath)
+        modifyTypeDict = self.corpus.getModifyStat(filePath)
+        errorTypeDict = self.corpus.getErrorTypeStat(filePath)
+        charFreqDict = self.corpus.getChar(filePath)
+
+        # 设置偏误统计表
+        rowCount = self.errorStatShow.rowCount()
+        for i in range(rowCount):
+            self.errorStatShow.removeRow(0)
+        
+        self.errorStatShow.setRowCount(len(errorList))
+        
+        for i, error in enumerate(errorList):
+            self.errorStatShow.setItem(i, 0, QTableWidgetItem(error[0]))
+            self.errorStatShow.setItem(i, 1, QTableWidgetItem(error[1]))
+            self.errorStatShow.setItem(i, 2, QTableWidgetItem(error[2]))
+            self.errorStatShow.setItem(i, 3, QTableWidgetItem(error[3]))
+            self.errorStatShow.setItem(i, 4, QTableWidgetItem(error[4]))
+
+        # 设置修改统计表
+        rowCount = self.modifyStatShow.rowCount()
+        for i in range(rowCount):
+            self.modifyStatShow.removeRow(0)
+
+        items = modifyTypeDict.items()
+        self.modifyStatShow.setRowCount(len(items))
+
+        for i, item in enumerate(items):
+            self.modifyStatShow.setItem(i, 0, QTableWidgetItem(item[0]))
+            self.modifyStatShow.setItem(i, 1, QTableWidgetItem(str(item[1])))
+
+
+        # 设置偏误类型统计表
+        rowCount = self.errorTypeStatShow.rowCount()
+        for i in range(rowCount):
+            self.errorTypeStatShow.removeRow(0)
+        
+        items = errorTypeDict.items()
+        self.errorTypeStatShow.setRowCount(len(items))
+
+        for i, item in enumerate(items):
+            self.errorTypeStatShow.setItem(i, 0, QTableWidgetItem(item[0]))
+            self.errorTypeStatShow.setItem(i, 1, QTableWidgetItem(str(item[1])))
+

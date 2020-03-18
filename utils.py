@@ -13,6 +13,9 @@ import docx
 import jieba
 import string
 import time
+import shutil
+from lxml import etree
+from tqdm import tqdm
 from pypinyin import lazy_pinyin
 from PyQt5.Qt import *
 
@@ -191,9 +194,10 @@ class Counter(object):
 
                 print("*******Start Processing File: " + file_path + "*******")
 
-                for i in range(textLength):
-                    time.sleep(0.0001)
-                    QApplication.processEvents()
+                for i in tqdm(range(textLength)):
+                    if i % (textLength // 100) == 0:
+                        time.sleep(0.00001)
+                        QApplication.processEvents()
 
                     char = text[i]
                     if char < u'\u4e00' or char > u'\u9fa5': continue
@@ -205,9 +209,10 @@ class Counter(object):
 
                 stats = [[item[0], int(item[1])] for item in stats.items()]
 
-                for row in stats:
-                    time.sleep(0.0001)
-                    QApplication.processEvents()
+                for i, row in enumerate(stats):
+                    if i % (len(stats) // 100) == 0:
+                        time.sleep(0.00001)
+                        QApplication.processEvents()
 
                     char = row[0]
                     row.append(str(self.converter.dict_char_to_unicode.get(char, "-1")))
@@ -271,8 +276,6 @@ class Counter(object):
 
         for file in os.listdir(srcPath):
             file_path = os.path.join(srcPath, file)
-            time.sleep(0.0001)
-            QApplication.processEvents()
 
             if os.path.isdir(file_path):
                 self.groupBy(file_path, tgtPath)
@@ -298,10 +301,12 @@ class Counter(object):
 
                 print("*******Start Processing File: " + file_path + "*******")
 
-                for i in range(textLength):
+                for i in tqdm(range(textLength)):
                     char = text[i]
-                    time.sleep(0.0001)
-                    QApplication.processEvents()
+                    
+                    if i % (textLength // 100) == 0:
+                        time.sleep(0.00001)
+                        QApplication.processEvents()
 
                     if char >= u'\u4e00' and char <= u'\u9fa5':
                         charNum += 1
@@ -351,11 +356,12 @@ class Extractor(object):
                 newLines = []
 
                 print("*******Start Processing File: " + file_path + "*******")
-                for line in textLines:
+                for i, line in enumerate(tqdm(textLines)):
                     newLine = ' '.join(jieba.cut(line.strip()))
                     newLines.append(newLine+'\n')
-                    time.sleep(0.001)
-                    QApplication.processEvents()
+                    if i % (len(textLines) // 100) == 0:
+                        time.sleep(0.00001)
+                        QApplication.processEvents()
                 
 
                 tgtPath = os.path.join(tgtPath, 'segmented_' + file)
@@ -371,8 +377,6 @@ class Extractor(object):
         
         for file in os.listdir(srcPath):
             file_path = os.path.join(srcPath, file)
-            time.sleep(0.001)
-            QApplication.processEvents()
 
             if os.path.isdir(file_path):
                 self.countSegmentedFile(file_path, os.path.join(tgtPath, file))
@@ -391,13 +395,12 @@ class Extractor(object):
 
                 print("*******Start Processing File: " + file_path + "*******")
 
-                for line in text:
-                    words = line.strip().split(' ')
-                    time.sleep(0.001)
-                    QApplication.processEvents()
-                    for word in words:
-                        time.sleep(0.001)
+                for i, line in tqdm(enumerate(text)):
+                    if i % (len(text) // 100 + 1) == 0:
+                        time.sleep(0.00001)
                         QApplication.processEvents()
+                    words = line.strip().split(' ')
+                    for word in words:
                         if word not in stats.keys(): 
                             stats[word] = 1
                         else: 
@@ -405,9 +408,10 @@ class Extractor(object):
 
                 stats = [[item[0], int(item[1])] for item in stats.items()] # [word, frequency]
 
-                for row in stats:
-                    time.sleep(0.001)
-                    QApplication.processEvents()
+                for i, row in tqdm(enumerate(stats)):
+                    if i % (len(stats) // 100) == 0:
+                        time.sleep(0.00001)
+                        QApplication.processEvents()
                     word = row[0]
                     wordUnicode = ''
                     wordUtf8 = ''
@@ -415,8 +419,6 @@ class Extractor(object):
                     wordBig5 = ''
                     wordStroke = 0
                     for character in word:
-                        time.sleep(0.001)
-                        QApplication.processEvents()
                         characterUnicode = str(self.converter.dict_char_to_unicode.get(character, "-1"))
                         characterUtf8 = str(self.converter.dict_char_to_utf8.get(character, "-1"))
                         characterGBK = str(self.converter.dict_char_to_gbk.get(character, "-1"))
@@ -485,15 +487,174 @@ class Extractor(object):
         print("*********************Complete**********************")
 
 class Corpus(object):
-    def __init__(self, ref, converter):
-        self.ref = ref
+    def __init__(self, converter):
         self.converter = converter
 
-    def statChar(self, file):
-        pass
-    
-    def addFile(self, file):
-        pass 
+    def addCorpusPath(self, path):
+        self.path = path
 
-    def deleteFile(self, file):
-        pass
+    def listFile(self, path):
+        dirs = os.listdir(path)
+        fileDir = []
+        for file in dirs:
+            if os.path.isfile(os.path.join(path, file)):
+                fileDir.append(file)
+            else:
+                fileDir.append(self.listFile((os.path.join(path, file))))
+
+        return fileDir
+
+    def getChar(self, file):
+        text = self.getRawText(file)
+        charFreqDict = {}
+        for char in text:
+            if char not in charFreqDict.keys():
+                charFreqDict[char] = 0
+            charFreqDict[char] += 1
+        
+        # 按照字频排序
+        charFreqDict = dict(sorted(charFreqDict.items(), key = lambda item: item[1], reverse=True))
+        return charFreqDict
+
+    def getId(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        result = parsed.xpath('//id/text()')
+        return result[0] if result != [] else ''
+
+    def getNationality(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        result = parsed.xpath('//nationality/text()')
+        return result[0] if result != [] else ''
+
+    def getSex(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        result = parsed.xpath('//sex/text()')
+        return result[0] if result != [] else ''
+
+    def getAge(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        result = parsed.xpath('//age/text()')
+        return result[0] if result != [] else ''
+
+    def getLanguage(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        result = parsed.xpath('//first_language/text()') + ['-'] + \
+            parsed.xpath('//major/text()')
+        return result[0] if result != [] else ''
+    
+    def getYear(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        result = parsed.xpath('//school_year/text()')
+        return result[0] if result != [] else ''
+
+    def getMonthStudy(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        result = parsed.xpath('//month_of_study/text()')
+        return result[0] if result != [] else ''
+
+    def getEduLanguage(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        result = parsed.xpath('//educational_language/text()')
+        return result[0] if result != [] else ''
+
+    def getChuken(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        result = parsed.xpath('//chuken/text()')
+        return result[0] if result != [] else ''
+
+    def getRawText(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        rawText = ''.join(parsed.xpath('//text//*/text()'))
+        return rawText
+
+    def getModifiedText(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+        # 找出所有段落
+        paragraphs = parsed.xpath('//paragraph')
+        # 找到所有error结点
+        errors = parsed.xpath('//error')
+        errorNum = len(errors) 
+
+        texts = []
+
+        # 把每个段落里的error结点都打上标记
+        for paragraph in paragraphs:
+            if paragraph.text:
+                texts.append(paragraph.text)
+            
+            #遍历子节点
+            for sub in paragraph.iterchildren():
+                texts.append('#%s#' % sub.get('id', ''))
+                # tail是当前结点到下个邻居结点之间的文本内容，如果没有文本则返回None
+                if sub.tail: 
+                    texts.append(sub.tail)
+            texts.append('\n')
+
+        texts = ''.join(texts).strip()
+
+        # 把每个error标记替换
+        for i in range(1, errorNum+1):
+            errorTag = '#'+str(i)+'#'
+            _type = errors[i-1].attrib['type']
+            if _type == 'delete':
+                revised = '[DELETED]'
+            else:
+                revised = errors[i-1].attrib['revised']
+            texts = texts.replace(errorTag, '<font color="red">'+revised+'</font>')
+        
+        return texts
+
+    def getErrorStat(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+
+        errorList = []
+        errors = parsed.xpath('//error')
+
+        for error in errors:
+            attrib = error.attrib
+            raw = error.text
+            _id = attrib['id']
+            _type = attrib['type']
+            category = attrib['category']
+            revised = attrib['revised']
+            errorList.append([_id, raw, revised, _type, category])
+
+        return errorList
+
+    def getModifyStat(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+
+        modifyTypeDict = {}
+        errors = parsed.xpath('//error')
+
+        for error in errors:
+            attrib = error.attrib
+            _type = attrib['type']
+            if _type not in modifyTypeDict.keys():
+                modifyTypeDict[_type] = 0
+            modifyTypeDict[_type] += 1
+        
+        return modifyTypeDict
+
+    def getErrorTypeStat(self, file):
+        parsed = etree.parse(file, etree.HTMLParser())
+
+        errorTypeDict = {}
+        errors = parsed.xpath('//error')
+
+        for error in errors:
+            attrib = error.attrib
+            category = attrib['category']
+            if category not in errorTypeDict.keys():
+                errorTypeDict[category] = 0
+            errorTypeDict[category] += 1
+        
+        return errorTypeDict
+    
+    def addFile(self, files):
+        if type(files) == list:
+            for file in files:
+                shutil.copy(file, self.path)
+        else:
+            shutil.copy(files, self.path)
+

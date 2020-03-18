@@ -23,7 +23,7 @@ if __name__ == '__main__':
     converter = Converter()
     counter = Counter(converter)
     extractor = Extractor(converter)
-    corpus = Corpus('./04_Corpus/Chinese', converter)
+    corpus = Corpus(converter)
 
     app = QApplication(sys.argv)
     exe = Window(converter, counter, extractor, corpus)
