@@ -563,8 +563,29 @@ class Corpus(object):
         return result[0] if result != [] else ''
 
     def getRawText(self, file):
+        #parsed = etree.parse(file, etree.HTMLParser())
+        #rawText = ''.join(parsed.xpath('//text//*/text()'))
         parsed = etree.parse(file, etree.HTMLParser())
-        rawText = ''.join(parsed.xpath('//text//*/text()'))
+        # 找出所有段落
+        paragraphs = parsed.xpath('//paragraph')
+        # 找到所有error结点
+
+        rawText = []
+
+        # 把每个段落里的error结点都打上标记
+        for paragraph in paragraphs:
+            if paragraph.text:
+                rawText.append(paragraph.text)
+            
+            #遍历子节点
+            for sub in paragraph.iterchildren():
+                rawText.append(sub.text if sub.text != None else '')
+                # tail是当前结点到下个邻居结点之间的文本内容，如果没有文本则返回None
+                if sub.tail: 
+                    rawText.append(sub.tail)
+            rawText.append('\n')
+
+        rawText = ''.join(rawText).strip()
         return rawText
 
     def getModifiedText(self, file):
@@ -588,7 +609,7 @@ class Corpus(object):
                 # tail是当前结点到下个邻居结点之间的文本内容，如果没有文本则返回None
                 if sub.tail: 
                     texts.append(sub.tail)
-            texts.append('\n')
+            texts.append('<br>')
 
         texts = ''.join(texts).strip()
 
@@ -658,3 +679,31 @@ class Corpus(object):
         else:
             shutil.copy(files, self.path)
 
+    def delFile(self, files):
+        if type(files) == list:
+            for file in files:
+                os.remove(file)
+        else:
+            os.remove(files)
+
+    def retrieve(self, _id, age, text, nationality, sex):
+        dirs = os.listdir(self.path)
+        fileDir = []
+        for f in dirs:
+            file = os.path.join(self.path, f)
+            if os.path.isfile(file):
+                fileId = self.getId(file)
+                fileAge = self.getAge(file)
+                fileText = self.getRawText(file)
+                fileNationality = self.getNationality(file)
+                fileSex = self.getSex(file)
+
+                if _id != '' and fileId.find(_id) == -1: continue
+                if age != '' and fileAge != age: continue 
+                if text != '' and fileText.find(text) == -1: continue
+                if nationality != '不限' and nationality != fileNationality: continue
+                if sex != '不限' and sex != fileSex: continue
+
+                fileDir.append(f)
+
+        return fileDir

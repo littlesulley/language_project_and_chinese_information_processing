@@ -649,6 +649,12 @@ class Window(QMainWindow):
 
             addCorpusFileButton = QPushButton('添加语料')
             delCorpusFileButton = QPushButton('删除语料')
+            retCorpusFileButton = QPushButton('检索语料')
+            exiCorpusFileButton = QPushButton('其他功能')
+
+            addCorpusFileButton.clicked.connect(self.addCorpusFileDialog)
+            delCorpusFileButton.clicked.connect(self.delCorpusFileDialog)
+            retCorpusFileButton.clicked.connect(self.retCorpusFileDialog)
 
             self.corpus.addCorpusPath(path)
             listFile = self.corpus.listFile(self.corpus.path)
@@ -659,7 +665,9 @@ class Window(QMainWindow):
 
             layout.addWidget(addCorpusFileButton, 0, 0)
             layout.addWidget(delCorpusFileButton, 0, 1)
-            layout.addWidget(self.leftWidget, 1, 0, 5, 2)
+            layout.addWidget(retCorpusFileButton, 1, 0)
+            layout.addWidget(exiCorpusFileButton, 1, 1)
+            layout.addWidget(self.leftWidget, 2, 0, 5, 2)
             layout.setHorizontalSpacing(10)
             layout.setVerticalSpacing(10)
             layout.setContentsMargins(10, 10, 10, 10)
@@ -689,6 +697,7 @@ class Window(QMainWindow):
             chukenLabel = QLabel('汉语水平')
             rawTextLabel = QLabel('原始文本')
             modifiedTextLabel = QLabel('修改文本')
+            charLabel = QLabel('用字统计')
             errorStatLabel = QLabel('偏误统计')
             modifyStatLabel = QLabel('修改统计')
             errorTypeStatLabel = QLabel('偏误类型统计')
@@ -703,6 +712,7 @@ class Window(QMainWindow):
             chukenLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
             rawTextLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
             modifiedTextLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
+            charLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
             errorStatLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
             modifyStatLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
             errorTypeStatLabel.setStyleSheet('font:10pt "微软雅黑"; font-weight:bold;')
@@ -717,6 +727,7 @@ class Window(QMainWindow):
             chukenLabel.setAlignment(Qt.AlignCenter)
             rawTextLabel.setAlignment(Qt.AlignCenter)
             modifiedTextLabel.setAlignment(Qt.AlignCenter)
+            charLabel.setAlignment(Qt.AlignCenter)
             errorStatLabel.setAlignment(Qt.AlignCenter)
             modifyStatLabel.setAlignment(Qt.AlignCenter)
             errorTypeStatLabel.setAlignment(Qt.AlignCenter)
@@ -731,6 +742,7 @@ class Window(QMainWindow):
             self.chukenShow = QLabel()
             self.rawTextShow = QTextEdit()
             self.modifiedTextShow = QTextEdit()
+            self.charShow = QTableWidget()
             self.errorStatShow = QTableWidget()
             self.modifyStatShow = QTableWidget()
             self.errorTypeStatShow = QTableWidget()
@@ -748,18 +760,27 @@ class Window(QMainWindow):
             font = QFont('微软雅黑', 10)
             font.setBold(True)
 
+            self.charShow.horizontalHeader().setFont(font)
+            self.charShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+            self.charShow.verticalHeader().setDefaultSectionSize(10)
+            self.charShow.setColumnCount(2)
+            self.charShow.setHorizontalHeaderLabels(['字符', '频次'])
+
             self.errorStatShow.horizontalHeader().setFont(font)
             self.errorStatShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+            self.errorStatShow.verticalHeader().setDefaultSectionSize(10)
             self.errorStatShow.setColumnCount(5)
             self.errorStatShow.setHorizontalHeaderLabels(['序号','原文','修改','修改方式','偏误类型'])
 
             self.modifyStatShow.horizontalHeader().setFont(font)
             self.modifyStatShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+            self.modifyStatShow.verticalHeader().setDefaultSectionSize(10)
             self.modifyStatShow.setColumnCount(2)
             self.modifyStatShow.setHorizontalHeaderLabels(['修改方式','次数'])
 
             self.errorTypeStatShow.horizontalHeader().setFont(font)
             self.errorTypeStatShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+            self.errorTypeStatShow.verticalHeader().setDefaultSectionSize(10)
             self.errorTypeStatShow.setColumnCount(2)
             self.errorTypeStatShow.setHorizontalHeaderLabels(['偏误类型', '次数'])
 
@@ -771,8 +792,9 @@ class Window(QMainWindow):
             layout.addWidget(monthStudyLabel, 0, 7)
             layout.addWidget(educationLanguageLabel, 0, 8)
             layout.addWidget(chukenLabel, 0, 9)
-            layout.addWidget(rawTextLabel, 2, 2, 1, 4)
-            layout.addWidget(modifiedTextLabel, 2, 6, 1, 4)
+            layout.addWidget(rawTextLabel, 2, 2, 1, 3)
+            layout.addWidget(modifiedTextLabel, 2, 5, 1, 3)
+            layout.addWidget(charLabel, 2, 8, 1, 2)
             layout.addWidget(errorStatLabel, 4, 2, 1, 4)
             layout.addWidget(modifyStatLabel, 4, 6, 1, 2)
             layout.addWidget(errorTypeStatLabel, 4, 8, 1, 2)
@@ -785,8 +807,9 @@ class Window(QMainWindow):
             layout.addWidget(self.monthStudyShow, 1, 7)
             layout.addWidget(self.educationLanguageShow, 1, 8)
             layout.addWidget(self.chukenShow, 1, 9)
-            layout.addWidget(self.rawTextShow, 3, 2, 1, 4)
-            layout.addWidget(self.modifiedTextShow, 3, 6, 1, 4)
+            layout.addWidget(self.rawTextShow, 3, 2, 1, 3)
+            layout.addWidget(self.modifiedTextShow, 3, 5, 1, 3)
+            layout.addWidget(self.charShow, 3, 8, 1, 2)
             layout.addWidget(self.errorStatShow, 5, 2, 1, 4)
             layout.addWidget(self.modifyStatShow, 5, 6, 1, 2)
             layout.addWidget(self.errorTypeStatShow, 5, 8, 1, 2)
@@ -975,8 +998,77 @@ class Window(QMainWindow):
         else:
             self.sortWordConfirmLabel.setText("Error")
             self.sortWordConfirmLabel.setStyleSheet("color:red;font-weight:bold;")
+
+    def addCorpusFileDialog(self):
+        files = QFileDialog.getOpenFileNames(self, 'Open Directory', './')[0]
+        self.corpus.addFile(files)
+    
+    def delCorpusFileDialog(self):
+        files = QFileDialog.getOpenFileNames(self, 'Open Directory', './')[0]
+        self.corpus.delFile(files)
+
+    def retCorpusFileDialog(self):
+        widget = QDialog()
+        widget.setWindowTitle('检索语料')
+        widget.resize(600, 200)
+
+        layout = QGridLayout()
+
+        idRetLabel = QLabel('编号：')
+        nationalityRetLabel = QLabel('国籍')
+        sexRetLabel = QLabel('性别：')
+        ageRetLabel = QLabel('年龄：')
+        textRetLabel = QLabel('文本：')
+        confirmButton = QPushButton('确认')
+
+        idRetLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+        nationalityRetLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+        sexRetLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+        ageRetLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+        textRetLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+
+        idRetLineEdit = QLineEdit()
+        ageRetLineEdit = QLineEdit()
+        textRetLineEdit = QLineEdit()
+        nationalityRetComboBox = QComboBox()
+        sexRetComboBox = QComboBox() 
+
+        idRetLineEdit.setPlaceholderText('')
+        ageRetLineEdit.setPlaceholderText('')
+        textRetLineEdit.setPlaceholderText('')
+
+        idRetLineEdit.setToolTip('不限制请留白')
+        ageRetLineEdit.setToolTip('不限制请留白')
+        textRetLineEdit.setToolTip('不限制请留白')
+
+        nationalityRetChoices = ['不限', '日本', '中国']
+        nationalityRetComboBox.addItems(nationalityRetChoices)
+        sexRetChoices = ['不限', '男', '女']
+        sexRetComboBox.addItems(sexRetChoices)
+
+        layout.addWidget(idRetLabel, 0, 0)
+        layout.addWidget(ageRetLabel, 0, 2)
+        layout.addWidget(textRetLabel, 0, 4)
+        layout.addWidget(nationalityRetLabel, 1, 0)
+        layout.addWidget(sexRetLabel, 1, 2)
+        layout.addWidget(confirmButton, 1, 5)
+        layout.addWidget(idRetLineEdit, 0, 1)
+        layout.addWidget(ageRetLineEdit, 0, 3)
+        layout.addWidget(textRetLineEdit, 0, 5)
+        layout.addWidget(nationalityRetComboBox, 1, 1)
+        layout.addWidget(sexRetComboBox, 1, 3)
+
+        confirmButton.clicked.connect(lambda: self.retrieveConfirm(
+                idRetLineEdit.text(), ageRetLineEdit.text(), textRetLineEdit.text(), 
+                nationalityRetComboBox.currentText(), sexRetComboBox.currentText(), widget
+            ))
+
+        widget.setLayout(layout)
+        widget.exec_()
     
     def changeBrowser(self, index):
+        if self.leftWidget.item(index) == None: return
+        
         file = self.leftWidget.item(index).text()
         filePath = os.path.join(self.corpus.path, file)
     
@@ -994,7 +1086,6 @@ class Window(QMainWindow):
         errorList = self.corpus.getErrorStat(filePath)
         modifyTypeDict = self.corpus.getModifyStat(filePath)
         errorTypeDict = self.corpus.getErrorTypeStat(filePath)
-        charFreqDict = self.corpus.getChar(filePath)
 
         # 设置偏误统计表
         rowCount = self.errorStatShow.rowCount()
@@ -1035,3 +1126,30 @@ class Window(QMainWindow):
             self.errorTypeStatShow.setItem(i, 0, QTableWidgetItem(item[0]))
             self.errorTypeStatShow.setItem(i, 1, QTableWidgetItem(str(item[1])))
 
+        # 设置用字情况
+        charFreqDict = self.corpus.getChar(filePath)
+
+        rowCount = self.charShow.rowCount()
+        for i in range(rowCount):
+            self.charShow.removeRow(0)
+        
+        items = charFreqDict.items()
+        self.charShow.setRowCount(len(items))
+
+        for i, item in enumerate(items):
+            self.charShow.setItem(i, 0, QTableWidgetItem(item[0]))
+            self.charShow.setItem(i, 1, QTableWidgetItem(str(item[1])))
+
+    def retrieveConfirm(self, _id, age, text, nationality, sex, widget):
+        listFile = self.corpus.retrieve(_id, age, text, nationality, sex)
+        
+        countNum = self.leftWidget.count()
+        for _ in range(countNum):
+            self.leftWidget.takeItem(0)
+        
+        for file in listFile:
+            item = QListWidgetItem(str(file), self.leftWidget)
+            item.setSizeHint(QSize(15,30))
+            item.setTextAlignment(Qt.AlignLeft)
+        
+        widget.close()
