@@ -487,9 +487,6 @@ class Extractor(object):
         print("*********************Complete**********************")
 
 class Corpus(object):
-    def __init__(self, converter):
-        self.converter = converter
-
     def addCorpusPath(self, path):
         self.path = path
 
@@ -707,3 +704,31 @@ class Corpus(object):
                 fileDir.append(f)
 
         return fileDir
+
+class Lexicon(object):
+    def addLexiconPath(self, path):
+        self.path = path
+    
+    def listFile(self, path):
+        dirs = os.listdir(path)
+        fileDir = []
+        for file in dirs:
+            if os.path.isfile(os.path.join(path, file)):
+                fileDir.append(file)
+            else:
+                fileDir.append(self.listFile((os.path.join(path, file))))
+
+        return fileDir
+
+    def getFile(self, path):
+        with codecs.open(path, 'r', encoding='utf_8_sig') as fopen:
+            fcsv = csv.reader(fopen)
+            headings = next(fcsv)
+            stats = [row for row in fcsv]
+        return headings, stats
+    
+    def modifyData(self, headings, data, path):
+        with codecs.open(path, 'w', encoding='utf_8_sig') as fopen:
+            f_csv = csv.writer(fopen)
+            f_csv.writerow(headings)
+            f_csv.writerows(data)

@@ -25,7 +25,7 @@ class subWindow(QWidget):
         super(subWindow, self).__init__(parent, Window)
 
 class Window(QMainWindow):
-    def __init__(self, converter, counter, extractor, corpus):
+    def __init__(self, converter, counter, extractor, corpus, lexicon):
         super().__init__()
         self.init()
         self.windowCenter()
@@ -33,6 +33,7 @@ class Window(QMainWindow):
         self.counter = counter 
         self.extractor = extractor
         self.corpus = corpus
+        self.lexicon = lexicon
     
     def init(self):
         # 设置窗口大小、标题
@@ -57,7 +58,7 @@ class Window(QMainWindow):
         self.fileMenu = menubar.addMenu('&文件')
         self.charMenu = menubar.addMenu('&汉字')
         self.statMenu = menubar.addMenu('&统计')
-        self.corpusMenu = menubar.addMenu('&语料库')
+        self.corpusMenu = menubar.addMenu('&库管理')
         self.parsingMenu = menubar.addMenu('&语法分析')
         self.helpMenu = menubar.addMenu('&帮助')
 
@@ -156,11 +157,17 @@ class Window(QMainWindow):
         self.sortMenu.addAction(self.wordSortAction)
 
     def constructCorpusMenu(self, corpusMenu):
-        self.corpusAction = QAction('打开', self)
+        self.corpusAction = QAction('打开语料库', self)
         self.corpusAction.setShortcut('Alt+Ctrl+C')
         self.corpusAction.setStatusTip('打开语料库')
         self.corpusAction.triggered.connect(self.openCorpusDialog)
         corpusMenu.addAction(self.corpusAction)
+
+        self.lexiconAction = QAction('打开词库', self)
+        self.lexiconAction.setShortcut('Alt+Ctrl+L')
+        self.lexiconAction.setStatusTip('打开词库')
+        self.lexiconAction.triggered.connect(self.openLexiconDialog)
+        corpusMenu.addAction(self.lexiconAction)
 
     def constructParsingMenu(self, parsingMenu):
         pass
@@ -673,10 +680,8 @@ class Window(QMainWindow):
             layout.setContentsMargins(10, 10, 10, 10)
             
             # 每次点击都改变显示内容
-            self.leftWidget.currentRowChanged.connect(self.changeBrowser)
+            self.leftWidget.currentRowChanged.connect(self.changeCorpusBrowser)
             self.leftWidget.setFrameShape(QListWidget.NoFrame) 
-
-            listFile = self.corpus.listFile(self.corpus.path)
 
             # 设置左边布局
             for file in listFile:
@@ -685,8 +690,6 @@ class Window(QMainWindow):
                 item.setTextAlignment(Qt.AlignLeft)
 
             # 设置右边布局
-            inLayout = QGridLayout()
-
             idLabel = QLabel('编号')
             nationalityLabel = QLabel('国籍')
             sexLabel = QLabel('性别')
@@ -813,6 +816,68 @@ class Window(QMainWindow):
             layout.addWidget(self.errorStatShow, 5, 2, 1, 4)
             layout.addWidget(self.modifyStatShow, 5, 6, 1, 2)
             layout.addWidget(self.errorTypeStatShow, 5, 8, 1, 2)
+                
+            widget.setLayout(layout)
+            widget.exec_()
+
+        else:
+            reply = QMessageBox.warning(self, '警告', '访问的路径不存在', QMessageBox.Yes,QMessageBox.Yes) 
+
+    def openLexiconDialog(self):
+        path = str(QFileDialog.getExistingDirectory(self, 'Open Directory', './'))
+
+        if os.path.exists(path):
+            widget = QDialog()
+            widget.setWindowTitle('词库')
+            widget.resize(1200, 600)
+
+            addLexiconFileButton = QPushButton('添加词条')
+            delLexiconFileButton = QPushButton('删除词条')
+            retLexiconFileButton = QPushButton('检索词条')
+            savLexiconFileButton = QPushButton('保存修改')
+            savLexiconFileButton.setToolTip('保存对当前文件的修改')
+
+            addLexiconFileButton.clicked.connect(self.addLexiconFileDialog)
+            delLexiconFileButton.clicked.connect(self.delLexiconFileDialog)
+            retLexiconFileButton.clicked.connect(self.retLexiconFileDialog)
+            savLexiconFileButton.clicked.connect(self.savLexiconFileDialog)
+
+            self.lexicon.addLexiconPath(path)
+            listFile = self.lexicon.listFile(self.lexicon.path)
+
+            layout = QGridLayout(widget)
+            
+            self.leftLexiconWidget = QListWidget()
+
+            layout.addWidget(addLexiconFileButton, 0, 0)
+            layout.addWidget(delLexiconFileButton, 0, 1)
+            layout.addWidget(retLexiconFileButton, 1, 0)
+            layout.addWidget(savLexiconFileButton, 1, 1)
+            layout.addWidget(self.leftLexiconWidget, 2, 0, 1, 2)
+            layout.setHorizontalSpacing(10)
+            layout.setVerticalSpacing(10)
+            layout.setContentsMargins(10, 10, 10, 10)
+            
+            # 每次点击都改变显示内容
+            self.leftLexiconWidget.currentRowChanged.connect(self.changeLexiconBrowser)
+            self.leftLexiconWidget.setFrameShape(QListWidget.NoFrame) 
+
+            # 设置左边布局
+            for file in listFile:
+                item = QListWidgetItem(str(file), self.leftLexiconWidget)
+                item.setSizeHint(QSize(15,30))
+                item.setTextAlignment(Qt.AlignLeft)
+
+            # 设置右边布局
+            self.lexiconShow = QTableWidget()
+            font = QFont('微软雅黑', 10)
+            font.setBold(True)
+            self.lexiconShow.horizontalHeader().setFont(font)
+            self.lexiconShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+            self.lexiconShow.verticalHeader().setDefaultSectionSize(10)
+            self.lexiconShow.setSortingEnabled(True)
+
+            layout.addWidget(self.lexiconShow, 0, 2, 3, 1)
                 
             widget.setLayout(layout)
             widget.exec_()
@@ -1066,7 +1131,7 @@ class Window(QMainWindow):
         widget.setLayout(layout)
         widget.exec_()
     
-    def changeBrowser(self, index):
+    def changeCorpusBrowser(self, index):
         if self.leftWidget.item(index) == None: return
         
         file = self.leftWidget.item(index).text()
@@ -1153,3 +1218,76 @@ class Window(QMainWindow):
             item.setTextAlignment(Qt.AlignLeft)
         
         widget.close()
+
+    def addLexiconFileDialog(self):
+        file = self.leftLexiconWidget.currentItem().text()
+        filePath = os.path.join(self.lexicon.path, file)
+
+        rowCount = self.lexiconShow.rowCount()
+        columnCount = self.lexiconShow.columnCount()
+        self.lexiconShow.setRowCount(rowCount + 1)
+        for j in range(columnCount):
+            self.lexiconShow.setItem(rowCount, j, QTableWidgetItem(''))
+
+    def delLexiconFileDialog(self):
+        # 当前行
+        currentRow = self.lexiconShow.currentRow()
+        selections = self.lexiconShow.selectionModel()
+
+        # 选中的行，必须要选中整行才行
+        selectedsList = selections.selectedRows()
+        rows = []
+        for r in selectedsList:
+            rows.append(r.row())
+        if len(rows) == 0:
+            rows.append(currentRow)
+
+        # 移除所有选中的行
+        rows.reverse()
+        for i in rows:
+            self.lexiconShow.removeRow(i)
+
+    def retLexiconFileDialog(self):
+        pass
+
+    def savLexiconFileDialog(self):
+        file = self.leftLexiconWidget.currentItem().text()
+        filePath = os.path.join(self.lexicon.path, file)
+
+        rowCount = self.lexiconShow.rowCount()
+        columnCount = self.lexiconShow.columnCount()
+        headings = [self.lexiconShow.horizontalHeaderItem(j).text() for j in range(columnCount)]
+
+        data = []
+        for i in range(rowCount):
+            row = []
+            for j in range(columnCount):
+                row.append(self.lexiconShow.item(i, j).text() if self.lexiconShow.item(i, j)!=None else '')
+            data.append(row)
+
+        self.lexicon.modifyData(headings, data, filePath)
+
+    def changeLexiconBrowser(self, index):
+        if self.leftLexiconWidget.item(index) == None: return
+
+        file = self.leftLexiconWidget.item(index).text()
+        filePath = os.path.join(self.lexicon.path, file)
+
+        headings, stats = self.lexicon.getFile(filePath)
+
+        # 前一个表的数据
+        rowCount = self.lexiconShow.rowCount()
+        for i in range(rowCount):
+            self.lexiconShow.removeRow(0)
+
+        # 当前表的列数与行数
+        columnCount = len(headings)
+        rowCount = len(stats)
+
+        self.lexiconShow.setRowCount(rowCount)
+        self.lexiconShow.setColumnCount(columnCount)
+        self.lexiconShow.setHorizontalHeaderLabels(headings)
+
+        for i in range(rowCount):
+            for j in range(columnCount):
+                self.lexiconShow.setItem(i, j, QTableWidgetItem(stats[i][j]))
