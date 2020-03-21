@@ -732,3 +732,18 @@ class Lexicon(object):
             f_csv = csv.writer(fopen)
             f_csv.writerow(headings)
             f_csv.writerows(data)
+    
+    def retrieve(self, _id):
+        dirs = os.listdir(self.path)
+        fileDir = []
+        for f in dirs:
+            file = os.path.join(self.path, f)
+            with codecs.open(file, 'r', encoding='utf_8_sig') as fopen:
+                fcsv = csv.reader(fopen)
+                _ = next(fcsv)
+                words = [row[0] for row in fcsv]
+            if _id in words or _id == '':
+                fileDir.append(f)
+                continue
+
+        return fileDir

@@ -1248,8 +1248,43 @@ class Window(QMainWindow):
             self.lexiconShow.removeRow(i)
 
     def retLexiconFileDialog(self):
-        pass
+        widget = QDialog()
+        widget.setWindowTitle('检索词条')
+        widget.resize(400, 100)
 
+        layout = QGridLayout()
+        confirmButton = QPushButton('确认')
+
+        idRetLabel = QLabel('词条：')
+        idRetLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+
+        idRetLineEdit = QLineEdit()
+        idRetLineEdit.setPlaceholderText('')
+        idRetLineEdit.setToolTip('不限制请留白')
+
+        layout.addWidget(idRetLabel, 0, 0)
+        layout.addWidget(idRetLineEdit, 0, 1)
+        layout.addWidget(confirmButton, 0, 2)
+
+        confirmButton.clicked.connect(lambda: self.retrieveLexiconConfirm(idRetLineEdit.text(), widget))
+
+        widget.setLayout(layout)
+        widget.exec_()
+
+    def retrieveLexiconConfirm(self, _id, widget):
+        listFile = self.lexicon.retrieve(_id)
+        
+        countNum = self.leftLexiconWidget.count()
+        for _ in range(countNum):
+            self.leftLexiconWidget.takeItem(0)
+        
+        for file in listFile:
+            item = QListWidgetItem(str(file), self.leftLexiconWidget)
+            item.setSizeHint(QSize(15,30))
+            item.setTextAlignment(Qt.AlignLeft)
+        
+        widget.close()
+    
     def savLexiconFileDialog(self):
         file = self.leftLexiconWidget.currentItem().text()
         filePath = os.path.join(self.lexicon.path, file)
