@@ -8,8 +8,8 @@ Developed by **Sulley**
 - 支持统计汉字字频，并按照一定标准排序
 - 支持统计文件内的各类（汉字字符、英文字符、标点符号、其他字符）字符数量，并写入单个log文件
 - 支持提取中文词表并排序
-- 支持打开并管理语料库
-- 支持打开并管理词库
+- 支持打开并管理、检索语料库
+- 支持打开并管理、检索词库
 
 ## 安装方法
 
@@ -19,7 +19,7 @@ Developed by **Sulley**
 
 ```shell
 pip install --upgrade pip # 更新pip
-pip install xlrd pypinyin chardet docx pyqt5 jieba lxml # 安装依赖包
+pip install xlrd pypinyin chardet docx pyqt5 jieba lxml nltk# 安装依赖包
 ```
 
 ## 使用说明

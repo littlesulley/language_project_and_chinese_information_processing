@@ -662,6 +662,7 @@ class Window(QMainWindow):
             addCorpusFileButton.clicked.connect(self.addCorpusFileDialog)
             delCorpusFileButton.clicked.connect(self.delCorpusFileDialog)
             retCorpusFileButton.clicked.connect(self.retCorpusFileDialog)
+            self.keyText = ''
 
             self.corpus.addCorpusPath(path)
             listFile = self.corpus.listFile(self.corpus.path)
@@ -766,23 +767,27 @@ class Window(QMainWindow):
             self.charShow.horizontalHeader().setFont(font)
             self.charShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
             self.charShow.verticalHeader().setDefaultSectionSize(10)
+            self.charShow.setSortingEnabled(True)
             self.charShow.setColumnCount(2)
             self.charShow.setHorizontalHeaderLabels(['字符', '频次'])
 
             self.errorStatShow.horizontalHeader().setFont(font)
             self.errorStatShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
             self.errorStatShow.verticalHeader().setDefaultSectionSize(10)
+            self.errorStatShow.setSortingEnabled(True)
             self.errorStatShow.setColumnCount(5)
             self.errorStatShow.setHorizontalHeaderLabels(['序号','原文','修改','修改方式','偏误类型'])
 
             self.modifyStatShow.horizontalHeader().setFont(font)
             self.modifyStatShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
             self.modifyStatShow.verticalHeader().setDefaultSectionSize(10)
+            self.modifyStatShow.setSortingEnabled(True)
             self.modifyStatShow.setColumnCount(2)
             self.modifyStatShow.setHorizontalHeaderLabels(['修改方式','次数'])
 
             self.errorTypeStatShow.horizontalHeader().setFont(font)
             self.errorTypeStatShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+            self.errorTypeStatShow.setSortingEnabled(True)
             self.errorTypeStatShow.verticalHeader().setDefaultSectionSize(10)
             self.errorTypeStatShow.setColumnCount(2)
             self.errorTypeStatShow.setHorizontalHeaderLabels(['偏误类型', '次数'])
@@ -1145,8 +1150,8 @@ class Window(QMainWindow):
         self.monthStudyShow.setText(self.corpus.getMonthStudy(filePath))
         self.educationLanguageShow.setText(self.corpus.getEduLanguage(filePath))
         self.chukenShow.setText(self.corpus.getChuken(filePath))
-        self.rawTextShow.setText(self.corpus.getRawText(filePath))
-        self.modifiedTextShow.setHtml(self.corpus.getModifiedText(filePath))
+        self.rawTextShow.setHtml(self.corpus.getRawText(filePath, self.keyText))
+        self.modifiedTextShow.setHtml(self.corpus.getModifiedText(filePath, self.keyText))
         
         errorList = self.corpus.getErrorStat(filePath)
         modifyTypeDict = self.corpus.getModifyStat(filePath)
@@ -1207,6 +1212,7 @@ class Window(QMainWindow):
 
     def retrieveConfirm(self, _id, age, text, nationality, sex, widget):
         listFile = self.corpus.retrieve(_id, age, text, nationality, sex)
+        self.keyText = text
         
         countNum = self.leftWidget.count()
         for _ in range(countNum):

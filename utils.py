@@ -559,9 +559,7 @@ class Corpus(object):
         result = parsed.xpath('//chuken/text()')
         return result[0] if result != [] else ''
 
-    def getRawText(self, file):
-        #parsed = etree.parse(file, etree.HTMLParser())
-        #rawText = ''.join(parsed.xpath('//text//*/text()'))
+    def getRawText(self, file, keyText=''):
         parsed = etree.parse(file, etree.HTMLParser())
         # 找出所有段落
         paragraphs = parsed.xpath('//paragraph')
@@ -580,12 +578,17 @@ class Corpus(object):
                 # tail是当前结点到下个邻居结点之间的文本内容，如果没有文本则返回None
                 if sub.tail: 
                     rawText.append(sub.tail)
-            rawText.append('\n')
+            rawText.append('<br>')
 
         rawText = ''.join(rawText).strip()
+        
+        if keyText != '':
+            tokenizedText = rawText.split('。')
+            rawText = ['<b>'+sent+'</b>' if keyText in sent else sent for sent in tokenizedText]
+            rawText = '。'.join(rawText).strip()
         return rawText
 
-    def getModifiedText(self, file):
+    def getModifiedText(self, file, keyText=''):
         parsed = etree.parse(file, etree.HTMLParser())
         # 找出所有段落
         paragraphs = parsed.xpath('//paragraph')
@@ -619,7 +622,11 @@ class Corpus(object):
             else:
                 revised = errors[i-1].attrib['revised']
             texts = texts.replace(errorTag, '<font color="red">'+revised+'</font>')
-        
+
+        if keyText != '':
+            tokenizedText = texts.split('。')
+            texts = ['<b>'+sent+'</b>' if keyText in sent else sent for sent in tokenizedText]
+            texts = '。'.join(texts).strip()
         return texts
 
     def getErrorStat(self, file):
