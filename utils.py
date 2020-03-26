@@ -727,11 +727,24 @@ class Lexicon(object):
 
         return fileDir
 
-    def getFile(self, path):
+    def getFile(self, path, **kwargs):
         with codecs.open(path, 'r', encoding='utf_8_sig') as fopen:
             fcsv = csv.reader(fopen)
             headings = next(fcsv)
-            stats = [row for row in fcsv]
+            stats = []
+            for row in fcsv:
+                satisfied = True
+                for kHeading in kwargs.keys():
+                    if kwargs[kHeading] == '': continue
+                    elif kHeading not in headings: 
+                        satisfied = False 
+                        break
+                    elif row[headings.index(kHeading)] != kwargs[kHeading]:
+                        satisfied = False 
+                        break
+                    else: continue
+                if satisfied:
+                    stats.append(row)
         return headings, stats
     
     def modifyData(self, headings, data, path):
@@ -740,17 +753,45 @@ class Lexicon(object):
             f_csv.writerow(headings)
             f_csv.writerows(data)
     
-    def retrieve(self, _id):
+    def retrieve(self, **kwargs):
         dirs = os.listdir(self.path)
         fileDir = []
         for f in dirs:
             file = os.path.join(self.path, f)
             with codecs.open(file, 'r', encoding='utf_8_sig') as fopen:
                 fcsv = csv.reader(fopen)
-                _ = next(fcsv)
-                words = [row[0] for row in fcsv]
-            if _id in words or _id == '':
-                fileDir.append(f)
-                continue
-
+                headings = next(fcsv)
+                for row in fcsv:
+                    satisfied = True
+                    for kHeading in kwargs.keys():
+                        if kwargs[kHeading] == '': continue
+                        elif kHeading not in headings: 
+                            satisfied = False 
+                            break
+                        elif row[headings.index(kHeading)] != kwargs[kHeading]:
+                            satisfied = False 
+                            break
+                        else: continue
+                    if satisfied:
+                        fileDir.append(f)
+                        break
         return fileDir
+    
+    def listHeadings(self, path):
+        files = os.listdir(path)
+        headingDict = {}
+        for file in files:
+            file_path = os.path.join(path, file)
+            headings, stats = self.getFile(file_path)
+            for i, heading in enumerate(headings):
+                if heading == '词语' or heading == '全拼音' or heading == '备注' or heading == '义项' \
+                    or heading == 'JLH':
+                    continue
+                if heading not in headingDict.keys():
+                    headingDict[heading] = ['']
+                values = [item for row in stats for item in row[i].split(',')]
+                headingDict[heading] = list(set(headingDict[heading])|set(values))
+
+        for heading in headingDict.keys():
+            headingDict[heading].sort()
+        return headingDict

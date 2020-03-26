@@ -836,6 +836,9 @@ class Window(QMainWindow):
             widget.setWindowTitle('词库')
             widget.resize(1200, 600)
 
+            self.kwargs = {}
+            self.kwWidgets = {}
+
             addLexiconFileButton = QPushButton('添加词条')
             delLexiconFileButton = QPushButton('删除词条')
             retLexiconFileButton = QPushButton('检索词条')
@@ -875,7 +878,7 @@ class Window(QMainWindow):
 
             # 设置右边布局
             self.lexiconShow = QTableWidget()
-            font = QFont('微软雅黑', 10)
+            font = QFont('微软雅黑', 8)
             font.setBold(True)
             self.lexiconShow.horizontalHeader().setFont(font)
             self.lexiconShow.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
@@ -1256,29 +1259,71 @@ class Window(QMainWindow):
     def retLexiconFileDialog(self):
         widget = QDialog()
         widget.setWindowTitle('检索词条')
-        widget.resize(400, 100)
+        widget.resize(1600, 800)
+
+        self.headingsDict = self.lexicon.listHeadings(self.lexicon.path)
+        nLines = len(self.headingsDict.keys()) // 6 + 1
 
         layout = QGridLayout()
         confirmButton = QPushButton('确认')
+        showAllButton = QPushButton('显示全部')
 
         idRetLabel = QLabel('词条：')
         idRetLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
 
-        idRetLineEdit = QLineEdit()
-        idRetLineEdit.setPlaceholderText('')
-        idRetLineEdit.setToolTip('不限制请留白')
+        self.idRetLineEdit = QLineEdit()
+        self.idRetLineEdit.setPlaceholderText('')
+        self.idRetLineEdit.setToolTip('不限制请留白')
+
+        for i, heading in enumerate(self.headingsDict.keys()):
+            nameLabel = heading+'Label'
+            self.kwWidgets[nameLabel] = QLabel(heading+"：")
+            self.kwWidgets[nameLabel].setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+
+            nameCombox = heading+'Combox'
+            self.kwWidgets[nameCombox] = QComboBox()
+            self.kwWidgets[nameCombox].addItems(self.headingsDict[heading])
+
+            row = i // 6 + 1
+            column = i % 6
+            layout.addWidget(self.kwWidgets[nameLabel], row, 2 * column)
+            layout.addWidget(self.kwWidgets[nameCombox], row, 2 * column + 1)
 
         layout.addWidget(idRetLabel, 0, 0)
-        layout.addWidget(idRetLineEdit, 0, 1)
-        layout.addWidget(confirmButton, 0, 2)
-
-        confirmButton.clicked.connect(lambda: self.retrieveLexiconConfirm(idRetLineEdit.text(), widget))
-
+        layout.addWidget(self.idRetLineEdit, 0, 1, 1, 9)
+        layout.addWidget(confirmButton, 0, 10)
+        layout.addWidget(showAllButton, 0, 11)
+        
+        confirmButton.clicked.connect(lambda: self.retrieveLexiconConfirm(widget))
+        showAllButton.clicked.connect(lambda: self.showAllLexiconConfirm(widget))
+        
         widget.setLayout(layout)
         widget.exec_()
 
-    def retrieveLexiconConfirm(self, _id, widget):
-        listFile = self.lexicon.retrieve(_id)
+    def showAllLexiconConfirm(self, widget):
+        self.kwargs['词语'] = ''
+        for heading in self.headingsDict.keys():
+            self.kwargs[heading] = ''
+
+        listFile = self.lexicon.retrieve(**self.kwargs)
+        
+        countNum = self.leftLexiconWidget.count()
+        for _ in range(countNum):
+            self.leftLexiconWidget.takeItem(0)
+        
+        for file in listFile:
+            item = QListWidgetItem(str(file), self.leftLexiconWidget)
+            item.setSizeHint(QSize(15,30))
+            item.setTextAlignment(Qt.AlignLeft)
+        
+        widget.close()
+
+    def retrieveLexiconConfirm(self, widget):
+        self.kwargs['词语'] = self.idRetLineEdit.text()
+        for heading in self.headingsDict.keys():
+            self.kwargs[heading] = self.kwWidgets[heading+'Combox'].currentText()
+
+        listFile = self.lexicon.retrieve(**self.kwargs)
         
         countNum = self.leftLexiconWidget.count()
         for _ in range(countNum):
@@ -1307,6 +1352,7 @@ class Window(QMainWindow):
             data.append(row)
 
         self.lexicon.modifyData(headings, data, filePath)
+        reply = QMessageBox.information(self, '提示', '保存成功！', QMessageBox.Yes,QMessageBox.Yes) 
 
     def changeLexiconBrowser(self, index):
         if self.leftLexiconWidget.item(index) == None: return
@@ -1314,7 +1360,7 @@ class Window(QMainWindow):
         file = self.leftLexiconWidget.item(index).text()
         filePath = os.path.join(self.lexicon.path, file)
 
-        headings, stats = self.lexicon.getFile(filePath)
+        headings, stats = self.lexicon.getFile(filePath, **self.kwargs)
 
         # 前一个表的数据
         rowCount = self.lexiconShow.rowCount()
