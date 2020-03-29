@@ -20,6 +20,9 @@ Developed by **Sulley**
 ```shell
 pip install --upgrade pip # 更新pip
 pip install xlrd pypinyin chardet docx pyqt5 jieba lxml nltk# 安装依赖包
+
+git clone https://github.com/littlesulley/language_project_and_chinese_information_processing 
+python main.py # 运行
 ```
 
 ## 使用说明
@@ -28,7 +31,7 @@ pip install xlrd pypinyin chardet docx pyqt5 jieba lxml nltk# 安装依赖包
 - 汉字编码转换实现了给定汉字，输出汉字的各编码、笔画和拼音的功能；同时也支持将编码转换为汉字；支持输入笔画数，输出所有可能的汉字。点击“汉字”菜单选择想要的功能即可
 - 文件分词及统计功能完成了下述功能：对文件夹下所有文件分词（请保证**所有文件**均为未分词文件）；对文件夹下**所有文件**统计字符（或词）级别信息，包括频次、编码、拼音、笔画，并对每个文件输出一个.csv文件，若是词级别信息，请保证**所有文件**均已分词；对得到的单个.csv文件排序，排序标准有按频次、按编码、按拼音、按笔画，输出一个排序的.csv文件。点击“统计”菜单选择想要的功能
 - 语料库功能包括：打开语料库（暂不支持新建），查看语料库中的每篇语料并显示基本信息，展示每篇语料的用字情况并按照音序和字频序呈现，删除语料与添加语料
-- 词库功能包括：打开并显示词库，添加、删除词条，词条检索（待实现）
+- 词库功能包括：打开并显示词库，添加、删除词条，词条检索
 
 ## 程序说明
 **[utils.py](./utils.py)**
