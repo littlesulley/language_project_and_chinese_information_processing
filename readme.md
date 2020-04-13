@@ -1,5 +1,5 @@
 # Chinese Language Processor
-Current version: **v1.3.0**  
+Current version: **v1.4.0**  
 Developed by **Sulley**
 
 ## 程序简介
@@ -53,6 +53,13 @@ python main.py # 运行
 - 优化代码结构，减少冗余量
 
 ## 更新日志
+**v1.4.0**
+本版本主要是对语料库进行了较多的更新：
+- 对XML文档各种编码的支持（包括GBK字符集、Unicode、UTF-8字符集）
+- 串频统计（N-gram），用户可指定N的范围，按照字母序和频次序排序
+- 不连续关键字检索功能
+- 在线编辑功能
+
 **v1.3.0**
 - 实现基本语料库功能
 - 新增词库功能

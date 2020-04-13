@@ -11,6 +11,7 @@ import csv
 import xlrd
 import docx
 import jieba
+import re
 import string
 import time
 import shutil
@@ -514,56 +515,160 @@ class Corpus(object):
         return charFreqDict
 
     def getId(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         result = parsed.xpath('//id/text()')
         return result[0] if result != [] else ''
 
     def getNationality(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         result = parsed.xpath('//nationality/text()')
         return result[0] if result != [] else ''
 
     def getSex(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         result = parsed.xpath('//sex/text()')
         return result[0] if result != [] else ''
 
     def getAge(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         result = parsed.xpath('//age/text()')
         return result[0] if result != [] else ''
 
     def getLanguage(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         result = parsed.xpath('//first_language/text()') + ['-'] + \
             parsed.xpath('//major/text()')
         return result[0] if result != [] else ''
     
     def getYear(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         result = parsed.xpath('//school_year/text()')
         return result[0] if result != [] else ''
 
     def getMonthStudy(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         result = parsed.xpath('//month_of_study/text()')
         return result[0] if result != [] else ''
 
     def getEduLanguage(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         result = parsed.xpath('//educational_language/text()')
         return result[0] if result != [] else ''
 
     def getChuken(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         result = parsed.xpath('//chuken/text()')
         return result[0] if result != [] else ''
 
+    def getNgram(self, length, file):
+        text = self.getRawText(file)
+        text = text.replace("<br>", "")
+        ngrams = {}
+
+        ngram_length = int(length)
+        text_length = len(text)
+
+        for i in range(text_length - ngram_length):
+            ngram = text[i:i+ngram_length]
+            if '\n' in ngram: continue
+            if ngram not in ngrams.keys():
+                ngrams[ngram] = 0
+            ngrams[ngram] += 1
+        
+        ngrams = sorted(ngrams.items(), key = lambda item: item[1], reverse=True)
+        ngrams = [[ngram[0], ngram[1], ''.join(lazy_pinyin(ngram[0]))] for ngram in ngrams]
+
+        return ngrams
+
+    def getXML(self, file):
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+
+        with open(file, 'r', encoding=encoding) as fopen:
+            text = fopen.read()
+            return text
+
     def getRawText(self, file, keyText=''):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         # 找出所有段落
         paragraphs = parsed.xpath('//paragraph')
         # 找到所有error结点
+
+        pattern = re.compile(keyText)
 
         rawText = []
 
@@ -584,18 +689,25 @@ class Corpus(object):
         
         if keyText != '':
             tokenizedText = rawText.split('。')
-            rawText = ['<b>'+sent+'</b>' if keyText in sent else sent for sent in tokenizedText]
+            rawText = ['<b>'+sent+'</b>' if pattern.search(sent) != None else sent for sent in tokenizedText]
             rawText = '。'.join(rawText).strip()
         return rawText
 
     def getModifiedText(self, file, keyText=''):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
         # 找出所有段落
         paragraphs = parsed.xpath('//paragraph')
         # 找到所有error结点
         errors = parsed.xpath('//error')
         errorNum = len(errors) 
-
+        
         texts = []
 
         # 把每个段落里的error结点都打上标记
@@ -622,7 +734,7 @@ class Corpus(object):
             else:
                 revised = errors[i-1].attrib['revised']
             texts = texts.replace(errorTag, '<font color="red">'+revised+'</font>')
-
+        
         if keyText != '':
             tokenizedText = texts.split('。')
             texts = ['<b>'+sent+'</b>' if keyText in sent else sent for sent in tokenizedText]
@@ -630,7 +742,14 @@ class Corpus(object):
         return texts
 
     def getErrorStat(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
 
         errorList = []
         errors = parsed.xpath('//error')
@@ -647,7 +766,14 @@ class Corpus(object):
         return errorList
 
     def getModifyStat(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
 
         modifyTypeDict = {}
         errors = parsed.xpath('//error')
@@ -662,7 +788,14 @@ class Corpus(object):
         return modifyTypeDict
 
     def getErrorTypeStat(self, file):
-        parsed = etree.parse(file, etree.HTMLParser())
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        parsed = etree.parse(file, etree.HTMLParser(encoding=encoding))
 
         errorTypeDict = {}
         errors = parsed.xpath('//error')
@@ -690,7 +823,20 @@ class Corpus(object):
         else:
             os.remove(files)
 
+    def writeFile(self, file, text):
+        f = open(file, 'rb')
+        encode_data = chardet.detect(f.read(1000))
+        if encode_data["encoding"] in ["GBK", "GB2312", "ascii", "EUC-JP"]:
+            encode_data["encoding"] = "GBK"
+        encoding = encode_data["encoding"]
+        f.close()
+        
+        with codecs.open(file, 'w', encoding=encoding) as fopen:
+            fopen.write(text)
+
     def retrieve(self, _id, age, text, nationality, sex):
+        pattern = re.compile(text)
+
         dirs = os.listdir(self.path)
         fileDir = []
         for f in dirs:
@@ -704,7 +850,7 @@ class Corpus(object):
 
                 if _id != '' and fileId.find(_id) == -1: continue
                 if age != '' and fileAge != age: continue 
-                if text != '' and fileText.find(text) == -1: continue
+                if text != '' and pattern.search(fileText) == None: continue
                 if nationality != '不限' and nationality != fileNationality: continue
                 if sex != '不限' and sex != fileSex: continue
 
@@ -794,4 +940,4 @@ class Lexicon(object):
 
         for heading in headingDict.keys():
             headingDict[heading].sort()
-        return headingDict
+        return headingDict  

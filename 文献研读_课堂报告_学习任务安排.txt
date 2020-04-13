@@ -1,0 +1,54 @@
+语言知识工程——文献研读与专题报告
+
+2020.4.27 - 5.25  课堂报告、研讨
+
+
+一  词类专题  （03_Reading\03_词类问题）    4.27日
+
+阅读文献分工如下：
+（1）A Challenge Set and Methods for Noun-Verb Ambiguity   韩庆宏
+（2）Part of Speech， Hengeveld 1992      于欣池、邱晓枫、虞梦夏、祁晶
+（3）199305_2013 revision 中文词库小组 中文词类分析（三版）      黄澄、李楠、宗鑫辉
+
+概要介绍文章的内容要点，主要结论，论据语例。每个介绍报告20-30分钟。
+ 
+
+二 句法分析-树库专题  （03_Reading\04_句法分析）   5.11日
+
+（1）Universal Dependencies v1:  A Multilingual Treebank Collection， LREC 2016     韩庆宏
+https://universaldependencies.org/introduction.html
+
+（2） Universal Dependency Annotation for Multilingual Parsing， ACL2013     邱晓枫
+https://universaldependencies.org/guidelines.html
+
+（3）Penn Treebank， 于欣池、虞梦夏、祁晶
+
+（4）台湾中研院树库，  黄澄、李楠、宗鑫辉
+
+
+三 语义分析专题  （03_Reading\05_词义和句义分析） 5.18日
+
+（1） propbank    于欣池、虞梦夏、祁晶、宗鑫辉
+（内容：中、英文propbank语义资源概况，应用，存在的问题等）
+
+主要阅读文献：
+Adding semantic roles to the Chinese Treebank(Xue 2009).pdf
+The Proposition Bank An Annotated Corpus of semantic roles (2005) CL Vol.31 No.1.pdf
+
+（2） Abastract Meaning Representation      韩庆宏、邱晓枫、黄澄、李楠
+（内容：语义表示体系 + 标注规范 + 语料标注概况 + 应用等）
+
+主要阅读文献：
+amr-guidelines_amr.pdf
+CAMR_Guideline_v1.2.pdf
+
+四 构式分析与标注专题  （03_Reading\06_构式分析）   5.25日
+
+（1） FrameNet Construction项目的概况，设计思想，基本框架、标注规范 等    韩庆宏、邱晓枫、黄澄、李楠
+主要阅读文献：07_The FrameNet Constructicon by Charles J. Fillmore, Russell R. Lee-Goldman, and Russell Rhodes 2012.pdf
+
+（2） FrameNet Construction资源数据情况调研    于欣池、虞梦夏、祁晶、宗鑫辉
+调研资料：
+http://www1.icsi.berkeley.edu/~hsato/cxn00/21colorTag/index.html
+ftp://162.105.161.162/Resource/FrameNet_Construction/FrameNetConstruction_00cxn.tar.gz
+

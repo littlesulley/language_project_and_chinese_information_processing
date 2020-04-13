@@ -657,11 +657,15 @@ class Window(QMainWindow):
             addCorpusFileButton = QPushButton('添加语料')
             delCorpusFileButton = QPushButton('删除语料')
             retCorpusFileButton = QPushButton('检索语料')
-            exiCorpusFileButton = QPushButton('其他功能')
+            modCorpusFileButton = QPushButton('编辑语料')
+            ngramCorpusFileButton = QPushButton('串频统计')
+            moreCorpusFileButton = QPushButton('更多功能')
 
             addCorpusFileButton.clicked.connect(self.addCorpusFileDialog)
             delCorpusFileButton.clicked.connect(self.delCorpusFileDialog)
             retCorpusFileButton.clicked.connect(self.retCorpusFileDialog)
+            modCorpusFileButton.clicked.connect(self.modCorpusFileDialog)
+            ngramCorpusFileButton.clicked.connect(self.ngramCorpusFileDialog)
             self.keyText = ''
 
             self.corpus.addCorpusPath(path)
@@ -674,8 +678,10 @@ class Window(QMainWindow):
             layout.addWidget(addCorpusFileButton, 0, 0)
             layout.addWidget(delCorpusFileButton, 0, 1)
             layout.addWidget(retCorpusFileButton, 1, 0)
-            layout.addWidget(exiCorpusFileButton, 1, 1)
-            layout.addWidget(self.leftWidget, 2, 0, 5, 2)
+            layout.addWidget(modCorpusFileButton, 1, 1)
+            layout.addWidget(ngramCorpusFileButton, 2, 0)
+            layout.addWidget(moreCorpusFileButton, 2, 1)
+            layout.addWidget(self.leftWidget, 3, 0, 4, 2)
             layout.setHorizontalSpacing(10)
             layout.setVerticalSpacing(10)
             layout.setContentsMargins(10, 10, 10, 10)
@@ -1112,7 +1118,7 @@ class Window(QMainWindow):
 
         idRetLineEdit.setToolTip('不限制请留白')
         ageRetLineEdit.setToolTip('不限制请留白')
-        textRetLineEdit.setToolTip('不限制请留白')
+        textRetLineEdit.setToolTip('不限制请留白。支持模糊匹配，如‘喜.{2,4}欢’表示词‘喜欢’之间可以有2-4个其他词。请保证输入格式正确')
 
         nationalityRetChoices = ['不限', '日本', '中国']
         nationalityRetComboBox.addItems(nationalityRetChoices)
@@ -1138,7 +1144,103 @@ class Window(QMainWindow):
 
         widget.setLayout(layout)
         widget.exec_()
-    
+
+    def modCorpusFileDialog(self):
+        widget = QDialog()
+        widget.setWindowTitle('修改语料')
+        widget.resize(1200, 600)
+
+        fileLabel = QLabel('语料')
+        textLabel = QLabel('源XML文本')
+        confirmButton = QPushButton('保存修改')
+
+        textLabel.setAlignment(Qt.AlignCenter)
+        fileLabel.setAlignment(Qt.AlignCenter)
+        textLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+        fileLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+        listFile = self.corpus.listFile(self.corpus.path)
+        
+        layout = QGridLayout(widget)
+        leftWidget = QListWidget()
+        rightWidget = QTextEdit()
+        layout.addWidget(fileLabel, 0, 0)
+        layout.addWidget(textLabel, 0, 1)
+        layout.addWidget(confirmButton, 0, 2)
+        layout.addWidget(leftWidget, 1, 0)
+        layout.addWidget(rightWidget, 1, 1)
+        layout.setHorizontalSpacing(10)
+        layout.setVerticalSpacing(10)
+        layout.setContentsMargins(10, 10, 10, 10)
+        
+        # 点击保存
+        confirmButton.clicked.connect(lambda: self.modCorpusConfirm(leftWidget, rightWidget))
+
+        # 每次点击都改变显示内容
+        leftWidget.currentRowChanged.connect(lambda: self.modChangeCorpusBrowser(
+            leftWidget.currentRow(), leftWidget, rightWidget))
+        leftWidget.setFrameShape(QListWidget.NoFrame) 
+
+        # 设置左边布局
+        for file in listFile:
+            item = QListWidgetItem(str(file), leftWidget)
+            item.setSizeHint(QSize(15,30))
+            item.setTextAlignment(Qt.AlignLeft)
+
+        widget.setLayout(layout)
+        widget.exec_()
+
+    def ngramCorpusFileDialog(self):
+        widget = QDialog()
+        widget.setWindowTitle('串频统计')
+        widget.resize(600, 600)
+
+        layout = QGridLayout()
+
+        lengthLabel = QLabel('长度：')
+        fileLabel = QLabel('语料：')
+        confirmButton = QPushButton('确认')
+
+        lengthLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+        fileLabel.setStyleSheet('font:"微软雅黑"; font-weight:bold;')
+
+        lengthComboBox = QComboBox()
+        fileComboBox = QComboBox()
+        lengthComboBox.addItems(['2','3','4','5'])
+        files = self.corpus.listFile(self.corpus.path)
+        fileComboBox.addItems(files)
+
+        ngramTable = QTableWidget()
+        font = QFont('微软雅黑', 10)
+        font.setBold(True)
+        ngramTable.horizontalHeader().setFont(font)
+        ngramTable.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        ngramTable.verticalHeader().setDefaultSectionSize(10)
+        ngramTable.setSortingEnabled(True)
+        ngramTable.setColumnCount(3)
+        ngramTable.setHorizontalHeaderLabels(['字串', '频次', '拼音'])
+
+        layout.addWidget(fileLabel, 0, 0)
+        layout.addWidget(fileComboBox, 0, 1)
+        layout.addWidget(lengthLabel, 0, 2)
+        layout.addWidget(lengthComboBox, 0, 3)
+        layout.addWidget(confirmButton, 0, 4)
+        layout.addWidget(ngramTable, 1, 0, 1, 5)
+
+        confirmButton.clicked.connect(lambda: self.ngramCorpusConfirm(
+                lengthComboBox.currentText(), fileComboBox.currentText(), ngramTable))
+
+        widget.setLayout(layout)
+        widget.exec_()
+
+    def modChangeCorpusBrowser(self, index, leftWidget, rightWidget):
+        if leftWidget.item(index) == None: return
+
+        file = leftWidget.item(index).text()
+        filePath = os.path.join(self.corpus.path, file)
+        xml = self.corpus.getXML(filePath)
+
+        rightWidget.setText(xml)
+
     def changeCorpusBrowser(self, index):
         if self.leftWidget.item(index) == None: return
         
@@ -1227,6 +1329,27 @@ class Window(QMainWindow):
             item.setTextAlignment(Qt.AlignLeft)
         
         widget.close()
+
+    def modCorpusConfirm(self, leftWidget, rightWidget):
+        file = leftWidget.item(leftWidget.currentRow()).text()
+        filePath = os.path.join(self.corpus.path, file)
+
+        text = rightWidget.toPlainText()
+        self.corpus.writeFile(filePath, text)
+
+    def ngramCorpusConfirm(self, length, file, ngramTable):
+        ngrams = self.corpus.getNgram(length, os.path.join(self.corpus.path, file))
+
+        rowCount = ngramTable.rowCount()
+        for i in range(rowCount):
+            ngramTable.removeRow(0)
+        
+        ngramTable.setRowCount(len(ngrams))
+
+        for i, item in enumerate(ngrams):
+            ngramTable.setItem(i, 0, QTableWidgetItem(item[0])) # 字串
+            ngramTable.setItem(i, 1, QTableWidgetItem(str(item[1]))) # 频次
+            ngramTable.setItem(i, 2, QTableWidgetItem(item[2])) # 拼音
 
     def addLexiconFileDialog(self):
         file = self.leftLexiconWidget.currentItem().text()
